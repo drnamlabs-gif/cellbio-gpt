@@ -49,7 +49,28 @@ The model reads a problem such as "bath K+ is 12 mM, K+ permeability is 2x basel
 | 40M, trained on random points | – | 0.777 |
 | 40M, random points + five examples in the prompt | – | **0.835** |
 
-The hosted-model rows come from an agent that read one question file and wrote one answer file, with no simulator access. Without examples it is at the constant floor on exam A and below it on exam B. With five examples it ties the 40M model on exam A (98 problems, a one-problem gap) and falls short of it on exam B (0.808 against 0.835). This is a single forward test: one run, no repeated batches, so no statistical validation yet (no confidence intervals, no paired test), and the gaps above should not be read as significant. Tool use was checked only through the agent's own reports. The full log is in `08_betse_rlvr/out/agent_exam/`. A follow-up is planned with 20 separate, unseen test batches (new simulations used in no training or earlier exam), sat by every model, to give the statistics this run lacks.
+The hosted-model rows come from a first, single forward test: an agent that read one question file and wrote one answer file, with no simulator access. It suggested a tie with the 40M model, so a larger test followed.
+
+### Exam C: twenty sealed batches
+
+Twenty batches of fresh simulations (300 simulations, 1,146 problems) were generated at points that appear in no training set and no earlier exam. They were fixed before any model saw them: the repository holds only their SHA-256 hashes (`08_betse_rlvr/exam_c/commitment.json`, committed before the exams) and the analysis plan (`08_betse_rlvr/exam_c/PLAN.md`). Each batch is one unit, so every comparison is paired over 20 batches. Mean reward over the batches:
+
+| System | Reward |
+|---|---|
+| Hosted model as agent (Claude Sonnet 5.5), five worked examples | **0.852** |
+| Nearest-neighbour lookup, no model (diagnostic) | 0.827 |
+| 40M, mixed warm start, five worked examples | 0.807 |
+| 40M, trained on random points, zero-shot | 0.772 |
+| Constant predictor | 0.708 |
+| 40M, mixed warm start, zero-shot | 0.678 |
+| Hosted model as agent, zero-shot | 0.602 |
+| 40M, trained on the grid, zero-shot | 0.500 |
+
+The comparison fixed in advance was the 40M model with five examples against the hosted agent with five examples. The agent is ahead by 0.045 (95% bootstrap interval 0.025 to 0.065 over batches, Wilcoxon p = 0.0014) and wins 17 of 20 batches. The near-tie in the first test did not hold. Both are above the constant predictor with five examples, and the agent also beats nearest-neighbour lookup (+0.025, p = 0.003) while the 40M model falls below it (-0.020, p = 0.015). Zero-shot the order flips: the agent is 0.106 below the constant predictor, and the 40M model trained on random points is 0.063 above it, which is evidence that the weights hold part of the simulator's response surface and the agent needs the examples to get there. Only the first comparison was the planned test; the rest are descriptive, and with twelve comparisons the secondary p-values should not be read at face value. Full table: `08_betse_rlvr/out/exam_c/stats.md`.
+
+Limits: one hosted model (Sonnet 5.5), one run per batch, agent tool use checked only through the agents' own reports (none reported a rule breach; the log is in `08_betse_rlvr/out/exam_c/agent_run_log.jsonl`). Open models through Ollama and other hosted models have not sat exam C yet, so the exam stays sealed: truths, questions and per-problem answers are withheld until they have.
+
+The earlier single test is in `08_betse_rlvr/out/agent_exam/`.
 
 The second column is the one to read. The model trained on a regular grid scored 0.945 on held-out grid points and then fell below the constant predictor on points between the grid nodes. It had learned a lookup table: across 234 sealed problems it produced 17 distinct answers, and 16 of them were values it had memorized. Putting the same 150 simulations at random positions raised the off-grid score from 0.539 to 0.777 with no change to the model or the algorithm. Where the training data sits mattered more than which method was used.
 

@@ -25,7 +25,7 @@ pipeline at small scale, not SOTA. Repo: https://github.com/drnamlabs-gif/cellbi
 
 ## Checkpoints
 
-The first four are the post-training ladder; the last two are trained against
+The first four are the post-training ladder; the last three are trained against
 the BETSE tissue simulator.
 
 | file | stage |
@@ -36,6 +36,7 @@ the BETSE tissue simulator.
 | `model_grpo.pt` | stage 5b GRPO (bioelectric verifier, 300 steps, KL 0.05) |
 | `model_sim_grid.pt` | stage 8 simulator RL: warm start + GRPO on 150 grid simulations (exam A) |
 | `model_sim_mixed.pt` | stage 8e: 150 randomly placed simulations, mixed 0-5 worked examples (exam B) |
+| `model_sim_random.pt` | stage 8e: warm start on 150 randomly placed simulations, single format (exam B) |
 
 ## Training data
 
@@ -74,12 +75,30 @@ scores it: full reward within 2 mV, partial within 10 and 25 mV.
 | `model_sim_grid.pt` | **0.945** | 0.539 |
 | `model_sim_mixed.pt`, five worked examples in the prompt | not measured | **0.835** |
 | `model_sim_mixed.pt`, zero-shot | not measured | 0.666 |
+| `model_sim_random.pt`, zero-shot | not measured | 0.772 |
 
-The hosted-model rows are a single forward test: one run of an agent that read
-one question file and wrote one answer file, with no access to the simulator or
-the truths. There are no repeated batches, so no statistical validation yet and
-the gaps should not be read as significant. A follow-up with 20 separate, unseen
-test batches is planned. Its tool use was checked only through its own reports. Per-question answers and
+The hosted-model rows above come from a first single test (one agent run). A larger
+test followed, exam C: 20 sealed batches of fresh simulations (300 simulations, 1,146
+problems) whose SHA-256 hashes were published before any model saw them. Mean reward
+over the batches:
+
+| system | reward |
+|---|---|
+| hosted model as agent (Claude Sonnet 5.5), five examples | 0.852 |
+| nearest-neighbour lookup, no model (diagnostic) | 0.827 |
+| `model_sim_mixed.pt`, five examples | 0.807 |
+| `model_sim_random.pt`, zero-shot | 0.772 |
+| constant predictor | 0.708 |
+| `model_sim_mixed.pt`, zero-shot | 0.678 |
+| hosted model as agent, zero-shot | 0.602 |
+| `model_sim_grid.pt`, zero-shot | 0.500 |
+
+The comparison fixed in advance was `model_sim_mixed.pt` with five examples against the
+hosted agent with five examples. The agent is ahead by 0.045 (95% bootstrap interval 0.025
+to 0.065 over batches, Wilcoxon p = 0.0014) and wins 17 of 20 batches, so the near-tie in
+the first test did not hold. Other comparisons are descriptive. One hosted model, one run
+per batch; the agents' tool use was checked only through their own reports. Exam C stays
+sealed until other model families have sat it. Details are in the dataset repo. Per-question answers and
 scores are in the dataset repo.
 
 The grid-trained model is excellent on exam A and falls below the constant

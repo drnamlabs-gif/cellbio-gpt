@@ -560,25 +560,59 @@ strongest open chat model scored 0.529 zero-shot, below the constant
 predictor, and 0.904 with five worked examples. The supervised warm start
 did most of the work (0.938), and GRPO added a little on top.
 
-\paragraph{A hosted model as an agent.} We also had a hosted model sit both
-exams as an agent (Claude Sonnet 5.5, closed book). The agent read one
+\paragraph{A hosted model as an agent.} We also had a hosted model sit
+the exams as an agent (Claude Sonnet 5.5, closed book). The agent read one
 question file and wrote one answer file; it could reason before answering
 but had no access to the simulator or the truth files, and the same verifier
-scored its answers. Zero-shot it scored 0.562 on exam A, close to the
-constant predictor, and 0.591 on exam B, below it. With the same five nearest
-worked examples it scored 0.955 on exam A, level with the 40M model (0.945;
-98 problems, so the gap is one problem) and 0.808 on exam B, below the
-40M model's 0.835. This is a single forward test, with no repeated runs and
-no statistical validation yet, so none of these gaps should be read as
-significant. We plan 20 separate, unseen test batches (new simulations used in
-no training set or earlier exam), sat by every model, to supply the statistics
-this run lacks. Four of the ten batches had to be
-repeated because the agent reported using code to write or compute its
-answers, against the rules; the discarded attempts scored within 0.03 of
-the repeats on the same batches. Tool use could not be audited beyond the agents' own
-reports. A hosted model therefore does not know this simulator's physics
-without examples, and with examples it does about as well as a 40M model
-trained for the task.
+scored its answers. In a first single test it scored 0.562 on exam A, close
+to the constant predictor, and 0.591 on exam B, below it. With the five
+nearest worked examples it scored 0.955 on exam A, level with the 40M model
+(0.945; 98 problems, so the gap is one problem) and 0.808 on exam B, below
+the 40M model's 0.835. Four of those ten batches had to be repeated because
+the agent reported using code, against the rules; the discarded attempts
+scored within 0.03 of the repeats.
+
+That test could not say whether the gaps were real, so we built exam C
+before running anything further: twenty batches of fresh simulations
+(300 simulations, 1,146 problems), at points at least 0.25, 0.20 and 0.15
+log$_2$ units from every lattice node, random-training point and exam B point.
+The plan and the SHA-256 hash of each sealed file were published before any
+model or agent saw a batch. Each batch is one unit, so comparisons are paired
+over 20 batches (Table~\ref{tab:examc}). The comparison fixed in advance was
+the 40M model with five examples against the hosted agent with five examples.
+The agent was ahead by 0.045 (95\% bootstrap interval over batches 0.025 to
+0.065, Wilcoxon $p=0.0014$) and won 17 of 20 batches, so the near-tie of the
+first test did not hold. With five examples the agent also beat nearest-neighbour
+lookup (+0.025, $p=0.003$), which the 40M model did not (--0.020, $p=0.015$).
+Zero-shot the order reverses: the agent scored 0.106 below the constant predictor
+and the 40M model trained on random points 0.063 above it. We read that as the
+weights holding part of the simulator's response surface while the agent needs
+the examples to reach it, but only the first comparison was planned; the rest
+are descriptive, and with twelve comparisons the secondary $p$-values should
+not be taken at face value. The limits are one hosted model, one run per
+batch, and tool use that could be checked only through the agents' own
+reports, none of which reported a breach on exam C. Open models run through Ollama and other hosted models
+have not yet sat exam C, so it stays sealed.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}lc@{}}
+\toprule
+System & Reward\\
+\midrule
+Hosted model as agent, five worked examples & \textbf{0.852}\\
+Nearest-neighbour lookup, no model (diagnostic) & 0.827\\
+40M, mixed warm start, five worked examples & 0.807\\
+40M, trained on random points, zero-shot & 0.772\\
+Constant predictor & 0.708\\
+40M, mixed warm start, zero-shot & 0.678\\
+Hosted model as agent, zero-shot & 0.602\\
+40M, trained on the grid, zero-shot & 0.500\\
+\bottomrule
+\end{tabular}
+\caption{Exam C: mean reward over 20 sealed batches (1,146 problems).}
+\label{tab:examc}
+\end{table}
 
 Exam B changed the reading of these numbers (Figure~\ref{fig:exams}). The
 lattice-trained model dropped to 0.539, below the constant predictor. Its

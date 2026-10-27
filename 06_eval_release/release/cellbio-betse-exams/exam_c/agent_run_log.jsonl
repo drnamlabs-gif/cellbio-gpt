@@ -1,0 +1,43 @@
+{"model": "Sonnet 5.5 (session model)", "rules": "Read + Write only; no Bash, no background tasks, no code; stated in the exam file and in the prompt", "note": "agent transcripts are empty on disk; tool_uses and duration come from completion notices, violations only from the agents' own reports"}
+{"batch": "C03_five", "tool_uses": 4, "duration_s": 25.0, "self_report": "no rules broken, Read (two pages) + one Write"}
+{"batch": "C00_zero", "tool_uses": 3, "duration_s": 25.7, "self_report": "no rules broken"}
+{"batch": "C00_five", "tool_uses": 4, "duration_s": 25.8, "self_report": "no rules broken, ran no code"}
+{"batch": "C03_zero", "tool_uses": 3, "duration_s": 29.9, "self_report": "no rules broken; hand GHK estimate"}
+{"batch": "C04_five", "tool_uses": 4, "duration_s": 31.9, "self_report": "no rules broken"}
+{"batch": "C02_zero", "tool_uses": 3, "duration_s": 32.1, "self_report": "no rules broken; hand GHK estimate"}
+{"batch": "C04_zero", "tool_uses": 3, "duration_s": 34.7, "self_report": "no rules broken"}
+{"batch": "C01_zero", "tool_uses": 3, "duration_s": 37.5, "self_report": "no rules broken"}
+{"batch": "C01_five", "tool_uses": 5, "duration_s": 41.5, "self_report": "no rules broken; Read + one Write (extra tool use consistent with paging a 90 KB file)"}
+{"batch": "C07_zero", "tool_uses": 3, "duration_s": 23.9, "self_report": "no rules broken"}
+{"batch": "C02_five", "tool_uses": 4, "duration_s": 50.8, "self_report": "no rules broken; two reads"}
+{"batch": "C09_zero", "tool_uses": 3, "duration_s": 26.2, "self_report": "no rules broken; hand GHK estimates"}
+{"batch": "C08_zero", "tool_uses": 3, "duration_s": 28.7, "self_report": "no rules broken"}
+{"batch": "C08_five", "tool_uses": 4, "duration_s": 30.3, "self_report": "no rules broken; two pages"}
+{"batch": "C06_zero", "tool_uses": 3, "duration_s": 31.5, "self_report": "no rules broken; hand K+/Na+ GHK-style estimate, Cl- left out"}
+{"batch": "C05_zero", "tool_uses": 3, "duration_s": 35.1, "self_report": "no rules broken; simplified GHK estimate"}
+{"batch": "C05_five", "tool_uses": 4, "duration_s": 35.9, "self_report": "no rules broken; three pages"}
+{"batch": "C06_five", "tool_uses": 4, "duration_s": 37.8, "self_report": "no rules broken; two pages"}
+{"batch": "C07_five", "tool_uses": 5, "duration_s": 40.3, "self_report": "no rules broken"}
+{"batch": "C14_zero", "tool_uses": 3, "duration_s": 29.2, "self_report": "no rules broken"}
+{"batch": "C12_zero", "tool_uses": 3, "duration_s": 24.7, "self_report": "no rules broken"}
+{"batch": "C10_zero", "tool_uses": 3, "duration_s": 26.3, "self_report": "no rules broken"}
+{"batch": "C09_five", "tool_uses": 4, "duration_s": 48.9, "self_report": "no rules broken; three pages"}
+{"batch": "C10_five", "tool_uses": 5, "duration_s": 30.6, "self_report": "no rules broken; three pages"}
+{"batch": "C13_zero", "tool_uses": 3, "duration_s": 30.6, "self_report": "no rules broken"}
+{"batch": "C12_five", "tool_uses": 4, "duration_s": 34.0, "self_report": "no rules broken; two pages"}
+{"batch": "C14_five", "tool_uses": 4, "duration_s": 35.8, "self_report": "no rules broken; two pages"}
+{"batch": "C11_zero", "tool_uses": 3, "duration_s": 37.2, "self_report": "no rules broken"}
+{"batch": "C13_five", "tool_uses": 4, "duration_s": 42.0, "self_report": "no rules broken; two pages"}
+{"batch": "C11_five", "tool_uses": 4, "duration_s": 49.1, "self_report": "no rules broken; two pages"}
+{"batch": "C15_zero", "tool_uses": 3, "duration_s": 24.5, "self_report": "no rules broken"}
+{"batch": "C16_zero", "tool_uses": 3, "duration_s": 28.0, "self_report": "no rules broken"}
+{"batch": "C19_zero", "tool_uses": 3, "duration_s": 31.3, "self_report": "no rules broken"}
+{"batch": "C15_five", "tool_uses": 4, "duration_s": 32.3, "self_report": "no rules broken; two pages"}
+{"batch": "C17_zero", "tool_uses": 3, "duration_s": 33.1, "self_report": "no rules broken"}
+{"batch": "C17_five", "tool_uses": 5, "duration_s": 39.4, "self_report": "no rules broken"}
+{"batch": "C16_five", "tool_uses": 4, "duration_s": 42.1, "self_report": "no rules broken; two pages"}
+{"batch": "C18_five", "tool_uses": 5, "duration_s": 44.8, "self_report": "no rules broken"}
+{"batch": "C18_zero", "tool_uses": 3, "duration_s": 48.6, "self_report": "no rules broken"}
+{"batch": "C19_five", "tool_uses": null, "duration_s": null, "self_report": "no rules broken; usage notice not seen before scoring"}
+{"summary": "40 agents, none reported a rule breach; tool_uses 3-5 each (3 for zero-shot, 4-5 for five-shot, matching one Read of the small file, extra Reads for paging the large one, and one Write); durations 24-51 s, no outliers; no reruns were needed in this exam"}
+{"batch": "C19_five", "tool_uses": 4, "duration_s": 53.2, "note": "usage notice arrived after scoring; replaces the null entry above"}

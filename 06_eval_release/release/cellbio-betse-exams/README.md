@@ -46,21 +46,45 @@ within 2 mV and partial credit within 10 and 25 mV.
 
 ## Hosted model as agent
 
-`agent_exam/` holds one run of Claude Sonnet 5.5 sitting both exams closed book
-as an agent: it read one question file and wrote one answer file, could reason
-but had no simulator or truth access. Questions (`in/`), answers (`answers/`),
-per-question scores (`items.jsonl`), summary (`results.json`) and the run log
-(`run_log.jsonl`) are included.
+`agent_exam/` holds a first single test: Claude Sonnet 5.5 sat exams A and B closed book
+as an agent (it read one question file and wrote one answer file, could reason, had no
+simulator or truth access). Questions, answers, per-question scores, summary and run log
+are included.
 
 | | Exam A | Exam B |
 |---|---|---|
 | zero-shot | 0.562 | 0.591 |
 | five nearest worked examples | 0.955 | 0.808 |
 
-Four of ten batches were repeated because the agent reported using code, against
-the rules. The discarded attempts are in `agent_exam/violations/` and scored
-within 0.03 of the repeats. Tool use could not be audited beyond the agents' own
-reports. This is a single forward test: one run, one model, no repeated batches, so no statistical validation yet. A follow-up with 20 separate, unseen test batches is planned.
+Four of ten batches were repeated because the agent reported using code, against the
+rules; the discarded attempts are in `agent_exam/violations/` and scored within 0.03 of
+the repeats.
+
+## Exam C: twenty sealed batches
+
+`exam_c/` holds the pre-registered test that followed: 20 batches of fresh simulations
+(300 simulations, 1,146 problems) at points that appear in no training set and no earlier
+exam. `commitment.json` has the SHA-256 of every sealed file, published before any model
+saw a batch; `PLAN.md` is the analysis plan; `batch_means.json` has each system's mean
+reward per batch; `stats.md` and `stats.json` have the paired statistics;
+`agent_run_log.jsonl` is the run log. The questions, truths and per-problem answers are
+withheld until other model families have sat the exam.
+
+| System | Mean reward over 20 batches |
+|---|---|
+| hosted agent (Sonnet 5.5), five examples | 0.852 |
+| nearest-neighbour lookup (diagnostic) | 0.827 |
+| 40M mixed warm start, five examples | 0.807 |
+| 40M random-point training, zero-shot | 0.772 |
+| constant predictor | 0.708 |
+| 40M mixed warm start, zero-shot | 0.678 |
+| hosted agent, zero-shot | 0.602 |
+| 40M grid training, zero-shot | 0.500 |
+
+Planned comparison, 40M with five examples against the hosted agent with five examples:
+the agent is ahead by 0.045 (95% bootstrap interval 0.025 to 0.065, Wilcoxon p = 0.0014),
+winning 17 of 20 batches. Other comparisons are descriptive. One hosted model, one run
+per batch, tool use checked only through the agents' own reports.
 
 ## Why two exams
 

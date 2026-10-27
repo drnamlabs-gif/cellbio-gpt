@@ -59,3 +59,7 @@ data/sft_v2b/
 # secrets
 .env
 .env.*
+
+# exam C stays sealed until the other model families have sat it: per-problem rewards and answers are withheld
+08_betse_rlvr/out/exam_c/systems/
+08_betse_rlvr/out/exam_c/agent/
