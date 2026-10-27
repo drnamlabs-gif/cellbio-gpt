@@ -1,0 +1,962 @@
+[
+  {
+    "combo": [
+      20.3,
+      0.84,
+      1.64
+    ],
+    "truth": -19,
+    "nn_combo": [
+      19.4,
+      0.82,
+      1.88
+    ],
+    "nn_truth": -17,
+    "pred": -19.0,
+    "text": "Mean Vmem = -19 mV."
+  },
+  {
+    "combo": [
+      16.2,
+      0.32,
+      1.93
+    ],
+    "truth": -16,
+    "nn_combo": [
+      17.3,
+      0.26,
+      1.2
+    ],
+    "nn_truth": -21,
+    "pred": -19.0,
+    "text": "Mean Vmem = -19 mV."
+  },
+  {
+    "combo": [
+      19.6,
+      2.21,
+      0.6
+    ],
+    "truth": -29,
+    "nn_combo": [
+      16.6,
+      2.91,
+      0.64
+    ],
+    "nn_truth": -13,
+    "pred": -21.0,
+    "text": "Mean Vmem = -21 mV."
+  },
+  {
+    "combo": [
+      7.7,
+      0.7,
+      1.81
+    ],
+    "truth": -19,
+    "nn_combo": [
+      5.9,
+      0.55,
+      1.98
+    ],
+    "nn_truth": -17,
+    "pred": -20.0,
+    "text": "Mean Vmem = -20 mV."
+  },
+  {
+    "combo": [
+      13.8,
+      2.45,
+      0.92
+    ],
+    "truth": -34,
+    "nn_combo": [
+      10.8,
+      2.28,
+      0.83
+    ],
+    "nn_truth": -36,
+    "pred": -40.0,
+    "text": "Mean Vmem = -40 mV."
+  },
+  {
+    "combo": [
+      4.0,
+      1.16,
+      0.55
+    ],
+    "truth": -64,
+    "nn_combo": [
+      3.6,
+      0.99,
+      0.58
+    ],
+    "nn_truth": -62,
+    "pred": -43.0,
+    "text": "Mean Vmem = -43 mV."
+  },
+  {
+    "combo": [
+      23.9,
+      1.44,
+      1.43
+    ],
+    "truth": -20,
+    "nn_combo": [
+      32.8,
+      1.28,
+      1.61
+    ],
+    "nn_truth": -18,
+    "pred": -20.0,
+    "text": "Mean Vmem = -20 mV."
+  },
+  {
+    "combo": [
+      5.8,
+      3.69,
+      1.72
+    ],
+    "truth": -21,
+    "nn_combo": [
+      6.7,
+      2.97,
+      1.78
+    ],
+    "nn_truth": -20,
+    "pred": -20.0,
+    "text": "Mean Vmem = -20 mV."
+  },
+  {
+    "combo": [
+      20.6,
+      0.43,
+      0.95
+    ],
+    "truth": -21,
+    "nn_combo": [
+      19.0,
+      0.52,
+      0.89
+    ],
+    "nn_truth": -23,
+    "pred": -29.0,
+    "text": "Mean Vmem = -29 mV."
+  },
+  {
+    "combo": [
+      2.3,
+      0.38,
+      1.29
+    ],
+    "truth": -22,
+    "nn_combo": [
+      2.6,
+      0.5,
+      1.96
+    ],
+    "nn_truth": -18,
+    "pred": -21.0,
+    "text": "Mean Vmem = -21 mV."
+  },
+  {
+    "combo": [
+      18.6,
+      3.66,
+      0.79
+    ],
+    "truth": -32,
+    "nn_combo": [
+      16.6,
+      2.91,
+      0.64
+    ],
+    "nn_truth": -13,
+    "pred": -23.0,
+    "text": "Mean Vmem = -23 mV."
+  },
+  {
+    "combo": [
+      6.1,
+      0.92,
+      0.65
+    ],
+    "truth": -55,
+    "nn_combo": [
+      5.6,
+      1.01,
+      0.76
+    ],
+    "nn_truth": -42,
+    "pred": -60.0,
+    "text": "Mean Vmem = -60 mV."
+  },
+  {
+    "combo": [
+      3.0,
+      0.93,
+      0.68
+    ],
+    "truth": -57,
+    "nn_combo": [
+      3.2,
+      0.8,
+      0.75
+    ],
+    "nn_truth": -49,
+    "pred": -55.0,
+    "text": "Mean Vmem = -55 mV."
+  },
+  {
+    "combo": [
+      14.9,
+      0.84,
+      1.59
+    ],
+    "truth": -20,
+    "nn_combo": [
+      19.4,
+      0.82,
+      1.88
+    ],
+    "nn_truth": -17,
+    "pred": -19.0,
+    "text": "Mean Vmem = -19 mV."
+  },
+  {
+    "combo": [
+      16.3,
+      0.59,
+      1.59
+    ],
+    "truth": -19,
+    "nn_combo": [
+      19.1,
+      0.68,
+      1.82
+    ],
+    "nn_truth": -17,
+    "pred": -21.0,
+    "text": "Mean Vmem = -21 mV."
+  },
+  {
+    "combo": [
+      22.3,
+      0.73,
+      0.75
+    ],
+    "truth": -24,
+    "nn_combo": [
+      25.7,
+      0.78,
+      0.66
+    ],
+    "nn_truth": -24,
+    "pred": -29.0,
+    "text": "Mean Vmem = -29 mV."
+  },
+  {
+    "combo": [
+      15.5,
+      0.37,
+      0.66
+    ],
+    "truth": -32,
+    "nn_combo": [
+      20.4,
+      0.33,
+      0.69
+    ],
+    "nn_truth": -29,
+    "pred": -32.0,
+    "text": "Mean Vmem = -32 mV."
+  },
+  {
+    "combo": [
+      2.0,
+      2.22,
+      1.26
+    ],
+    "truth": -42,
+    "nn_combo": [
+      2.4,
+      2.05,
+      1.17
+    ],
+    "nn_truth": -45,
+    "pred": -20.0,
+    "text": "Mean Vmem = -20 mV."
+  },
+  {
+    "combo": [
+      11.0,
+      0.37,
+      0.59
+    ],
+    "truth": -51,
+    "nn_combo": [
+      13.6,
+      0.28,
+      0.6
+    ],
+    "nn_truth": -40,
+    "pred": -36.0,
+    "text": "Mean Vmem = -36 mV."
+  },
+  {
+    "combo": [
+      19.8,
+      1.45,
+      1.08
+    ],
+    "truth": -21,
+    "nn_combo": [
+      19.1,
+      1.22,
+      0.98
+    ],
+    "nn_truth": -22,
+    "pred": -20.0,
+    "text": "Mean Vmem = -20 mV."
+  },
+  {
+    "combo": [
+      10.7,
+      0.58,
+      0.52
+    ],
+    "truth": -57,
+    "nn_combo": [
+      7.0,
+      0.79,
+      0.57
+    ],
+    "nn_truth": -59,
+    "pred": -23.0,
+    "text": "Mean Vmem = -23 mV."
+  },
+  {
+    "combo": [
+      7.4,
+      0.45,
+      0.88
+    ],
+    "truth": -42,
+    "nn_combo": [
+      8.9,
+      0.35,
+      1.0
+    ],
+    "nn_truth": -33,
+    "pred": -58.0,
+    "text": "Mean Vmem = -58 mV."
+  },
+  {
+    "combo": [
+      4.6,
+      0.56,
+      1.25
+    ],
+    "truth": -23,
+    "nn_combo": [
+      4.9,
+      0.62,
+      1.12
+    ],
+    "nn_truth": -34,
+    "pred": -40.0,
+    "text": "Mean Vmem = -40 mV."
+  },
+  {
+    "combo": [
+      10.6,
+      2.2,
+      1.26
+    ],
+    "truth": -22,
+    "nn_combo": [
+      11.2,
+      2.31,
+      1.44
+    ],
+    "nn_truth": -21,
+    "pred": -23.0,
+    "text": "Mean Vmem = -23 mV."
+  },
+  {
+    "combo": [
+      6.8,
+      2.39,
+      0.63
+    ],
+    "truth": -58,
+    "nn_combo": [
+      5.6,
+      2.86,
+      0.68
+    ],
+    "nn_truth": -58,
+    "pred": -59.0,
+    "text": "Mean Vmem = -59 mV."
+  },
+  {
+    "combo": [
+      2.1,
+      0.32,
+      1.36
+    ],
+    "truth": -20,
+    "nn_combo": [
+      2.6,
+      0.5,
+      1.96
+    ],
+    "nn_truth": -18,
+    "pred": -18.0,
+    "text": "Mean Vmem = -18 mV."
+  },
+  {
+    "combo": [
+      8.0,
+      0.39,
+      1.0
+    ],
+    "truth": -35,
+    "nn_combo": [
+      8.9,
+      0.35,
+      1.0
+    ],
+    "nn_truth": -33,
+    "pred": -21.0,
+    "text": "Mean Vmem = -21 mV."
+  },
+  {
+    "combo": [
+      3.2,
+      1.72,
+      0.93
+    ],
+    "truth": -34,
+    "nn_combo": [
+      3.0,
+      1.75,
+      0.75
+    ],
+    "nn_truth": -54,
+    "pred": -21.0,
+    "text": "Mean Vmem = -21 mV."
+  },
+  {
+    "combo": [
+      6.3,
+      0.58,
+      1.2
+    ],
+    "truth": -23,
+    "nn_combo": [
+      6.2,
+      0.55,
+      1.47
+    ],
+    "nn_truth": -20,
+    "pred": -21.0,
+    "text": "Mean Vmem = -21 mV."
+  },
+  {
+    "combo": [
+      5.9,
+      0.32,
+      0.59
+    ],
+    "truth": -58,
+    "nn_combo": [
+      5.3,
+      0.34,
+      0.7
+    ],
+    "nn_truth": -48,
+    "pred": -63.0,
+    "text": "Mean Vmem = -63 mV."
+  },
+  {
+    "combo": [
+      35.7,
+      3.1,
+      1.32
+    ],
+    "truth": -19,
+    "nn_combo": [
+      31.4,
+      2.87,
+      1.27
+    ],
+    "nn_truth": -20,
+    "pred": -20.0,
+    "text": "Mean Vmem = -20 mV."
+  },
+  {
+    "combo": [
+      4.4,
+      3.67,
+      1.47
+    ],
+    "truth": -30,
+    "nn_combo": [
+      3.5,
+      3.14,
+      1.31
+    ],
+    "nn_truth": -41,
+    "pred": -20.0,
+    "text": "Mean Vmem = -20 mV."
+  },
+  {
+    "combo": [
+      17.1,
+      0.87,
+      0.73
+    ],
+    "truth": -33,
+    "nn_combo": [
+      17.3,
+      0.8,
+      0.64
+    ],
+    "nn_truth": -31,
+    "pred": -31.0,
+    "text": "Mean Vmem = -31 mV."
+  },
+  {
+    "combo": [
+      2.7,
+      3.05,
+      0.94
+    ],
+    "truth": -39,
+    "nn_combo": [
+      2.3,
+      2.59,
+      1.2
+    ],
+    "nn_truth": -46,
+    "pred": -63.0,
+    "text": "Mean Vmem = -63 mV."
+  },
+  {
+    "combo": [
+      3.7,
+      0.58,
+      1.12
+    ],
+    "truth": -38,
+    "nn_combo": [
+      4.9,
+      0.62,
+      1.12
+    ],
+    "nn_truth": -34,
+    "pred": -21.0,
+    "text": "Mean Vmem = -21 mV."
+  },
+  {
+    "combo": [
+      3.4,
+      2.69,
+      1.43
+    ],
+    "truth": -28,
+    "nn_combo": [
+      3.5,
+      3.14,
+      1.31
+    ],
+    "nn_truth": -41,
+    "pred": -20.0,
+    "text": "Mean Vmem = -20 mV."
+  },
+  {
+    "combo": [
+      17.3,
+      0.83,
+      1.19
+    ],
+    "truth": -21,
+    "nn_combo": [
+      16.0,
+      0.59,
+      1.09
+    ],
+    "nn_truth": -21,
+    "pred": -19.0,
+    "text": "Mean Vmem = -19 mV."
+  },
+  {
+    "combo": [
+      11.5,
+      1.52,
+      0.56
+    ],
+    "truth": -55,
+    "nn_combo": [
+      8.8,
+      1.89,
+      0.5
+    ],
+    "nn_truth": -62,
+    "pred": -21.0,
+    "text": "Mean Vmem = -21 mV."
+  },
+  {
+    "combo": [
+      7.0,
+      0.28,
+      0.99
+    ],
+    "truth": -38,
+    "nn_combo": [
+      8.9,
+      0.35,
+      1.0
+    ],
+    "nn_truth": -33,
+    "pred": -20.0,
+    "text": "Mean Vmem = -20 mV."
+  },
+  {
+    "combo": [
+      5.4,
+      0.37,
+      0.58
+    ],
+    "truth": -59,
+    "nn_combo": [
+      5.3,
+      0.34,
+      0.7
+    ],
+    "nn_truth": -48,
+    "pred": -58.0,
+    "text": "Mean Vmem = -58 mV."
+  },
+  {
+    "combo": [
+      11.6,
+      0.4,
+      1.8
+    ],
+    "truth": -18,
+    "nn_combo": [
+      8.2,
+      0.37,
+      1.56
+    ],
+    "nn_truth": -20,
+    "pred": -21.0,
+    "text": "Mean Vmem = -21 mV."
+  },
+  {
+    "combo": [
+      11.4,
+      0.65,
+      1.13
+    ],
+    "truth": -22,
+    "nn_combo": [
+      13.0,
+      0.76,
+      0.87
+    ],
+    "nn_truth": -34,
+    "pred": -21.0,
+    "text": "Mean Vmem = -21 mV."
+  },
+  {
+    "combo": [
+      20.9,
+      0.31,
+      0.98
+    ],
+    "truth": -21,
+    "nn_combo": [
+      19.6,
+      0.35,
+      0.8
+    ],
+    "nn_truth": -25,
+    "pred": -29.0,
+    "text": "Mean Vmem = -29 mV."
+  },
+  {
+    "combo": [
+      8.7,
+      3.37,
+      1.1
+    ],
+    "truth": -40,
+    "nn_combo": [
+      8.6,
+      2.88,
+      1.22
+    ],
+    "nn_truth": -31,
+    "pred": -20.0,
+    "text": "Mean Vmem = -20 mV."
+  },
+  {
+    "combo": [
+      8.3,
+      0.52,
+      0.79
+    ],
+    "truth": -36,
+    "nn_combo": [
+      8.9,
+      0.35,
+      1.0
+    ],
+    "nn_truth": -33,
+    "pred": -33.0,
+    "text": "Mean Vmem = -33 mV."
+  },
+  {
+    "combo": [
+      9.5,
+      0.84,
+      0.52
+    ],
+    "truth": -59,
+    "nn_combo": [
+      7.0,
+      0.79,
+      0.57
+    ],
+    "nn_truth": -59,
+    "pred": -40.0,
+    "text": "Mean Vmem = -40 mV."
+  },
+  {
+    "combo": [
+      23.8,
+      3.0,
+      0.61
+    ],
+    "truth": -29,
+    "nn_combo": [
+      17.7,
+      3.14,
+      0.57
+    ],
+    "nn_truth": -33,
+    "pred": -23.0,
+    "text": "Mean Vmem = -23 mV."
+  },
+  {
+    "combo": [
+      10.5,
+      0.34,
+      1.27
+    ],
+    "truth": -21,
+    "nn_combo": [
+      11.6,
+      0.31,
+      1.12
+    ],
+    "nn_truth": -21,
+    "pred": -21.0,
+    "text": "Mean Vmem = -21 mV."
+  },
+  {
+    "combo": [
+      4.6,
+      1.56,
+      1.37
+    ],
+    "truth": -22,
+    "nn_combo": [
+      5.4,
+      1.7,
+      1.7
+    ],
+    "nn_truth": -20,
+    "pred": -20.0,
+    "text": "Mean Vmem = -20 mV."
+  },
+  {
+    "combo": [
+      20.0,
+      0.34,
+      1.78
+    ],
+    "truth": -17,
+    "nn_combo": [
+      17.3,
+      0.26,
+      1.2
+    ],
+    "nn_truth": -21,
+    "pred": -20.0,
+    "text": "Mean Vmem = -20 mV."
+  },
+  {
+    "combo": [
+      6.1,
+      2.5,
+      1.53
+    ],
+    "truth": -21,
+    "nn_combo": [
+      6.7,
+      2.97,
+      1.78
+    ],
+    "nn_truth": -20,
+    "pred": -20.0,
+    "text": "Mean Vmem = -20 mV."
+  },
+  {
+    "combo": [
+      5.2,
+      3.51,
+      0.75
+    ],
+    "truth": -56,
+    "nn_combo": [
+      5.6,
+      2.86,
+      0.68
+    ],
+    "nn_truth": -58,
+    "pred": -58.0,
+    "text": "Mean Vmem = -58 mV."
+  },
+  {
+    "combo": [
+      9.4,
+      0.51,
+      1.83
+    ],
+    "truth": -18,
+    "nn_combo": [
+      8.2,
+      0.37,
+      1.56
+    ],
+    "nn_truth": -20,
+    "pred": -19.0,
+    "text": "Mean Vmem = -19 mV."
+  },
+  {
+    "combo": [
+      3.3,
+      0.28,
+      0.91
+    ],
+    "truth": -45,
+    "nn_combo": [
+      3.8,
+      0.27,
+      1.0
+    ],
+    "nn_truth": -44,
+    "pred": -19.0,
+    "text": "Mean Vmem = -19 mV."
+  },
+  {
+    "combo": [
+      39.1,
+      2.96,
+      1.41
+    ],
+    "truth": -18,
+    "nn_combo": [
+      31.4,
+      2.87,
+      1.27
+    ],
+    "nn_truth": -20,
+    "pred": -20.0,
+    "text": "Mean Vmem = -20 mV."
+  },
+  {
+    "combo": [
+      28.8,
+      2.98,
+      1.03
+    ],
+    "truth": -20,
+    "nn_combo": [
+      31.4,
+      2.87,
+      1.27
+    ],
+    "nn_truth": -20,
+    "pred": -21.0,
+    "text": "Mean Vmem = -21 mV."
+  },
+  {
+    "combo": [
+      5.2,
+      2.13,
+      1.25
+    ],
+    "truth": -34,
+    "nn_combo": [
+      5.4,
+      1.7,
+      1.7
+    ],
+    "nn_truth": -20,
+    "pred": -20.0,
+    "text": "Mean Vmem = -20 mV."
+  },
+  {
+    "combo": [
+      6.1,
+      0.32,
+      1.41
+    ],
+    "truth": -20,
+    "nn_combo": [
+      6.5,
+      0.31,
+      1.89
+    ],
+    "nn_truth": -18,
+    "pred": -20.0,
+    "text": "Mean Vmem = -20 mV."
+  },
+  {
+    "combo": [
+      4.4,
+      3.36,
+      0.7
+    ],
+    "truth": -59,
+    "nn_combo": [
+      5.6,
+      2.86,
+      0.68
+    ],
+    "nn_truth": -58,
+    "pred": -5.0,
+    "text": "Mean Vmem = -5 mV."
+  },
+  {
+    "combo": [
+      2.9,
+      2.5,
+      0.62
+    ],
+    "truth": -64,
+    "nn_combo": [
+      3.8,
+      2.3,
+      0.61
+    ],
+    "nn_truth": -63,
+    "pred": -34.0,
+    "text": "Mean Vmem = -34 mV."
+  }
+]

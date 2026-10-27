@@ -1,0 +1,58 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "seed": 42,
+  "exam_A": {
+    "val_reward": 0.4265306122448979,
+    "exact": 0.336734693877551,
+    "by_kind": {
+      "nernst": 0.256,
+      "polarity": 0.6041666666666666
+    },
+    "sample": [
+      "Mean Vmem = -70 mV.",
+      "Mean Vmem = -70 mV.",
+      "The tissue is hyperpolarized."
+    ]
+  },
+  "exam_B": {
+    "val_reward": 0.37713675213675213,
+    "exact": 0.3034188034188034,
+    "by_kind": {
+      "nernst": 0.15208333333333332,
+      "polarity": 0.6140350877192983
+    },
+    "sample": [
+      "Mean Vmem = -70 mV.",
+      "Mean Vmem = -70 mV.",
+      "The tissue is depolarized."
+    ]
+  },
+  "long": [
+    {
+      "q": "If extracellular potassium in a tissue bath rises from 5 mM to 25 mM while sodium stays constant, how does the resting membrane potential change, and why?",
+      "a": "When the extracellular potassium concentration in a tissue bath increases from 5 mM to 25 mM while the sodium concentration remains constant, it affects the resting membrane potential of cells within that environment.\n\nThe resting membrane potential is primarily determined by the balance between the inward flow of sodium ions (Na+) through voltage-gated channels and the outward flow of potassium ions (K+) through similar channels. The resting membrane potential can be described as:\n\n\\[ E_{m} = -\\frac{1}{2}(g_N V_N + g_K V_K) \\]\n\nwhere:\n- \\( E_m \\) is the resting membrane potential,\n- \\( g_N \\) is the conductance for Na+,\n- \\( V_N \\) is the reversal potential for Na+,\n- \\( g_K \\) is the conductance for K+,\n- \\( V_K \\) is the reversal potential for K+.\n\nIn this scenario, we have two key points to consider:\n1. **Conductances**: If the conductance for potassium (\\( g_K \\)) remains constant, an increase in"
+    },
+    {
+      "q": "Why do many cancer cells have a more depolarized resting membrane potential than the normal cells they came from?",
+      "a": "The difference in resting membrane potentials between cancer cells and normal cells can be attributed to several factors:\n\n1. **Genetic Changes**: Cancer cells often undergo genetic mutations that alter their cellular machinery. These changes can include alterations in ion channels or transporters responsible for maintaining the resting membrane potential.\n\n2. **Increased Activity of Ion Channels**: In some cases, cancer cells may exhibit increased activity of specific ion channels (e.g., sodium channels) that allow ions to flow into the cell more readily at rest compared to normal cells. This results in a higher influx of positive ions like sodium, which depolarizes the membrane further.\n\n3. **Alterations in Membrane Properties**: The lipid composition of the cell membrane might change due to genetic modifications, leading to altered properties such as fluidity or permeability. This can affect how quickly ions move across the membrane, contributing to the overall depolarization.\n\n4. **Cytoskeletal Modifications**: Changes in the cytoskeleton, particularly the actin cytoskeleton, can influence membrane stability and contribute to the depolarization observed in cancer cells.\n\n5"
+    },
+    {
+      "q": "How do gap junctions let bioelectric signals spread across a tissue during regeneration?",
+      "a": "Gap junctions allow for the rapid and efficient transmission of electrical signals between cells in tissues that regenerate or repair themselves. Here's how they facilitate this process:\n\n1. **Formation of Gap Junctions**: During the initial stages of tissue regeneration, specialized proteins called connexins assemble to form gap junctions at the cell-cell interfaces. These channels provide direct communication pathways between adjacent cells.\n\n2. **Conduction of Electrical Signals**: Once formed, these gap junctions act as conduits for ionic currents (mainly sodium and potassium ions). This allows for the rapid propagation of action potentials from one cell to another without the need for synaptic transmission through synapses.\n\n3. **Enhanced Signal Transmission Speed**: The presence of gap junctions significantly speeds up the conduction of electrical impulses compared to conventional synaptic connections. This is crucial because it enables coordinated responses within the regenerating tissue, which can be necessary for proper healing and function restoration.\n\n4. **Regulation of Cell-to-Cell Communication**: By facilitating the exchange of information directly between neighboring cells, gap junctions help maintain synchronization among different parts of"
+    }
+  ],
+  "dialogue": [
+    {
+      "user": "What is bioelectricity?",
+      "assistant": "Bioelectricity refers to the electrical activity generated within living organisms, particularly in cells and tissues. It plays a crucial role in various biological processes such as nerve impulse transmission, muscle contraction, and cell communication.\n\nKey points about bioelectricity include:\n\n1. Generation: Bioelectricity arises from the flow of electric charges across cell membranes due to differences in ion concentrations inside and outside the cell.\n\n2. Types:\n   - Action potential (nerve impulses): Rapid changes in membrane potential that propagate along axons.\n   - Local potentials: Small changes in membrane potential that can be summed up to form action potentials.\n   - Resting potential: The lower threshold for generating an action potential.\n\n3. Importance:\n   - Essential for neural signaling and coordination of bodily functions.\n   - Crucial for maintaining proper cellular function and communication.\n\n4. Measurement: Bioelectrical signals can be measured using electrodes placed on"
+    },
+    {
+      "user": "Explain more: how is it different from nerve signalling?",
+      "assistant": "Bioelectricity and nerve signaling are both important aspects of how living organisms communicate with each other, but they differ in several key ways:\n\n### 1. **Nature of Signals:**\n- **Nerve Signaling:** Nerve signaling involves the rapid propagation of electrical impulses through specialized structures called neurons. These impulses travel down the length of the neuron via electrochemical gradients and synaptic connections.\n  \n- **Bioelectricity:** Bioelectricity is a broader term that encompasses all forms of electrical activity within cells and tissues. This includes local potentials, resting potentials, and action potentials, which do not necessarily involve the rapid propagation of signals like those seen in nerves.\n\n### 2. **Mechanism:**\n- **Nerve Signaling:** Nerve signaling relies on the movement of ions across the neuronal membrane, primarily sodium and potassium ions. This process creates voltage-gated channels that allow these ions to flow"
+    },
+    {
+      "user": "Give one experiment that shows it matters for regeneration.",
+      "assistant": "One classic experiment demonstrating the importance of bioelectricity for tissue regeneration is the study of regenerating salamanders. Salamanders have the remarkable ability to regenerate limbs after amputation, a phenomenon known as limb regeneration. This process involves complex interactions between the nervous system, muscles, and connective tissues.\n\nIn this experiment, researchers observed that when salamander limbs were amputated, the surrounding tissues would begin to regenerate immediately. However, if the nerve supply was severed before the limb was removed, the limb did not regenerate at all. This suggests that the intact nerve provides essential information about the environment around the injury site, allowing the body to coordinate the correct sequence of events necessary for regeneration.\n\nThe specific mechanism behind this response involves the release of growth factors and cytokines from damaged tissue, which stimulate nearby cells to start the healing process. These growth factors also help to maintain the integrity of the"
+    }
+  ]
+}

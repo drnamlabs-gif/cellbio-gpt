@@ -1,0 +1,100 @@
+{
+  "seed": 42,
+  "date": "2026-10-23",
+  "smoke": false,
+  "baselines": {
+    "chance_acc": 0.3333333333333333,
+    "majority_acc": 0.552,
+    "majority_acc_clean": 0.5409139213602551
+  },
+  "models": {
+    "base": {
+      "ckpt": "03_pretrain\\out\\final.pt",
+      "val_ce": 2.4423089856012106,
+      "val_ppl": 11.499562435992729,
+      "pubmedqa_full": {
+        "acc": 0.537,
+        "macro_f1": 0.24808855414812278,
+        "n": 1000
+      },
+      "pubmedqa_clean": {
+        "acc": 0.5260361317747078,
+        "macro_f1": 0.23595891690009338,
+        "n": 941
+      },
+      "betse_reward": 0.0,
+      "betse_exact": 0.0,
+      "betse_by_kind": {
+        "deltaE": 0.0,
+        "polarity": 0.0,
+        "nernst": 0.0
+      }
+    },
+    "sft": {
+      "ckpt": "04_sft\\out\\sft_final.pt",
+      "val_ce": 2.680534047357274,
+      "val_ppl": 14.592884506663637,
+      "pubmedqa_full": {
+        "acc": 0.491,
+        "macro_f1": 0.2647419117375376,
+        "n": 1000
+      },
+      "pubmedqa_clean": {
+        "acc": 0.48034006376195537,
+        "macro_f1": 0.26126404385931046,
+        "n": 941
+      },
+      "betse_reward": 0.23927097661623106,
+      "betse_exact": 0.23796423658872076,
+      "betse_by_kind": {
+        "deltaE": 0.49570200573065903,
+        "polarity": 0.0,
+        "nernst": 0.022619047619047622
+      }
+    },
+    "dpo": {
+      "ckpt": "05_dpo_rlvr\\out\\dpo_final_v2.pt",
+      "val_ce": 2.6803851476992064,
+      "val_ppl": 14.590711792912558,
+      "pubmedqa_full": {
+        "acc": 0.496,
+        "macro_f1": 0.2737524904564189,
+        "n": 1000
+      },
+      "pubmedqa_clean": {
+        "acc": 0.485653560042508,
+        "macro_f1": 0.27078638383968834,
+        "n": 941
+      },
+      "betse_reward": 0.2380330123796424,
+      "betse_exact": 0.23658872077028886,
+      "betse_by_kind": {
+        "deltaE": 0.49283667621776506,
+        "polarity": 0.0,
+        "nernst": 0.025
+      }
+    },
+    "grpo": {
+      "ckpt": "05_dpo_rlvr\\out\\grpo_final.pt",
+      "val_ce": 2.7874221667188848,
+      "val_ppl": 16.239104096154975,
+      "pubmedqa_full": {
+        "acc": 0.46,
+        "macro_f1": 0.2619443060399712,
+        "n": 1000
+      },
+      "pubmedqa_clean": {
+        "acc": 0.4527098831030818,
+        "macro_f1": 0.2605961888748774,
+        "n": 941
+      },
+      "betse_reward": 0.9768225584594225,
+      "betse_exact": 0.953232462173315,
+      "betse_by_kind": {
+        "deltaE": 1.0,
+        "polarity": 1.0,
+        "nernst": 0.5988095238095239
+      }
+    }
+  }
+}

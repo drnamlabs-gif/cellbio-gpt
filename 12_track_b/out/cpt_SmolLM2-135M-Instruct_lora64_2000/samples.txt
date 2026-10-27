@@ -1,0 +1,24 @@
+=== step 0 (untouched) ===
+Membrane potential, which is a measure of the difference in electrical charge between two points. The membrane potential can be thought of as the "voltage" that separates the inside and outside of the cell.
+
+The membrane potential is influenced by various factors such as the concentration gradient of ions across the membrane, the concentration of solutes on either side of the membrane, and the presence of other molecules that affect the movement of ions.
+
+In general, the membrane
+
+=== step 500 ===
+Membrane potential (Pm) and the membrane-associated protein, P10.
+The phosphatidylinositol 3-kinase (PI3K)/Akt signaling pathway is a key regulator of cell proliferation and differentiation in many tissues. However, its role in cancer remains poorly understood. Here we show that PI3K/Akt signaling plays an important role in the development of breast cancer by regulating the expression of genes involved in apoptosis
+
+=== step 1000 ===
+Membrane potential (mVp) and the membrane permeability coefficient (Pc). The results showed that the MTT-induced cell death was associated with a decrease in the Pc value. The expression of the genes involved in apoptosis, such as caspase-3, caspase-8, and Bax/Bcl-2, were also decreased by MTT treatment. These findings suggest that MTT may be an effective tool for the study
+
+=== step 1500 ===
+Membrane potential (mVp) and the membrane potential (muP), which are important for the regulation of ion transport. The current-voltage relationship between these two parameters is described in detail, with a focus on the role of the voltage dependence of the current.The effect of 17beta-estradiol on the proliferation of human cervical cancer cells.
+To investigate the effects of estradiol on the proliferation of human cervical carcinoma cell lines
+
+=== step 2000 ===
+Membrane potential (mVp) and the membrane potential (muP), which are important for the regulation of ion transport. The current-voltage relationship between these two variables is described in detail, but it can be summarized as follows: mVp = -10 +/- 2 mV/microM; muP = -35 +/- 4 mV/microM. In addition to the direct effect on ion transport, the current-voltage
+
+=== final ===
+Membrane potential (mVp) and the membrane potential (muP), which are important for the regulation of ion transport. The current-voltage relationship between these two variables is described in detail, but it can be summarized as follows: mVp = -10 +/- 2 mV/microM; muP = -35 +/- 4 mV/microM. In addition to the direct effect on ion transport, the current-voltage
+

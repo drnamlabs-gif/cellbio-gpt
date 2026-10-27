@@ -1,0 +1,32 @@
+{
+  "seed": 42,
+  "date": "2026-10-23",
+  "slices": 477,
+  "raw_counts": {
+    "qtitle": 24549,
+    "defn": 298230,
+    "abbrev": 883149,
+    "titlegen": 2945103
+  },
+  "caps": {
+    "qtitle": 30000,
+    "defn": 25000,
+    "abbrev": 25000,
+    "titlegen": 25000
+  },
+  "n_train": 97559,
+  "n_val": 1990,
+  "train_counts": {
+    "qtitle": 24078,
+    "defn": 24505,
+    "abbrev": 24507,
+    "titlegen": 24469
+  },
+  "val_excluded": [
+    "slice_20260704_20260723.jsonl.gz",
+    "slice_20260724_20260813.jsonl.gz",
+    "slice_20260814_20260902.jsonl.gz",
+    "slice_20260903_20261012.jsonl.gz",
+    "slice_20261013_20261231.jsonl.gz"
+  ]
+}

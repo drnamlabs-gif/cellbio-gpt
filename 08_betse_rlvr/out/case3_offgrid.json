@@ -1,0 +1,39 @@
+{
+  "seed": 42,
+  "exam": "betse_offgrid.jsonl",
+  "anchors": "5 nearest from betse_train2_tr (text in prompt)",
+  "results": {
+    "case3 ws (mixed-k)": {
+      "k5": {
+        "val_reward": 0.8348290598290596,
+        "by_kind": {
+          "nernst": 0.7112499999999999,
+          "polarity": 0.9649122807017544
+        }
+      },
+      "k0": {
+        "val_reward": 0.6658119658119659,
+        "by_kind": {
+          "nernst": 0.5149999999999999,
+          "polarity": 0.8245614035087719
+        }
+      }
+    },
+    "case3 +GRPO@k5": {
+      "k5": {
+        "val_reward": 0.811965811965812,
+        "by_kind": {
+          "nernst": 0.6833333333333333,
+          "polarity": 0.9473684210526315
+        }
+      },
+      "k0": {
+        "val_reward": 0.6741452991452992,
+        "by_kind": {
+          "nernst": 0.5062499999999999,
+          "polarity": 0.8508771929824561
+        }
+      }
+    }
+  }
+}

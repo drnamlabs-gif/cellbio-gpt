@@ -1,0 +1,112 @@
+=== step 0 (untouched) ===
+Membrane potential, which is a measure of the difference in electrical charge between two points. The membrane potential can be thought of as the "voltage" that separates the inside and outside of the cell.
+
+The membrane potential is influenced by various factors such as the concentration gradient of ions across the membrane, the concentration of solutes on either side of the membrane, and the presence of other molecules that affect the movement of ions.
+
+In general, the membrane
+
+=== step 1000 ===
+Membrane potential (Pm) and the membrane potential (Mp), which are important for the regulation of ion transport. The Pm is a measure of the concentration-dependent permeability of the cell membrane to Na+ and K+. In this study, we investigated the effect of the intracellular Ca2+-channel on the Pm in cultured human cells. We found that the Ca2+-channel was activated by 10(-6) M/cm(3
+
+=== step 2000 ===
+Membrane potential (Pm) of the cell membrane was measured by using a microelectrode. The Pm value decreased with increasing concentration of 10(-7)-10(-8) M NaCl, and it increased with decreasing concentrations of 2-chloroethylamine (CEA), 3-methylcholanthrene (MCH), or 4-phenyleneglycol (PEG). The Pm values were
+
+=== step 3000 ===
+Membrane potential (mV) was measured by using a microelectrode. The mV of the membrane potential in the cell was determined to be 105 +/- 24 mV, which is about 30% less than the standard value of 67 +/- 8 mV. The results indicate that the membrane potential can be used as an indicator for intracellular calcium concentration and may provide information on the activity level of the cells.
+
+=== step 4000 ===
+Membrane potential (mV) and the rate of depolarization. The results suggest that the membrane potential is a function of the concentration gradient, but not the magnitude of the external electric field.The effect of anionic compounds on the growth of human embryonic stem cells in vitro.
+We have previously shown that the addition of 10 mM NaCl to the medium for 24 h induces cell death in human embryonic stem cells (hESCs
+
+=== step 5000 ===
+Membrane potential (Pm) and the membrane resistance (Rm). The Pm was measured by measuring the change in the voltage-dependent current I(Vp), which is a measure of the rate at which the membrane potential changes. The Rm was calculated from the change in the membrane potential, i.e., the ratio of the change in the membrane potential to the change in the membrane potential. The relationship between the Pm and the Rm
+
+=== step 6000 ===
+Membrane potential (mV) and the rate of depolarization. The results suggest that the membrane potential is a key factor in determining the action potential duration, which may be important for maintaining the integrity of the Na+/K+-ATPase complex.The role of the endoplasmic reticulum in the regulation of calcium signaling during cardiac hypertrophy.
+Cardiac hypertrophy involves an increase in intracellular Ca2+ concentration ([Ca2+]
+
+=== step 7000 ===
+Membrane potential (mV) was measured using a microelectrode. The mV of the membrane potential was determined by measuring the difference between the voltage-dependent and -independent current in the presence of an external solution containing 10 mM KCl, which is used as a reference for the measurement of the membrane potential. The results showed that the mV of the membrane potential decreased with increasing concentration of KCl. The effect of KCl on the
+
+=== step 8000 ===
+Membrane potential (mV) and the rate of depolarization were measured in 10- to 20-min-old rat hippocampal slices. The results showed that the membrane potential was not affected by the presence of a single Na+ channel blocker, but it became more negative after the addition of an inhibitor of Na(+) channels, 4-aminopyridine. The rate of depolarization was also not altered by the
+
+=== step 9000 ===
+Membrane potential (mV) and the rate of decay of the membrane potential. The effect of the concentration of the Na(+) channel blocker, 4-aminopyridine (APP), on the mV was studied in isolated rat hippocampal neurons. APP blocked the inward current induced by depolarization to -100 mV with a half-maximal inhibitory effect at -25 mV. The APP-induced
+
+=== step 10000 ===
+Membrane potential (mV) and the membrane resistance (Rms), as well as the intracellular calcium concentration ([Ca2+]i). The results showed that the expression of the G-protein coupled receptor, GPR106, was significantly increased in the brain tissue of patients with Alzheimer's disease. The expression of GPR106 mRNA was also found to be upregulated by 3-methyladenine treatment in the hippocampus of Alzheimer's
+
+=== step 11000 ===
+Membrane potential (mV) was measured in the presence of 10(-6) M KCl. The membrane potential was determined by using a voltage-clamp technique and the intracellular Ca2+ concentration ([Ca2+]i). The results showed that the mV decreased with increasing [Ca2+]i, but there were no significant differences between the control group and the other groups. The results also indicated that the increase in [Ca2
+
+=== step 12000 ===
+Membrane potential (mV) was measured in the presence of 10(-6) M KCl and 5 mM NaF. The membrane potential was determined by using a voltage-clamp technique. The results showed that the mV decreased with increasing concentrations of KCl, but not with increasing concentrations of NaF. The effect of KCl on the membrane potential was reversed by the addition of 20 mM Ca2+ to the solution.
+
+=== step 13000 ===
+Membrane potential (Vm) was measured in the presence of 10(-6) M KCl and 5 mM NaF. The Vm decreased with increasing concentrations of KCl, but not with increasing concentrations of NaF. In addition, the Vm increased when the concentration of KCl reached a maximum value. The increase in Vm was inhibited by the addition of 20 microM CdCl(2), which is known to
+
+=== step 14000 ===
+Membrane potential (mV) and the membrane resistance (R(M)) were measured in 10 healthy subjects. The mean mV was -43.28 +/- 5.79 mV, R(M) = 6.0 +/- 1.0 M omega-conotoxin GVIA (CTG). The mean mV was -43.28 +/- 5.79 mV, R
+
+=== step 15000 ===
+Membrane potential (Vm) was measured in the presence of 10(-6) M KCl and 5 mM NaCl. The Vm was determined by measuring the change in membrane resistance with a voltage-clamp technique. The results showed that the Vm decreased significantly at all concentrations of K+ and Na+. The decrease in Vm was not due to an increase in the permeability of the cell membrane, as it did not occur when the
+
+=== step 16000 ===
+Membrane potential (Vm) and the membrane resistance (Rms), as well as the intracellular Ca2+ concentration ([Ca]i). The results showed that the expression of the G-protein coupled receptor, GPR10A, was increased in the brain tissue of patients with Alzheimer's disease. In addition, the expression of the G-protein coupled receptor, GPR34, was decreased in the brain tissue of patients with Alzheimer's disease.
+
+=== step 17000 ===
+Membrane potential (Vm) was measured in the presence of 10(-6)-10(-4) M KCNQ2. The Vm decreased by 57% at 30 min and then increased to a maximum value of 89% at 1 h, indicating that the membrane potential is maintained for several minutes after depolarization. The voltage-dependent activation of the Na+ current was also studied using whole cell patch
+
+=== step 18000 ===
+Membrane potential (Vm) and the rate of depolarization were measured in isolated rat ventricular myocytes. The results showed that the membrane potential was not affected by the addition of 10(-6)-10(-4) M KCl, but it decreased with increasing [K+]o. The rate of depolarization increased linearly with increasing [Na+], but it did not change with increasing [Ca2+]. The effect of K
+
+=== step 19000 ===
+Membrane potential (Vm) was measured in the presence of 10(-6)-10(-4) M of the Ca2+ chelator BAPTA-AM. The effect of this compound on the membrane potential was studied by measuring the change in Vm with a voltage clamp technique. The addition of BAPTA-AM to the solution increased the amplitude of the current response, and decreased the slope of the current curve. The increase
+
+=== step 20000 ===
+Membrane potential (Vm) was measured in the presence of 10(-6)-10(-4) M KCNQ2. The Vm decreased by 50% after 3 min and then increased to a maximum value at 90 min. The increase in Vm was not due to an increase in the number of Na+ channels, since it could be prevented by the addition of 1 mM CsCl or 1
+
+=== step 21000 ===
+Membrane potential (Vm) was measured in the presence of 10(-6) M KCl and 5 mM NaCl. The membrane potential was determined by using a voltage-sensitive dye, rhodamine 123. The Vm was found to be approximately 4 mV for K+ and 7 mV for Cl-. The K+-induced depolarization was inhibited by 80% by 10(-9)
+
+=== step 22000 ===
+Membrane potential (Vm) was measured in the presence of 10(-6) M KCNQ2 and 5 x 10(-4) M KCNE3. The Vm was not affected by the addition of 10(-7) M KCNQ2 or 5 x 10(-4) M KCNE3, but it was reduced to 89% of control values by adding 1
+
+=== step 23000 ===
+Membrane potential (Vm) was measured in the presence of 10(-6)-10(-4) M KCNQ2. The Vm was not affected by the addition of 5 mM CsCl, but it was reduced by 30% when the membrane potential was depolarized to -70 mV. The effect of KCNQ2 on the voltage-dependent Na+ current was also studied. The KCN
+
+=== step 24000 ===
+Membrane potential (Vm) was measured in the presence of 10(-6) M KCNQ4. The Vm decreased by approximately 50% after 2 min and then increased to a maximum at 30 min. The increase in Vm was not due to an increase in the number of Na+ channels, since it was also observed with 10(-7) M KCNQ4. The decrease in Vm
+
+=== step 25000 ===
+Membrane potential (Vm) and the membrane resistance (Rm). The results of this study suggest that the effect of the drug on the membrane potential is not due to a direct action on the membrane, but rather to an indirect action which involves changes in the membrane permeability.The effects of 1-methyl-4-phenylpyridinium chloride on the growth rate of human breast cancer cells.
+We have previously shown that 1-methyl
+
+=== step 26000 ===
+Membrane potential (mV) and the membrane resistance (R(m)) were measured in the rat brain using a microelectrode array. The results showed that the mV was significantly decreased by 10(-6)-10(-4) M of the drug, whereas R(m) remained unchanged. The effect of the drug on the membrane potential was not due to an increase in the intracellular calcium concentration ([Ca(2+)](i)),
+
+=== step 27000 ===
+Membrane potential (Vm) was measured in the presence of 10(-6)-10(-4) M of the Ca2+ chelator BAPTA-AM. The Vmax and Vm were determined by using a microelectrode technique. The results showed that the Vmax increased with increasing [Ca2+]i, but the Vm remained constant at about 35 mV. The Vmax decreased when the
+
+=== step 28000 ===
+Membrane potential (Vm) and the membrane resistance (Rm), were measured in the presence of 10(-6)-10(-4) M KCl. The Vm was reduced by 50% at a concentration of 20 microM KCl, whereas Rm remained unchanged. The reduction of Vm by 30-70% was observed with concentrations of 10(-8)-10(-6)
+
+=== step 29000 ===
+Membrane potential (Vm) was measured in the presence of 10(-6)-10(-4) M KCNQ2 and KCNE1. The Vm was determined by measuring the change in membrane resistance (R(M)) as a function of voltage, using a microelectrode technique. The results showed that the K+ channel blocker 5-nitro-2-(3-phenylpropylamino)
+
+=== step 30000 ===
+Membrane potential (Vm) was measured in the presence of 10(-6) M KCNQ2 and 10(-5) M KCNE3. The Vm values were significantly lower for KCNQ2 than for KCNE3, but not for KCNQ4. The results suggest that the voltage-dependent inward current is mediated by a voltage-gated potassium channel.The effect of calcium on the membrane properties
+
+=== step 31000 ===
+Membrane potential (Vm) was measured in the presence of 10(-6) M KCNQ2 and 10(-5) M KCNE3. The Vm values were significantly lower for KCNQ2 than for KCNE3, but not for KCNQ4. The results suggest that the voltage-dependent gating mechanism of KCNQ channels is different from those of KCNE channels.The effect of
+
+=== step 32000 ===
+Membrane potential (Vm) and the rate of depolarization were measured in isolated rat ventricular myocytes. The results showed that the membrane potential was not affected by the addition of 10(-6)-10(-4) M KCl, but it decreased with increasing extracellular Ca2+ concentration. The rate of depolarization was also not affected by the addition of 10(-5)-10(-3) M KCl. The
+
+=== step 32320 ===
+Membrane potential (Vm) was measured in the presence of 10(-6)-10(-4) M KCNQ2 and KCNE3. The Vm values were significantly lower for KCNQ2 than for KCNE3, indicating that KCNQ2 is a more efficient channel than KCNE3. The voltage dependence of the current-voltage relationship was similar for both channels. The time course of the current-
+
+=== final ===
+Membrane potential (Vm) was measured in the presence of 10(-6)-10(-4) M KCNQ2 and KCNE3. The Vm values were significantly lower for KCNQ2 than for KCNE3, indicating that KCNQ2 is a more efficient channel than KCNE3. The voltage dependence of the current-voltage relationship was similar for both channels. The time course of the current-
+

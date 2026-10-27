@@ -1,0 +1,7 @@
+GENERATED (greedy, 20-token prompt):
+Reconstructing the Tumor Mechanical Microenvironment in Organoids: From Mechanical Cues to Biomimetic Modeling and Therapeutic Insights.
+The tumor mechanical microenvironment (TMME) is a critical regulator of cancer initiation, progression, metastasis, and
+
+GROUND TRUTH (first 50 tokens):
+Reconstructing the Tumor Mechanical Microenvironment in Organoids: From Mechanical Cues to Biomimetic Modeling and Therapeutic Insights.
+The tumor mechanical microenvironment (TMME) is a critical regulator of cancer initiation, progression, metastasis, and

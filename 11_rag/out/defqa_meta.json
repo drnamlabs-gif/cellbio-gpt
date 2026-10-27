@@ -1,0 +1,7 @@
+{
+  "seed": 42,
+  "n_train": 29054,
+  "n_val": 946,
+  "distinct_terms": 23960,
+  "max_tok": 496
+}

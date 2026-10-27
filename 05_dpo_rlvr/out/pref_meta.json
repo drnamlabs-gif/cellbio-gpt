@@ -1,0 +1,16 @@
+{
+  "n_train": 10841,
+  "n_val": 500,
+  "by_task": {
+    "defn": 3835,
+    "abbrev": 3184,
+    "qtitle": 3822
+  },
+  "by_neg": {
+    "on_policy": 8898,
+    "circular": 1943
+  },
+  "seed": 42,
+  "temp": 0.8,
+  "date": "2026-10-23"
+}

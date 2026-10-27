@@ -1,0 +1,139 @@
+<!doctype html>
+<!-- Dr. Nam H. Le. drnamlabs.com, bunnyquant.com -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Track B Chat</title>
+<style>
+:root{
+  --bg:#F5F8F9; --card:#FFFFFF; --ink:#0E1A20; --mut:#5B7078; --line:#DDE5E8;
+  --teal:#0E6E86; --amber:#B7791F; --red:#B3403A; --green:#2F7D4F; --user:#E7F0F3;
+  --ok-bg:#E3F2E8; --mid-bg:#FBF0DC; --bad-bg:#F8E3E1;
+}
+@media (prefers-color-scheme: dark){ :root{
+  --bg:#0B1115; --card:#141D22; --ink:#E7EEF1; --mut:#90A4AD; --line:#243137;
+  --teal:#49AEC6; --amber:#E0A84F; --red:#E2817A; --green:#63B583; --user:#1C2A31;
+  --ok-bg:#183326; --mid-bg:#3A2E15; --bad-bg:#3B1E1C; color-scheme:dark }}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:15px/1.55 "Segoe UI",system-ui,sans-serif;display:flex;flex-direction:column}
+header{padding:14px 18px 10px;border-bottom:1px solid var(--line);background:var(--card)}
+h1{font-size:18px;margin:0}
+h1 small{color:var(--mut);font-weight:400;font-size:12.5px;margin-left:8px}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:10px}
+select,textarea,button{font:inherit}
+select{padding:7px 10px;border:1px solid var(--line);border-radius:8px;
+  background:var(--bg);color:var(--ink);min-width:300px;max-width:100%}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:var(--bg);color:var(--mut);padding:7px 13px;cursor:pointer}
+.seg button.on{background:var(--teal);color:#fff;font-weight:600}
+.ghost{border:1px solid var(--line);background:var(--bg);color:var(--mut);
+  border-radius:8px;padding:7px 12px;cursor:pointer}
+main{flex:1;overflow-y:auto;padding:16px 18px}
+.log{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.msg{padding:11px 14px;border-radius:12px;max-width:92%;white-space:pre-wrap;word-break:break-word}
+.user{background:var(--user);align-self:flex-end}
+.bot{background:var(--card);border:1px solid var(--line);align-self:flex-start}
+.who{font-size:11.5px;color:var(--mut);margin-bottom:5px;font-family:Consolas,monospace}
+.s-ok{background:var(--ok-bg);border-radius:3px}
+.s-mid{background:var(--mid-bg);border-radius:3px}
+.s-bad{background:var(--bad-bg);border-radius:3px}
+.meter{font-size:11.5px;color:var(--mut);margin-top:8px;font-family:Consolas,monospace}
+details{margin-top:8px;font-size:12.5px;color:var(--mut)}
+details a{color:var(--teal)}
+.src{margin:6px 0}
+.empty{color:var(--mut);text-align:center;margin-top:40px;font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:12px}
+.chip{border:1px solid var(--line);border-radius:14px;padding:5px 11px;font-size:12.5px;
+  cursor:pointer;background:var(--card);color:var(--mut)}
+footer{border-top:1px solid var(--line);background:var(--card);padding:12px 18px}
+.inrow{max-width:860px;margin:0 auto;display:flex;gap:10px}
+textarea{flex:1;resize:none;height:52px;padding:10px 12px;border:1px solid var(--line);
+  border-radius:10px;background:var(--bg);color:var(--ink)}
+.send{border:0;border-radius:10px;background:var(--teal);color:#fff;padding:0 20px;
+  font-weight:600;cursor:pointer}
+.send:disabled{opacity:.45;cursor:wait}
+.legend{max-width:860px;margin:6px auto 0;font-size:11.5px;color:var(--mut);display:flex;gap:14px;flex-wrap:wrap}
+.legend span{padding:0 5px;border-radius:3px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Track B Chat <small>every training stage, side by side · local only</small></h1>
+  <div class="controls">
+    <select id="model" aria-label="model"></select>
+    <div class="seg" role="group" aria-label="mode">
+      <button id="m-chat" class="on" onclick="setMode('chat')">Chat</button>
+      <button id="m-lib" onclick="setMode('library')">Chat + library</button>
+    </div>
+    <button class="ghost" onclick="newConv()">New conversation</button>
+    <button class="ghost" onclick="loadModels()">Refresh model list</button>
+  </div>
+</header>
+<main id="scroll"><div class="log" id="log"></div></main>
+<footer>
+  <div class="inrow">
+    <textarea id="q" placeholder="Ask anything, then follow up: &quot;explain more&quot;, &quot;why?&quot;, &quot;what if K+ doubles?&quot;  (Enter sends, Shift+Enter new line)"></textarea>
+    <button class="send" id="send" onclick="send()">Send</button>
+  </div>
+  <div class="legend" id="legend" hidden>
+    <span class="s-ok">supported by its cited source</span>
+    <span class="s-mid">backed by some retrieved source</span>
+    <span class="s-bad">not found in the sources</span>
+  </div>
+</footer>
+<script>
+const $=id=>document.getElementById(id);
+let mode='chat', history=[];
+const SUGGEST=["What is bioelectricity?","How does extracellular potassium affect the resting membrane potential?",
+ "Why do cancer cells often have a depolarized membrane potential?","How do gap junctions coordinate bioelectric signaling?"];
+function esc(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+async function loadModels(){
+  const r=await fetch('/models'); const ms=await r.json(); const cur=$('model').value;
+  $('model').innerHTML=ms.map(m=>`<option value="${m.id}">${esc(m.label)}</option>`).join('');
+  if(cur && ms.some(m=>m.id===cur)) $('model').value=cur;
+}
+function setMode(m){ mode=m; $('m-chat').classList.toggle('on',m==='chat');
+  $('m-lib').classList.toggle('on',m==='library'); $('legend').hidden=(m!=='library'); }
+function empty(){ $('log').innerHTML='<div class="empty">Pick a model and ask. Switch models mid-conversation to compare stages on the same thread.'+
+  '<div class="chips">'+SUGGEST.map(s=>`<span class="chip" onclick="fill(this)">${esc(s)}</span>`).join('')+'</div></div>'; }
+function fill(el){ $('q').value=el.textContent; $('q').focus(); }
+function newConv(){ history=[]; empty(); }
+function add(html,cls){ const e=$('log').querySelector('.empty'); if(e) e.remove();
+  const d=document.createElement('div'); d.className='msg '+cls; d.innerHTML=html;
+  $('log').appendChild(d); $('scroll').scrollTop=$('scroll').scrollHeight; return d; }
+function painted(answer,rows){
+  if(!rows||!rows.length) return esc(answer);
+  let out=esc(answer);
+  for(const r of rows){ const s=esc(r.sentence);
+    const cls=r.cited_recall>=0.6?'s-ok':(r.any_recall>=0.6?'s-mid':'s-bad');
+    out=out.replace(s,`<span class="${cls}" title="cited support ${r.cited_recall} · any-source ${r.any_recall}">${s}</span>`); }
+  return out; }
+async function send(){
+  const q=$('q').value.trim(); if(!q) return;
+  add(esc(q),'user'); history.push({role:'user',content:q}); $('q').value='';
+  $('send').disabled=true;
+  const label=$('model').selectedOptions[0]?.textContent||'';
+  const wait=add(`<div class="who">${esc(label)}${mode==='library'?' · library':''}</div>thinking…`,'bot');
+  try{
+    const r=await (await fetch('/chat',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({model_id:$('model').value,mode,messages:history})})).json();
+    if(r.error){ wait.innerHTML=`<div class="who">${esc(label)}</div>error: ${esc(r.error)}`; history.pop(); }
+    else{
+      let h=`<div class="who">${esc(r.model)}${mode==='library'?' · library':''}</div>`+painted(r.answer,r.sentences);
+      if(r.metrics){ const m=r.metrics;
+        h+=`<div class="meter">${m.n_sent} sentences · cited ${(m.cited*100).toFixed(0)}% · supported ${(m.supported*100).toFixed(0)}% · backed ${(m.backed*100).toFixed(0)}%</div>`; }
+      if(r.sources&&r.sources.length){
+        h+='<details><summary>'+r.sources.length+' sources retrieved</summary>'+r.sources.map(s=>
+          `<div class="src">[${s.n}] <a href="https://pubmed.ncbi.nlm.nih.gov/${s.pmid}/" target="_blank" rel="noopener">PMID ${s.pmid}</a> · ${esc(s.title)}</div>`).join('')+'</details>'; }
+      wait.innerHTML=h; history.push({role:'assistant',content:r.answer}); }
+  }catch(e){ wait.textContent='error: '+e; history.pop(); }
+  $('send').disabled=false; $('q').focus(); $('scroll').scrollTop=$('scroll').scrollHeight;
+}
+$('q').addEventListener('keydown',e=>{ if(e.key==='Enter'&&!e.shiftKey){ e.preventDefault(); send(); }});
+loadModels(); empty();
+</script>
+</body>
+</html>

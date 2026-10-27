@@ -1,0 +1,70 @@
+{
+  "seed": 42,
+  "n_val": 234,
+  "results": {
+    "constant (train mode)": {
+      "val_reward": 0.6628205128205129,
+      "exact": 0.5726495726495726,
+      "by_kind": {
+        "nernst": 0.5591666666666666,
+        "polarity": 0.7719298245614035
+      }
+    },
+    "1-NN knob lookup (no LLM)": {
+      "val_reward": 0.7931623931623931,
+      "exact": 0.6153846153846154,
+      "by_kind": {
+        "nernst": 0.6633333333333333,
+        "polarity": 0.9298245614035088
+      }
+    },
+    "base (pretrain only)": {
+      "val_reward": 0.0,
+      "exact": 0.0,
+      "by_kind": {
+        "nernst": 0.0,
+        "polarity": 0.0
+      }
+    },
+    "+ SFT (chat)": {
+      "val_reward": 0.0006410256410256411,
+      "exact": 0.0,
+      "by_kind": {
+        "nernst": 0.0012500000000000002,
+        "polarity": 0.0
+      }
+    },
+    "+ DPO": {
+      "val_reward": 0.0,
+      "exact": 0.0,
+      "by_kind": {
+        "nernst": 0.0,
+        "polarity": 0.0
+      }
+    },
+    "+ GRPO textbook (5b)": {
+      "val_reward": 0.2799145299145299,
+      "exact": 0.24358974358974358,
+      "by_kind": {
+        "nernst": 0.07083333333333333,
+        "polarity": 0.5
+      }
+    },
+    "sim warm-start SFT (8b)": {
+      "val_reward": 0.5361111111111111,
+      "exact": 0.3888888888888889,
+      "by_kind": {
+        "nernst": 0.5287499999999999,
+        "polarity": 0.543859649122807
+      }
+    },
+    "+ GRPO vs simulator (8b)": {
+      "val_reward": 0.5391025641025641,
+      "exact": 0.39316239316239315,
+      "by_kind": {
+        "nernst": 0.5345833333333333,
+        "polarity": 0.543859649122807
+      }
+    }
+  }
+}

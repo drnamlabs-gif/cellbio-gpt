@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "date": "2026-10-23",
+  "val_frac_combos": 0.15,
+  "n_ws": 3000,
+  "n_grpo_train": 4028,
+  "n_val": 727,
+  "ws_counts": {
+    "nernst": 139,
+    "deltaE": 1437,
+    "polarity": 1424
+  },
+  "train_counts": {
+    "nernst": 193,
+    "deltaE": 1911,
+    "polarity": 1924
+  },
+  "val_counts": {
+    "nernst": 42,
+    "deltaE": 349,
+    "polarity": 336
+  }
+}

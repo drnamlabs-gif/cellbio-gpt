@@ -1,0 +1,60 @@
+
+=== step 1000 ===
+Q: What does membrane depolarization trigger?
+A: These findings suggest that membrane depolarization trigger is a common mechanism of action of the Ca2+ channel blocker nifedipine.
+
+Q: What is a gap junction?
+A: A gap junction is a major component of the intercellular space of the mammalian heart.
+
+Q: In cell biology, what does ATP stand for?
+A: ATP stands for ATP.
+
+Q: Write a concise title for this abstract:
+Planarians regenerate complete heads after amputa
+A: Gap junction communication in the blastema during regeneration.
+
+
+=== step 2000 ===
+Q: What does membrane depolarization trigger?
+A: These membrane depolarization trigger is a common feature of many cell types, and is thought to be a consequence of the activation of a variety of intracellular signaling pathways.
+
+Q: What is a gap junction?
+A: The gap junction is a highly specialized membrane channel that is responsible for the exchange of ions between cells.
+
+Q: In cell biology, what does ATP stand for?
+A: ATP stands for ATP.
+
+Q: Write a concise title for this abstract:
+Planarians regenerate complete heads after amputa
+A: Gap junction communication in the blastema and anterior-posterior polarity during regeneration.
+
+
+=== step 3000 ===
+Q: What does membrane depolarization trigger?
+A: These membrane depolarization trigger is a common feature of many cell types, and it is thought to be a common feature of many cell types.
+
+Q: What is a gap junction?
+A: The gap junction is a highly specialized membrane channel that is responsible for the electrical coupling between cells.
+
+Q: In cell biology, what does ATP stand for?
+A: ATP stands for ATP.
+
+Q: Write a concise title for this abstract:
+Planarians regenerate complete heads after amputa
+A: Gap junction communication in the blastema and anterior-posterior polarity during regeneration in the planarian Planarians.
+
+
+=== FINAL (step 3048, val 2.3159) ===
+Q: What does membrane depolarization trigger?
+A: These membrane depolarization trigger is a common feature of many cell types, and it is thought to be a common feature of many cell types.
+
+Q: What is a gap junction?
+A: The gap junction is a highly specialized membrane channel that is responsible for the electrical coupling between cells.
+
+Q: In cell biology, what does ATP stand for?
+A: ATP stands for ATP.
+
+Q: Write a concise title for this abstract:
+Planarians regenerate complete heads after amputa
+A: Gap junction communication in the blastema and anterior-posterior polarity during regeneration in the planarian Planarians.
+

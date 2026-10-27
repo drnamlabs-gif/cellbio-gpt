@@ -1,0 +1,228 @@
+<!doctype html>
+<!-- Dr. Nam H. Le. drnamlabs.com, bunnyquant.com -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CellBio-GPT 40M</title>
+<style>
+:root{
+  --bg:#FBFAF7; --card:#ffffff; --ink:#1a2b32; --mut:#5c6f76;
+  --teal:#0E7C86; --orange:#C97B1E; --red:#B3403A; --green:#3A7D44;
+  --line:#e4e0d8;
+}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);
+  font:15px/1.5 "Segoe UI",system-ui,sans-serif;padding:0 16px}
+.wrap{max-width:860px;margin:0 auto;padding:18px 0 40px}
+h1{font-size:22px;margin:0}
+h1 small{color:var(--mut);font-weight:400;font-size:13px;margin-left:10px}
+.sub{color:var(--mut);font-size:13px;margin:4px 0 16px}
+.tabs{display:flex;gap:8px;margin-bottom:14px}
+.tab{padding:8px 16px;border:1px solid var(--line);border-radius:20px;
+  background:var(--card);cursor:pointer;font-size:14px;color:var(--mut)}
+.tab.on{background:var(--teal);border-color:var(--teal);color:#fff;font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:18px;margin-bottom:14px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:end}
+label{font-size:12px;color:var(--mut);display:block;margin-bottom:3px}
+input[type=text]{width:100%;padding:10px 12px;border:1px solid var(--line);
+  border-radius:8px;font-size:14px;background:var(--bg);color:var(--ink)}
+input[type=number]{width:110px;padding:9px 10px;border:1px solid var(--line);
+  border-radius:8px;font-size:15px;font-weight:600;background:var(--bg);
+  color:var(--ink)}
+button{padding:10px 18px;border:0;border-radius:8px;background:var(--teal);
+  color:#fff;font-size:14px;font-weight:600;cursor:pointer}
+button.alt{background:var(--orange)}
+button:disabled{opacity:.45;cursor:wait}
+.chip{display:inline-block;margin:4px 6px 0 0;padding:5px 11px;border:1px solid
+  var(--line);border-radius:14px;font-size:12px;color:var(--mut);cursor:pointer;
+  background:var(--bg)}
+.msg{margin:10px 0;padding:11px 14px;border-radius:10px;max-width:92%;
+  white-space:pre-wrap}
+.msg.user{background:#eef3f4;margin-left:auto}
+.msg.bot{background:var(--bg);border:1px solid var(--line);font-family:Consolas,monospace}
+.step{display:flex;gap:10px;align-items:baseline;margin:8px 0;font-size:14px}
+.badge{min-width:26px;height:26px;border-radius:50%;background:var(--mut);
+  color:#fff;display:inline-flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:700}
+.badge.on{background:var(--teal)}
+.anchor{font-family:Consolas,monospace;font-size:12px;color:var(--mut);margin:2px 0}
+#verdict{font-size:20px;font-weight:700;padding:14px;border-radius:10px;
+  display:none;margin-top:10px}
+.v-ok{background:#e8f3ea;color:var(--green);display:block!important}
+.v-near{background:#f8efe2;color:var(--orange);display:block!important}
+.v-bad{background:#f7e8e7;color:var(--red);display:block!important}
+.spin{display:inline-block;width:14px;height:14px;border:2px solid var(--line);
+  border-top-color:var(--orange);border-radius:50%;animation:r .8s linear infinite;
+  vertical-align:-2px;margin-right:7px}
+@keyframes r{to{transform:rotate(360deg)}}
+footer{color:var(--mut);font-size:11.5px;border-top:1px solid var(--line);
+  padding-top:12px;margin-top:8px}
+@media (prefers-color-scheme: dark){ :root{
+  --bg:#14191c; --card:#1c2327; --ink:#e8e4da; --mut:#95a3a8; --line:#2e383d}
+  .msg.user{background:#243034}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>CellBio-GPT <small>40M params · built from scratch · physics-verified</small></h1>
+  <div class="sub">A tiny language model whose answers are checked by running
+    the real tissue simulator.</div>
+
+  <div class="tabs">
+    <div class="tab on" id="tab-qa" onclick="tab('qa')">Textbook problems</div>
+    <div class="tab" id="tab-exp" onclick="tab('exp')">Experiment loop</div>
+    <div class="tab" id="tab-lit" onclick="tab('lit')">Ask the literature</div>
+  </div>
+
+  <div class="card" id="pane-qa">
+    <div id="chat"></div>
+    <div class="row" style="margin-top:8px">
+      <div style="flex:1"><input type="text" id="q" placeholder="Quantitative questions: Nernst potentials, depolarize vs hyperpolarize, E shifts..."
+        onkeydown="if(event.key==='Enter')ask()"></div>
+      <button id="askb" onclick="ask()">Ask</button>
+    </div>
+    <div>
+      <span class="chip" onclick="fill('At 37 C a cell has [K+]in = 140 mM and [K+]out = 5 mM. Compute the Nernst equilibrium potential of K+ in mV.')">Nernst K+</span>
+      <span class="chip" onclick="fill('A membrane is predominantly permeable to K+. Extracellular K+ changes from 5 mM to 25 mM. Does the cell depolarize or hyperpolarize?')">High-K bath</span>
+      <span class="chip" onclick="fill('If [Na+]out changes from 100 to 145 mM at constant [Na+]in = 15 mM, does E_Na increase or decrease?')">Shift Na+</span>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Honest note: at 40M
+      parameters this model solves the quantitative problem families above (it was
+      trained against physics on them) — it is not an encyclopedia. Open
+      "what is..." questions get toy answers.</div>
+  </div>
+
+  <div class="card" id="pane-exp" style="display:none">
+    <div class="step"><span class="badge on">1</span><b>Design the intervention</b>
+      <span style="color:var(--mut);font-size:12px">(validated ranges: K+ 2&ndash;40 mM, scales 0.25&ndash;4 / 0.5&ndash;2)</span></div>
+    <div class="row" style="margin-bottom:8px">
+      <div style="min-width:320px"><label>suggested interventions (tested)</label>
+        <select id="preset" onchange="setPreset()" style="width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:8px;font-size:14px;background:var(--bg);color:var(--ink)">
+          <option value="4.8,0.55,0.9">K+ 4.8 mM · Dm_K ×0.55 · Dm_Na ×0.9 — polarized tissue</option>
+          <option value="13.7,0.77,1.3">K+ 13.7 mM · ×0.77 · ×1.3 — high-K bath</option>
+          <option value="7.9,1.2,0.6">K+ 7.9 mM · ×1.2 · ×0.6 — mid range</option>
+          <option value="4.2,0.8,1.2">K+ 4.2 mM · ×0.8 · ×1.2 — near baseline</option>
+          <option value="2.8,1.1,0.9">K+ 2.8 mM · ×1.1 · ×0.9 — low-K bath</option>
+          <option value="7.5,1.5,0.8">K+ 7.5 mM · ×1.5 · ×0.8 — depolarization cliff (hard!)</option>
+          <option value="">— type your own below —</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div><label>bath K+ (mM)</label><input type="number" id="k" value="4.8" step="0.1" min="2" max="40"></div>
+      <div><label>Dm_K scale</label><input type="number" id="dk" value="0.55" step="0.01" min="0.25" max="4"></div>
+      <div><label>Dm_Na scale</label><input type="number" id="dn" value="0.9" step="0.01" min="0.5" max="2"></div>
+      <button id="predb" onclick="predict()">2 &middot; Model predicts</button>
+      <button class="alt" id="verb" onclick="verify()" disabled>3 &middot; Run the REAL experiment</button>
+    </div>
+    <div id="expout" style="margin-top:10px"></div>
+    <div id="verdict"></div>
+    <div id="simviz" style="display:none;margin-top:12px">
+      <div style="font-size:12px;color:var(--mut);margin-bottom:5px">
+        What the tissue actually did (real BETSE output):</div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start">
+        <img id="vanim" style="max-width:330px;border:1px solid var(--line);border-radius:10px">
+        <img id="vtrace" style="max-width:360px;border:1px solid var(--line);border-radius:10px">
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="pane-lit" style="display:none">
+    <div id="chatlit"></div>
+    <div class="row" style="margin-top:8px">
+      <div style="flex:1"><input type="text" id="qlit" placeholder="What is ... ? The model reads our 3.2M-abstract library and answers with a source."
+        onkeydown="if(event.key==='Enter')askLit()"></div>
+      <button id="askl" onclick="askLit()">Ask</button>
+    </div>
+    <div>
+      <span class="chip" onclick="fillLit('What is bioelectricity?')">bioelectricity</span>
+      <span class="chip" onclick="fillLit('What is membrane voltage?')">membrane voltage</span>
+      <span class="chip" onclick="fillLit('What is apoptosis?')">apoptosis</span>
+      <span class="chip" onclick="fillLit('What are gap junctions?')">gap junctions</span>
+      <span class="chip" onclick="fillLit('What is gastrulation?')">gastrulation</span>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Retrieval-augmented:
+      BM25 search over the 3.2M PubMed abstracts this model was pretrained on, then the
+      40M extracts the answer from the retrieved passage — every answer carries its
+      source PMID. Definition-style questions work best.</div>
+  </div>
+
+  <footer>Research prototype &middot; Dr. Nam H. Le &middot; drnamlabs.com</footer>
+</div>
+<script>
+let pred=null;
+const $=id=>document.getElementById(id);
+function tab(t){ for(const x of ['qa','exp','lit']){ $('pane-'+x).style.display=x===t?'':'none';
+  $('tab-'+x).classList.toggle('on',x===t);} }
+function fill(t){ $('q').value=t; }
+function fillLit(t){ $('qlit').value=t; }
+function addLit(cls,html){ const d=document.createElement('div');
+  d.className='msg '+cls; d.innerHTML=html; $('chatlit').appendChild(d);
+  d.scrollIntoView({block:'end'}); }
+async function askLit(){ const q=$('qlit').value.trim(); if(!q)return;
+  addLit('user',q.replace(/</g,'&lt;')); $('qlit').value=''; $('askl').disabled=true;
+  try{ const r=await post('ask',{mode:'lit',question:q});
+    let h=(r.answer||('error: '+r.error)).replace(/</g,'&lt;');
+    if(r.sources&&r.sources.length){ const s=r.sources[0];
+      h+='<br><span style="font-size:11.5px;color:var(--mut)">source: '+
+        '<a href="https://pubmed.ncbi.nlm.nih.gov/'+s.pmid+'/" target="_blank" '+
+        'style="color:var(--teal)">PMID '+s.pmid+'</a> &middot; '+
+        s.title.replace(/</g,'&lt;')+'</span>'; }
+    addLit('bot',h); }
+  catch(e){ addLit('bot','error: '+e); }
+  $('askl').disabled=false; }
+function setPreset(){ const v=$('preset').value; if(!v) return;
+  const [k,dk,dn]=v.split(','); $('k').value=k; $('dk').value=dk; $('dn').value=dn;
+  $('verb').disabled=true; pred=null; }
+function add(cls,txt){ const d=document.createElement('div');
+  d.className='msg '+cls; d.textContent=txt; $('chat').appendChild(d);
+  d.scrollIntoView({block:'end'}); }
+async function post(url,body){ const r=await fetch(url,{method:'POST',
+  headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+  return r.json(); }
+async function ask(){ const q=$('q').value.trim(); if(!q)return;
+  add('user',q); $('q').value=''; $('askb').disabled=true;
+  try{ const r=await post('/ask',{mode:'qa',question:q});
+    add('bot',r.answer||('error: '+r.error)); }
+  catch(e){ add('bot','error: '+e); }
+  $('askb').disabled=false; }
+function knobs(){ return {k:+$('k').value, dk:+$('dk').value, dn:+$('dn').value}; }
+async function predict(){ $('predb').disabled=true; $('verdict').className='';
+  $('expout').innerHTML='<span class="spin"></span>40M reading the lab book + predicting...';
+  try{ const r=await post('/ask',{mode:'exp',...knobs()}); pred=r.pred;
+    let h='<div class="msg user">'+r.prompt+'</div>';
+    h+='<div style="font-size:12px;color:var(--mut);margin:6px 0 2px">5 nearest worked examples retrieved into context:</div>';
+    for(const a of r.anchors) h+='<div class="anchor">K+='+a.combo[0]+' mM, Dm_K x'+a.combo[1]+', Dm_Na x'+a.combo[2]+' &rarr; '+a.answer+'</div>';
+    h+='<div class="msg bot"><b>model:</b> '+r.answer+'</div>';
+    $('expout').innerHTML=h; $('verb').disabled=(pred===null); }
+  catch(e){ $('expout').textContent='error: '+e; }
+  $('predb').disabled=false; }
+async function verify(){ $('verb').disabled=true; $('predb').disabled=true;
+  const t0=Date.now();
+  $('verdict').className=''; $('verdict').style.display='block';
+  $('verdict').innerHTML='<span class="spin"></span>BETSE solving ion electrodiffusion on the tissue... (~20 s, real simulation)';
+  const tick=setInterval(()=>{ const s=((Date.now()-t0)/1000).toFixed(0);
+    const el=$('verdict').querySelector('i'); if(el) el.textContent=s+' s'; },1000);
+  $('verdict').innerHTML+=' <i></i>';
+  try{ const r=await post('/verify',knobs()); clearInterval(tick);
+    if(r.error){ $('verdict').className='v-bad'; $('verdict').textContent='sim error: '+r.error; }
+    else{ const err=Math.abs(pred-r.truth_mV);
+      const cls=err<=2?'v-ok':(err<=10?'v-near':'v-bad');
+      const sym=err<=2?'✓ VERIFIED':(err<=10?'≈ CLOSE':'✗ WRONG');
+      $('verdict').className=cls;
+      $('verdict').textContent=sym+'  model '+pred+' mV vs physics '+r.truth_mV+
+        ' mV  (error '+err.toFixed(1)+' mV, '+r.n_cells+' cells, '+r.wall_s+' s)';
+      if(r.tag && (r.anim||r.map||r.trace)){ const b='/sim_img/'+r.tag+'/';
+        $('vanim').src=b+(r.anim?'vmem_anim.gif':'vmem_map.png')+'?t='+Date.now();
+        $('vanim').style.display=(r.anim||r.map)?'':'none';
+        $('vtrace').src=b+'vmem_trace.png?t='+Date.now();
+        $('vtrace').style.display=r.trace?'':'none';
+        $('simviz').style.display='block'; }
+      else $('simviz').style.display='none'; } }
+  catch(e){ clearInterval(tick); $('verdict').className='v-bad';
+    $('verdict').textContent='error: '+e; }
+  $('verb').disabled=false; $('predb').disabled=false; }
+</script>
+</body>
+</html>

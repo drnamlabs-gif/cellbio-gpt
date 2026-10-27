@@ -1,0 +1,15 @@
+{
+  "seed": 42,
+  "n_points": 60,
+  "n_problems": 234,
+  "min_node_dist_log2": 0.25,
+  "dist_to_node": {
+    "min": 0.252,
+    "median": 0.429,
+    "max": 0.68
+  },
+  "vmem_range": [
+    -64.2,
+    -16.18
+  ]
+}

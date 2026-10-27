@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "date": "2026-10-23",
+  "device": "cuda",
+  "params": 7407872,
+  "batch_shape": [
+    8,
+    256
+  ],
+  "steps": 68,
+  "final_loss": 0.049018196761608124,
+  "parity_max_diff": 2.384185791015625e-06,
+  "parity_ok": true,
+  "cache_ok": true,
+  "overfit_ok": true
+}

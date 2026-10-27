@@ -1,0 +1,17 @@
+# Main environment (Python 3.13, CUDA 12.8). Tested on one RTX 5090.
+torch==2.11.0
+numpy
+scipy
+matplotlib
+regex
+tqdm
+requests
+pyyaml
+# Track B (domain adaptation of SmolLM2)
+transformers==4.57.1
+peft==0.21.2
+accelerate
+safetensors
+tokenizers
+datasets
+huggingface_hub

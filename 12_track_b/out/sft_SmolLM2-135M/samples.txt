@@ -1,0 +1,168 @@
+
+=== step 0 (before SFT) ===
+Q: What does membrane depolarization trigger?
+A: Membrane depolarization is a common feature of many physiological and pathological processes. The depolarization is a result of the activation of ion channels and the opening of ion channels. The depolarization is a result of the activation of ion channels and the opening of ion channels. The depolarization is a result of the activation of ion channels and the opening of ion channels. The depolarization is a result of the activation of ion channels and the opening of ion channels. The depolarization is a result of the activation of ion channels and the opening of ion channels. The depolarization
+
+Q: What is a gap junction?
+A: Gap junctions are specialized intercellular channels that allow the exchange of small molecules between cells. Gap junctions are found in all eukaryotic cells and are found in all tissues. Gap junctions are found in all tissues and are found in all cells. Gap junctions are found in all tissues and are found in all cells. Gap junctions are found in all tissues and are found in all cells. Gap junctions are found in all tissues and are found in all cells. Gap junctions are found in all tissues and are found in all cells. Gap junctions are found in all tissues and are found in all cells. Gap junctions are found
+
+Q: In cell biology, what does ATP stand for?
+A: The ATP-binding cassette transporter (ABC) transporter family is a group of proteins that are involved in the transport of various substrates across the plasma membrane. The ABC transporter family is composed of 12 members, and the most common ABC transporter is the ATP-binding cassette transporter (ABC) transporter. ABC transporter proteins are involved in the transport of various substrates across the plasma membrane. The ABC transporter family is involved in the transport of various substrates across the plasma membrane. The ABC transporter family is composed of 12 members, and the most common ABC transporter is the ATP-binding cassette
+
+Q: Write a concise title for this abstract:
+Planarians regenerate complete heads after amputa
+A: The planarian regeneration process is a model for the study of the mechanisms that control the formation of new tissues. The planarian is a simple model organism that can be used to study the mechanisms that control the formation of new tissues. The planarian is a model organism that can be used to study the mechanisms that control the formation of new tissues. The planarian is a simple model organism that can be used to study the mechanisms that control the formation of new tissues. The planarian is a simple model organism that can be used to study the mechanisms that control the formation of new tissues. The planarian
+
+Q: What is bioelectricity?
+A: What is bioelectricity?
+
+Q: What is cancer?
+A: What is cancer?  Cancer is a disease that affects millions of people worldwide. It is a complex disease that is caused by a variety of genetic and environmental factors. The disease is characterized by the uncontrolled growth of cells in the body. The disease is caused by the uncontrolled proliferation of cells. The disease is caused by the uncontrolled proliferation of cells in the body. The disease is caused by the uncontrolled proliferation of cells in the body. The disease is caused by the uncontrolled proliferation of cells in the body. The disease is caused by the uncontrolled proliferation of cells in the body. The disease is caused by the
+
+
+=== step 500 ===
+Q: What does membrane depolarization trigger?
+A: The membrane depolarization triggers a Ca2+ influx, which is the main trigger of the Ca2+ release.
+
+Q: What is a gap junction?
+A: A gap junction is a specialized intercellular channel that allows the passage of small molecules and ions between cells.
+
+Q: In cell biology, what does ATP stand for?
+A: ATP stands for adenosine triphosphate.
+
+Q: Write a concise title for this abstract:
+Planarians regenerate complete heads after amputa
+A: Planarian regeneration: a new paradigm for the control of polarity.
+
+Q: What is bioelectricity?
+A: Bioelectricity is a key component of the nervous system, and its dysfunction is a hallmark of neurodegenerative diseases.
+
+Q: What is cancer?
+A: Cancer is a complex disease with a high incidence and mortality rate.
+
+
+=== step 1000 ===
+Q: What does membrane depolarization trigger?
+A: membrane depolarization triggers a series of events that lead to the activation of the Ca2+ -dependent K+ channel.
+
+Q: What is a gap junction?
+A: A gap junction is a specialized intercellular channel that allows the passage of small molecules and ions between cells.
+
+Q: In cell biology, what does ATP stand for?
+A: ATP stands for adenosine triphosphate.
+
+Q: Write a concise title for this abstract:
+Planarians regenerate complete heads after amputa
+A: Regeneration of the planarian head requires gap junction communication.
+
+Q: What is bioelectricity?
+A: Bioelectricity is a key component of the nervous system, and its dysfunction is a major cause of neurological disorders.
+
+Q: What is cancer?
+A: Cancer is a complex disease with a high incidence and mortality rate.
+
+
+=== step 1500 ===
+Q: What does membrane depolarization trigger?
+A: membrane depolarization triggers a rapid increase in the intracellular calcium concentration, which is followed by a rapid increase in the intracellular calcium concentration.
+
+Q: What is a gap junction?
+A: A gap junction is a specialized intercellular channel that allows the passage of small molecules and ions between cells.
+
+Q: In cell biology, what does ATP stand for?
+A: ATP stands for adenosine triphosphate.
+
+Q: Write a concise title for this abstract:
+Planarians regenerate complete heads after amputa
+A: Regeneration of the planarian head: a model for the control of polarity.
+
+Q: What is bioelectricity?
+A: Bioelectricity is a key component of the nervous system, and its dysfunction is a hallmark of neurodegenerative diseases.
+
+Q: What is cancer?
+A: Cancer is a disease of the human body, and the incidence of cancer is increasing worldwide.
+
+
+=== step 2000 ===
+Q: What does membrane depolarization trigger?
+A: The membrane depolarization triggers a Ca2+ influx, which is followed by a Ca2+ release from the endoplasmic reticulum.
+
+Q: What is a gap junction?
+A: A gap junction is a specialized intercellular channel that allows the passage of small molecules and ions between cells.
+
+Q: In cell biology, what does ATP stand for?
+A: ATP stands for adenosine triphosphate.
+
+Q: Write a concise title for this abstract:
+Planarians regenerate complete heads after amputa
+A: Regeneration of the planarian head requires gap junction communication.
+
+Q: What is bioelectricity?
+A: Bioelectricity is a key component of the nervous system, and its dysfunction is a major cause of neurological disorders.
+
+Q: What is cancer?
+A: Cancer is a major cause of death worldwide.
+
+
+=== step 2500 ===
+Q: What does membrane depolarization trigger?
+A: The membrane depolarization triggers a Ca2+ influx, which is followed by a Ca2+ release from the sarcoplasmic reticulum.
+
+Q: What is a gap junction?
+A: A gap junction is a specialized intercellular channel that allows the passage of small molecules and ions between cells.
+
+Q: In cell biology, what does ATP stand for?
+A: ATP stands for adenosine triphosphate.
+
+Q: Write a concise title for this abstract:
+Planarians regenerate complete heads after amputa
+A: Regeneration of the planarian head requires gap junction communication.
+
+Q: What is bioelectricity?
+A: Bioelectricity is a key component of the nervous system, and its dysfunction is a hallmark of neurological disorders.
+
+Q: What is cancer?
+A: Cancer is a disease of the human body, and the incidence of cancer is increasing worldwide.
+
+
+=== step 3000 ===
+Q: What does membrane depolarization trigger?
+A: The membrane depolarization triggers a Ca2+ influx, which is followed by a Ca2+ release from the endoplasmic reticulum.
+
+Q: What is a gap junction?
+A: A gap junction is a specialized intercellular channel that allows the passage of small molecules and ions between cells.
+
+Q: In cell biology, what does ATP stand for?
+A: ATP stands for adenosine triphosphate.
+
+Q: Write a concise title for this abstract:
+Planarians regenerate complete heads after amputa
+A: Regeneration of the planarian head requires gap junction communication.
+
+Q: What is bioelectricity?
+A: Bioelectricity is a key component of the nervous system, and its dysfunction is a hallmark of neurological disorders.
+
+Q: What is cancer?
+A: Cancer is a disease of the human body, and the incidence of cancer is increasing worldwide.
+
+
+=== FINAL (step 3048, val 2.1001) ===
+Q: What does membrane depolarization trigger?
+A: The membrane depolarization triggers a series of events that ultimately lead to the activation of the Ca2+ channel.
+
+Q: What is a gap junction?
+A: A gap junction is a specialized intercellular channel that allows the passage of small molecules and ions between cells.
+
+Q: In cell biology, what does ATP stand for?
+A: ATP stands for adenosine triphosphate.
+
+Q: Write a concise title for this abstract:
+Planarians regenerate complete heads after amputa
+A: Regeneration of the planarian head requires gap junction communication.
+
+Q: What is bioelectricity?
+A: Bioelectricity is a key component of the nervous system, and its dysfunction is a hallmark of neurological disorders.
+
+Q: What is cancer?
+A: Cancer is a disease of the human body, and the incidence of cancer is increasing worldwide.
+

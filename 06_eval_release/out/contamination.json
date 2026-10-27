@@ -1,0 +1,19 @@
+{
+  "seed": 42,
+  "date": "2026-10-23",
+  "n_items": 1000,
+  "n_contaminated": 59,
+  "n_clean": 941,
+  "label_dist_full": {
+    "yes": 552,
+    "no": 338,
+    "maybe": 110
+  },
+  "label_dist_clean": {
+    "no": 329,
+    "yes": 509,
+    "maybe": 103
+  },
+  "corpus_pmids": 3198417,
+  "note": "contaminated = benchmark source PMID present in pretraining corpus"
+}

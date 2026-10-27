@@ -1,0 +1,27 @@
+
+--- FINAL (step 300, val 5.1989) ---
+Membrane potential in this model.Focal and T-RF in the p53-mediated manner.
+The effects of the cell cycle of cellular pathways and the cell growth phase of the cells. This study aimed to analyze the expression of the Ci-mediated signaling events, which are associated with the activity of the G protein-2, does not show that Hs-mediated receptor-dependent activation
+
+--- step 5000 ---
+Membrane potential, and ionic conductance, with a conductance of 1.9 pS and a time constant of 6.5 mM. Prolonged exposure of the cells to the M-CSF dose-response curve for the agonist was determined to be +45 mM + -30 mM + + 10 mM + 1.0 mM + 10 mM + 0.6 mM + 1.0 mM + 1.0 mM
+
+--- step 10000 ---
+Membrane potential and input resistance. It is suggested that the membrane potential and input resistance in this channel have a close relationship with the membrane potential of these channels.Presence and localization of voltage-gated Na+ channel in the rabbit basilar plexus.
+The membrane potential of basilar artery vesicles of two bathed rabbits was measured with an intracellular dye-conjugated probe. The data were fitted by a
+
+--- step 15000 ---
+Membrane potential). Our findings demonstrate that, at low concentrations (up to 10 µM), the TEA-sensitive potassium channel in the apical membrane of mouse retinal pigment epithelial (RPE) cells is permeable to sodium ions. This is accompanied by a large increase in the intracellular free Ca 2+  concentration to 111 ± 7 mV (n = 12), and a significant
+
+--- step 20000 ---
+Membrane potential) as measured by fluorescence of a fluorescent dye, bis-(2,4-dihydroxyphenyl)-1,4,5,6-tetrahydroxyphenyl-1,4,5,6-tetrahydroxysuccinic acid (WR-276). It was found that the membrane potential had an influence on the extent of the action potential when the [Ca2+]i was increased
+
+--- step 25000 ---
+Membrane potential, and the release of cytochrome c was monitored by fluorometric imaging. The effect of cADPR on the membrane potential was studied by means of the patch-clamp technique. Application of cADPR at the sub-micromolar concentration (50 microM) caused a reversible increase in the resting intracellular potassium concentration ([K+]i). The increase in the K(+)-induced conductance was concentration dependent (
+
+--- step 30000 ---
+Membrane potential (V m ) across the cell membrane.  In vivo , the  I m  was significantly reduced in the dorsal and ventral lobes of the brain in a dose-dependent manner, whereas the response of the vibrissae to the  I m  was significantly more significant in the dorsal region than the ventral region.  In vivo , the  I m  was strongly reduced in the
+
+--- FINAL (step 30167, val 2.4363) ---
+Membrane potential.
+The effects of extracellular pH on the kinetics of the Na+/K+ ATPase and its electrogenic counterpart, the K+ ATPase, were determined in isolated synaptosomes from the guinea-pig heart. The K+ ATPase was expressed in a cell-free system in the presence of extracellular H+ and pH. The pH optimum for the K+ ATPase was 6.4 and it was pH

@@ -1,0 +1,107 @@
+=== step 0 (untouched) ===
+Membrane potential
+The membrane potential is the difference in electrical charge between an electrically charged cell and its surroundings. The membrane potential of a neuron can be measured by measuring the voltage across the membrane, which is usually expressed as millivolts (mV).
+Neurons are made up of many different types of cells called neurons. Neurons have specialized structures that allow them to communicate with each other through chemical signals. These special structures include dendrites, axons,
+
+=== step 1000 ===
+Membrane potential (Km) of the cells was 1.02 +/- 0.03 mV, and the membrane potential of the cells was -79 +/- 4 mV. The cell membrane potential was not affected by the addition of 5 mM KCl or 60 microM CaCl2 to the medium. The results indicate that the cell membrane is a good model for studying the effects of calcium on the cytosolic
+
+=== step 2000 ===
+Membrane potential (Delta) and the membrane conductance (Gm). The membrane potential is a measure of the difference in electrical activity between two points on the plasma membrane. The membrane conductance is the rate at which ions can flow across the membrane. The membrane potential is also an indicator of the ionic composition of the bathing solution, as well as the concentration gradient of ions across the membrane. The membrane potential is affected by many factors including temperature, pH, ionic
+
+=== step 3000 ===
+Membrane potential (Vm) and the membrane conductance (Gm). The membrane potential is a measure of the difference in electrical activity between two cells. The membrane conductance is a measure of the rate at which ions can move across the cell membrane. The membrane potential is also an indicator of the concentration of ions within the cell. The membrane potential is measured by measuring the difference in voltage across the membrane. The membrane potential is calculated from the difference in voltage
+
+=== step 4000 ===
+Membrane potential (DeltaPsi) and the membrane conductance (Gm). The membrane potential was measured by the use of a voltage-clamp technique. The membrane potential was found to be -40 mV in the presence of 1 mM KCl, and -35 mV in the presence of 20 mM KCl. The membrane conductance was determined from the change in the membrane potential with an increase in the concentration of K
+
+=== step 5000 ===
+Membrane potential (ΔΨm) and the membrane conductance (Gm). The ΔΨm is a measure of the change in membrane potential that occurs when an action potential is applied. The Gm is a measure of the change in the membrane conductance that occurs when an action potential is applied. The ΔΨm and Gm are both measured by using the voltage-clamp technique. The voltage clamp technique is used to measure the
+
+=== step 6000 ===
+Membrane potential (Vm) was measured in the presence of 10(-6)-10(-5) M KCl. The Vm was significantly reduced by 2-3 times in the presence of 10(-7)-10(-4) M KCNQ1, but not in the presence of 10(-8)-10(-6) M KCNQ1. The reduction of Vm was also observed in
+
+=== step 7000 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was determined by measuring the difference between the voltage-dependent activation and inactivation of the voltage-gated K+ channel. The results showed that the Vm was significantly reduced in the presence of 25 mM KCl, but not in the presence of 30 mM KCl. The results suggest that the reduction of the Vm is due
+
+=== step 8000 ===
+Membrane potential (Vm) and the membrane conductance (Gm). The Vm is a measure of the rate of change in the membrane potential. The Gm is a measure of the rate of change in the membrane conductance. The Vm and Gm are related to each other by the following equation: Vm = Gm/R, where R is the membrane resistance. The relationship between the Vm and Gm can be expressed as
+
+=== step 9000 ===
+Membrane potential (Vm) and the membrane conductance (Gm). The Vm was measured by measuring the current induced by a voltage step from -100 to +50 mV. The Gm was measured by measuring the time required for the current to reach a steady state. The results showed that the Vm was 24.7 +/- 3.8 mV, and the Gm was 6.9 +/- 
+
+=== step 10000 ===
+Membrane potential (Vm) was measured by the use of a voltage-sensitive dye, DiO. The membrane potential was found to be -40 mV in the presence of 1 mM KCl and -35 mV in the absence of KCl. The Vm was also found to be -26 mV in the presence of 1 mM KCl and -37 mV in the absence of KCl. The results
+
+=== step 11000 ===
+Membrane potential (Vm) was measured by the use of a voltage-sensitive dye, 4',6-diamidino-2-phenylindole. The membrane potential was found to be dependent on the concentration of the dye. The Vm was found to be independent of the cell volume and the cell density. The results suggest that the membrane potential is determined by the membrane permeability to the dye.
+
+=== step 12000 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was determined by measuring the difference between the resting and hyperpolarized potentials. The membrane potential was found to be approximately 25 mV in the presence of 30 mM KCl. The membrane potential was also found to be approximately 40 mV in the presence of 60 mM KCl. The results indicate that the Na
+
+=== step 13000 ===
+Membrane potential (Vm) was measured in the presence of 10(-4) M tetrodotoxin (TTX), 5 x 10(-6) M tetrodotoxin (TTX-10), and 2 x 10(-3) M tetrodotoxin (TTX-2). The membrane potential was determined by measuring the difference between the voltage at which the current-voltage relationship was linear and the
+
+=== step 14000 ===
+Membrane potential (Vm) was measured in the presence of 10(-4) M tetrodotoxin (TTX), 5 x 10(-6) M tetrodotoxin (TTX-I), and 2 x 10(-7) M tetrodotoxin (TTX-II). The membrane potential was measured by the voltage-sensitive dye, DiOC6. The Vm was increased by 3
+
+=== step 15000 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was measured by using a microelectrode technique. The results showed that the membrane potential was significantly lower in the presence of 20 mM KCl than in the absence of KCl. The membrane potential was also significantly lower in the presence of 50 mM KCl than in the absence of KCl. The membrane potential was significantly higher
+
+=== step 16000 ===
+Membrane potential (Vm) and the membrane resistance (Rm). The results of the experiments were compared with those obtained from the literature. The results showed that the Vm was not affected by the addition of 10(-6) M of the Ca2+ chelator BAPTA-AM, but it was decreased by 50% when the Ca2+ concentration was increased to 3 x 10(-7) M.
+
+=== step 17000 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was measured using a microelectrode technique. The Vm was found to be independent of the concentration of KCl, and the K+ concentration required to produce a Vm of -50 mV was 2.4 mM. The K+-induced depolarization was not affected by the addition of 3 mM KATP channel
+
+=== step 18000 ===
+Membrane potential (Vm) and the membrane resistance (Rm). The results show that the membrane conductance is independent of the membrane potential, but the membrane resistance is dependent on the membrane potential. The results also show that the membrane conductance is not affected by the presence of a large external Na+ concentration. The results are consistent with the hypothesis that the Na+-dependent K+ current is mediated by a voltage-gated Na+ channel.
+
+=== step 19000 ===
+Membrane potential (Vm) was measured in the presence of 10(-4) M tetrodotoxin (TTX). The membrane potential was recorded from the apical surface of the cell. The TTX-sensitive current was blocked by 5 x 10(-6) M tetrodotoxin (TTX), and the TTX-resistant current was blocked by 2 x 10(-7) M tetrodotoxin
+
+=== step 20000 ===
+Membrane potential (Vm) was measured in the presence of 10(-4) M tetrodotoxin (TTX), 5 x 10(-6) M tetrodotoxin (TTX-I), 2 x 10(-7) M tetrodotoxin (TTX-II), and 3 x 10(-8) M tetrodotoxin (TTX-III). The membrane potential was
+
+=== step 21000 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was measured by using a microelectrode technique. The results showed that the membrane potential was significantly lower in the presence of 20 mM KCl than in the absence of KCl. The K+ concentration in the medium was determined by using a microelectrode technique. The K+ concentration in the medium was measured by using a micro
+
+=== step 22000 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was determined by measuring the change in the amplitude of the current-voltage relationship. The results show that the membrane potential is not affected by the addition of 2 mM KCl to the bathing solution. The membrane potential was also measured in the presence of 5 mM KCl and 3 mM NaCl, and the results show that the membrane potential
+
+=== step 23000 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was determined by measuring the change in the amplitude of the current-voltage relationship. The Vm was found to be -42 mV in the presence of 5 mM KCl. The reversal potential for the K+ current was -39 mV. The reversal potential for the Na+ current was -68 mV. The reversal
+
+=== step 24000 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was measured by using a microelectrode technique. The results showed that the membrane potential was not affected by the addition of 20 mM KCl to the bathing solution. The membrane potential was also unaffected by the addition of 5 mM KCl to the bathing solution. The addition of 30 mM KCl to the bathing solution did
+
+=== step 25000 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was measured by using a microelectrode technique. The results showed that the membrane potential was significantly different between the two groups. The mean Vm of the group with 20% inhibition was -43 mV, which was significantly lower than that of the control group (p < 0.05). The mean Vm of
+
+=== step 26000 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was measured by using a microelectrode technique. The results showed that the membrane potential was significantly different from the resting potential in the presence of 20 mM KCl. The membrane potential was also significantly different from the resting potential in the presence of 50 mM KCl. The difference between the resting and the membrane potentials was not significant
+
+=== step 27000 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was determined by measuring the change in the amplitude of the current-voltage curve. The results showed that the membrane potential was significantly different from -45 mV in the presence of 20 mM KCl and -37 mV in the presence of 80 mM KCl. The reversal potential for the K+ current was -6
+
+=== step 28000 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was measured by using a microelectrode technique. The results showed that the Vm was significantly decreased in the presence of 20 mM KCl, and the decrease was more pronounced when the cells were incubated with 5 mM KCl. The increase in the Vm was also observed in the presence of 30 mM KCl.
+
+=== step 29000 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was determined by measuring the change in the amplitude of the current-voltage curve. The Vm was found to be -45 mV in the presence of 20 mM KCl and -37 mV in the absence of KCl. The reversal potential for the K+ current was -68 mV in the presence of 
+
+=== step 30000 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was measured by using a microelectrode technique. The results showed that the membrane potential was significantly different between the two groups. The mean Vm of the group with 20% inhibition was 53 +/- 4 mV, which was significantly lower than that of the control group (68 +/- 7 mV). The difference
+
+=== step 31000 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was measured by using a microelectrode technique. The results showed that the membrane potential was significantly different between the two groups. The mean Vm of the group with 20% inhibition was 53 +/- 4 mV, which was significantly lower than that of the control group (68 +/- 7 mV). The mean
+
+=== step 32000 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was measured with a microelectrode at the cell surface. The Vm was determined by measuring the change in the current-voltage relationship of the cell membrane. The results were compared to those obtained from the intracellular recording of the action potentials. The results showed that the membrane potential was not affected by the addition of 20 mM KCl to
+
+=== step 32320 ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was measured by using a microelectrode technique. The results showed that the membrane potential was significantly different between the two groups. The mean Vm of the group with 20% inhibition was 53 +/- 4 mV, which was significantly lower than that of the control group (68 +/- 7 mV). The mean
+
+=== final ===
+Membrane potential (Vm) was measured in the presence of 10 mM KCl. The membrane potential was measured by using a microelectrode technique. The results showed that the membrane potential was significantly different between the two groups. The mean Vm of the group with 20% inhibition was 53 +/- 4 mV, which was significantly lower than that of the control group (68 +/- 7 mV). The mean
+

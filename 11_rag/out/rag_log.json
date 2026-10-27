@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "steps": 800,
+  "n_train": 29054,
+  "n_val": 946,
+  "token_f1": 0.3911514975515312,
+  "exact": 0.12790697674418605,
+  "faithful_substring": 0.2135306553911205,
+  "probes": [
+    {
+      "q": "What is membrane voltage?",
+      "pmid": "18354422",
+      "title": "How membrane proteins sense voltage.",
+      "answer": "The membrane voltage is diverse: ion channels have a conserved, positively charged transmembrane region that moves in response to changes in membrane potential, some G-protein coupled receptors possess a specific voltage-sensing motif and some membrane pumps and transporters use the ions that they transport across membranes to sense membrane voltage."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "SFT": {
+    "circular_rate": 0.04430379746835443,
+    "rep4_rate": 0.272,
+    "mean_words": 21.508,
+    "empty_rate": 0.0
+  },
+  "DPO": {
+    "circular_rate": 0.0,
+    "rep4_rate": 0.276,
+    "mean_words": 24.006,
+    "empty_rate": 0.0
+  }
+}

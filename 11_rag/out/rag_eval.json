@@ -1,0 +1,44 @@
+{
+  "token_f1": 0.9900817662078855,
+  "exact": 0.9566596194503171,
+  "faithful_substring": 0.9619450317124736,
+  "n_val": 946,
+  "probes": [
+    {
+      "q": "What is bioelectricity?",
+      "pmid": "37984883",
+      "title": "Nanotechnology and Cancer Bioelectricity: Bridging the Gap Between Biology and Translational Medicine.",
+      "answer": "Bioelectricity is the electrical activity that occurs within living cells and tissues."
+    },
+    {
+      "q": "What is membrane voltage?",
+      "pmid": "24507604",
+      "title": "Temporal dynamics of microbial rhodopsin fluorescence reports absolute membrane voltage.",
+      "answer": "Membrane voltage is a fundamentally important property of a living cell; its value is tightly coupled to membrane transport, the dynamics of transmembrane proteins, and to intercellular communication."
+    },
+    {
+      "q": "What does membrane depolarization trigger?",
+      "pmid": "20858415",
+      "title": "Membrane potential depolarization as a triggering mechanism for Vpu-mediated HIV-1 release.",
+      "answer": "Moreover, membrane depolarization trigger is intrinsically linked to its channel-like structure, which enables it to interfere with homologous transmembrane structures in infected cells."
+    },
+    {
+      "q": "What is apoptosis?",
+      "pmid": "10879048",
+      "title": "[Dysregulation of the genes controlling apoptosis in cancer development].",
+      "answer": "Apoptosis is a cellular self-destruction mechanism involved in a variety of biological events."
+    },
+    {
+      "q": "What are gap junctions?",
+      "pmid": "17392685",
+      "title": "Gap junctions contain different amounts of cholesterol which undergo unique sequestering processes during fiber cell differentiation in the embryonic chicken lens.",
+      "answer": "Gap junctions are also investigated."
+    },
+    {
+      "q": "What is the resting membrane potential?",
+      "pmid": "28543529",
+      "title": "Kir2.1 and K2P1 channels reconstitute two levels of resting membrane potential in cardiomyocytes.",
+      "answer": "The resting membrane potential is the resting membrane potential of cardiomyocytes."
+    }
+  ]
+}
