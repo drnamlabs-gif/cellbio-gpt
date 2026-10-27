@@ -78,3 +78,14 @@ The planned primary comparison is unchanged. For this second family, p-values ar
 reported both raw and Holm-adjusted over the whole secondary family, and the adjusted
 value is the one to read. No comparison will be added after the data are seen. Batches
 that have to be repeated are logged as before.
+
+## Note on the headline, added after the first-round results were seen
+
+After the 40M and Sonnet results were known, the author decided that the headline
+comparison in write-ups is the zero-shot column (no worked examples in the prompt),
+because that column measures what a model brings on its own. This choice was made
+after seeing the data, so it is recorded here. The comparison fixed in advance
+(40M with five examples against the hosted agent with five examples) is unchanged
+and is still reported, and the final table always shows both columns. Zero-shot
+comparisons were already among the declared secondary ones, so their Holm-adjusted
+p-values are the ones to read.
