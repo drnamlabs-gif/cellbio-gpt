@@ -534,6 +534,8 @@ Constant predictor & 0.538 & 0.454\\
 Own ladder, zero-shot (best checkpoint) & 0.321 & 0.150\\
 Best open chat model, zero-shot & 0.529 & 0.216\\
 Best open chat model, five worked examples & 0.904 & 0.852\\
+Hosted model as agent, zero-shot & 0.562 & 0.462\\
+Hosted model as agent, five worked examples & 0.955 & 0.952\\
 40M, simulator warm start & 0.938 & 0.898\\
 40M, simulator warm start + GRPO & \textbf{0.945} & \textbf{0.912}\\
 \midrule
@@ -542,6 +544,8 @@ Constant predictor & 0.663 & 0.559\\
 40M trained on the lattice & 0.539 & 0.535\\
 40M trained on 150 random points, same budget & 0.777 & 0.657\\
 \quad + five nearest worked examples in the prompt & \textbf{0.835} & \textbf{0.711}\\
+Hosted model as agent, zero-shot & 0.591 & 0.453\\
+Hosted model as agent, five worked examples & 0.808 & 0.742\\
 \bottomrule
 \end{tabular}
 \caption{Simulator exams. All rows use the same verifier and the same reward bands.}
@@ -555,6 +559,26 @@ produce the answer format; the textbook RL model reached 0.321. The
 strongest open chat model scored 0.529 zero-shot, below the constant
 predictor, and 0.904 with five worked examples. The supervised warm start
 did most of the work (0.938), and GRPO added a little on top.
+
+\paragraph{A hosted model as an agent.} We also had a hosted model sit both
+exams as an agent (Claude Sonnet 5.5, closed book). The agent read one
+question file and wrote one answer file; it could reason before answering
+but had no access to the simulator or the truth files, and the same verifier
+scored its answers. Zero-shot it scored 0.562 on exam A, close to the
+constant predictor, and 0.591 on exam B, below it. With the same five nearest
+worked examples it scored 0.955 on exam A, level with the 40M model (0.945;
+98 problems, so the gap is one problem) and 0.808 on exam B, below the
+40M model's 0.835. This is a single forward test, with no repeated runs and
+no statistical validation yet, so none of these gaps should be read as
+significant. We plan 20 separate, unseen test batches (new simulations used in
+no training set or earlier exam), sat by every model, to supply the statistics
+this run lacks. Four of the ten batches had to be
+repeated because the agent reported using code to write or compute its
+answers, against the rules; the discarded attempts scored within 0.03 of
+the repeats on the same batches. Tool use could not be audited beyond the agents' own
+reports. A hosted model therefore does not know this simulator's physics
+without examples, and with examples it does about as well as a 40M model
+trained for the task.
 
 Exam B changed the reading of these numbers (Figure~\ref{fig:exams}). The
 lattice-trained model dropped to 0.539, below the constant predictor. Its

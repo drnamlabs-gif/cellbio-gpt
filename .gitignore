@@ -55,3 +55,7 @@ data/sft_v2b/
 05_dpo_rlvr/out/pref_train.jsonl
 11_rag/out/defqa_train.jsonl
 06_eval_release/out/pubmedqa.jsonl
+
+# secrets
+.env
+.env.*

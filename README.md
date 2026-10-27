@@ -43,9 +43,13 @@ The model reads a problem such as "bath K+ is 12 mM, K+ permeability is 2x basel
 | Constant predictor | 0.538 | 0.663 |
 | Best open chat model, zero-shot | 0.529 | – |
 | Best open chat model, five worked examples | 0.904 | – |
+| Hosted model as agent (Claude Sonnet 5.5), zero-shot | 0.562 | 0.591 |
+| Hosted model as agent (Claude Sonnet 5.5), five worked examples | **0.955** | 0.808 |
 | 40M, trained on the grid | **0.945** | 0.539 |
 | 40M, trained on random points | – | 0.777 |
 | 40M, random points + five examples in the prompt | – | **0.835** |
+
+The hosted-model rows come from an agent that read one question file and wrote one answer file, with no simulator access. Without examples it is at the constant floor on exam A and below it on exam B. With five examples it ties the 40M model on exam A (98 problems, a one-problem gap) and falls short of it on exam B (0.808 against 0.835). This is a single forward test: one run, no repeated batches, so no statistical validation yet (no confidence intervals, no paired test), and the gaps above should not be read as significant. Tool use was checked only through the agent's own reports. The full log is in `08_betse_rlvr/out/agent_exam/`. A follow-up is planned with 20 separate, unseen test batches (new simulations used in no training or earlier exam), sat by every model, to give the statistics this run lacks.
 
 The second column is the one to read. The model trained on a regular grid scored 0.945 on held-out grid points and then fell below the constant predictor on points between the grid nodes. It had learned a lookup table: across 234 sealed problems it produced 17 distinct answers, and 16 of them were values it had memorized. Putting the same 150 simulations at random positions raised the off-grid score from 0.539 to 0.777 with no change to the model or the algorithm. Where the training data sits mattered more than which method was used.
 

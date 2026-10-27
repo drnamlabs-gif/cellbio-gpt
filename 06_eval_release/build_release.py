@@ -137,9 +137,18 @@ scores it: full reward within 2 mV, partial within 10 and 25 mV.
 | | Exam A: 98 held-out grid problems | Exam B: 234 sealed off-grid problems |
 |---|---|---|
 | constant predictor | 0.538 | 0.663 |
+| hosted model as agent (Claude Sonnet 5.5), zero-shot | 0.562 | 0.591 |
+| hosted model as agent (Claude Sonnet 5.5), five worked examples | **0.955** | 0.808 |
 | `model_sim_grid.pt` | **0.945** | 0.539 |
 | `model_sim_mixed.pt`, five worked examples in the prompt | not measured | **0.835** |
 | `model_sim_mixed.pt`, zero-shot | not measured | 0.666 |
+
+The hosted-model rows are a single forward test: one run of an agent that read
+one question file and wrote one answer file, with no access to the simulator or
+the truths. There are no repeated batches, so no statistical validation yet and
+the gaps should not be read as significant. A follow-up with 20 separate, unseen
+test batches is planned. Its tool use was checked only through its own reports. Per-question answers and
+scores are in the dataset repo.
 
 The grid-trained model is excellent on exam A and falls below the constant
 predictor on exam B: it learned a lookup table. Placing the training

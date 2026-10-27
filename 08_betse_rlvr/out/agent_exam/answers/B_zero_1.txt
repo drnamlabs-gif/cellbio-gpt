@@ -1,0 +1,114 @@
+120: Mean Vmem = -66 mV.
+121: Mean Vmem = -66 mV.
+122: The tissue is hyperpolarized.
+123: The tissue is hyperpolarized.
+124: Mean Vmem = -42 mV.
+125: Mean Vmem = -42 mV.
+126: The tissue is depolarized.
+127: The tissue is depolarized.
+128: Mean Vmem = -74 mV.
+129: Mean Vmem = -74 mV.
+130: The tissue is hyperpolarized.
+131: The tissue is hyperpolarized.
+132: Mean Vmem = -41 mV.
+133: Mean Vmem = -41 mV.
+134: The tissue is depolarized.
+135: The tissue is depolarized.
+136: Mean Vmem = -64 mV.
+137: Mean Vmem = -64 mV.
+138: The tissue is hyperpolarized.
+139: The tissue is hyperpolarized.
+140: Mean Vmem = -37 mV.
+141: Mean Vmem = -37 mV.
+142: The tissue is depolarized.
+143: The tissue is depolarized.
+144: Mean Vmem = -54 mV.
+145: Mean Vmem = -54 mV.
+146: The tissue is hyperpolarized.
+147: The tissue is hyperpolarized.
+148: Mean Vmem = -31 mV.
+149: Mean Vmem = -31 mV.
+150: The tissue is depolarized.
+151: The tissue is depolarized.
+152: Mean Vmem = -44 mV.
+153: Mean Vmem = -44 mV.
+154: The tissue is depolarized.
+155: The tissue is depolarized.
+156: Mean Vmem = -24 mV.
+157: Mean Vmem = -24 mV.
+158: The tissue is depolarized.
+159: The tissue is depolarized.
+160: Mean Vmem = -38 mV.
+161: Mean Vmem = -38 mV.
+162: The tissue is depolarized.
+163: The tissue is depolarized.
+164: Mean Vmem = -29 mV.
+165: Mean Vmem = -29 mV.
+166: The tissue is depolarized.
+167: The tissue is depolarized.
+168: Mean Vmem = -60 mV.
+169: Mean Vmem = -60 mV.
+170: The tissue is hyperpolarized.
+171: The tissue is hyperpolarized.
+172: Mean Vmem = -42 mV.
+173: Mean Vmem = -42 mV.
+174: The tissue is depolarized.
+175: The tissue is depolarized.
+176: Mean Vmem = -52 mV.
+177: Mean Vmem = -52 mV.
+178: The tissue is hyperpolarized.
+179: The tissue is hyperpolarized.
+180: Mean Vmem = -43 mV.
+181: Mean Vmem = -43 mV.
+182: The tissue is depolarized.
+183: The tissue is depolarized.
+184: Mean Vmem = -29 mV.
+185: Mean Vmem = -29 mV.
+186: The tissue is depolarized.
+187: The tissue is depolarized.
+188: Mean Vmem = -53 mV.
+189: Mean Vmem = -53 mV.
+190: The tissue is hyperpolarized.
+191: The tissue is hyperpolarized.
+192: Mean Vmem = -21 mV.
+193: Mean Vmem = -21 mV.
+194: The tissue is depolarized.
+195: The tissue is depolarized.
+196: Mean Vmem = -57 mV.
+197: Mean Vmem = -57 mV.
+198: The tissue is hyperpolarized.
+199: The tissue is hyperpolarized.
+200: Mean Vmem = -71 mV.
+201: Mean Vmem = -71 mV.
+202: The tissue is hyperpolarized.
+203: The tissue is hyperpolarized.
+204: Mean Vmem = -27 mV.
+205: Mean Vmem = -27 mV.
+206: The tissue is depolarized.
+207: The tissue is depolarized.
+208: Mean Vmem = -34 mV.
+209: Mean Vmem = -34 mV.
+210: Mean Vmem = -30 mV.
+211: Mean Vmem = -30 mV.
+212: The tissue is depolarized.
+213: The tissue is depolarized.
+214: Mean Vmem = -37 mV.
+215: Mean Vmem = -37 mV.
+216: The tissue is depolarized.
+217: The tissue is depolarized.
+218: Mean Vmem = -59 mV.
+219: Mean Vmem = -59 mV.
+220: The tissue is hyperpolarized.
+221: The tissue is hyperpolarized.
+222: Mean Vmem = -27 mV.
+223: Mean Vmem = -27 mV.
+224: The tissue is depolarized.
+225: The tissue is depolarized.
+226: Mean Vmem = -73 mV.
+227: Mean Vmem = -73 mV.
+228: The tissue is hyperpolarized.
+229: The tissue is hyperpolarized.
+230: Mean Vmem = -75 mV.
+231: Mean Vmem = -75 mV.
+232: The tissue is hyperpolarized.
+233: The tissue is hyperpolarized.

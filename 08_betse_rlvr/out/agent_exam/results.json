@@ -1,0 +1,48 @@
+{
+  "model": "Sonnet 5.5 agent (session model), closed book, reasoning allowed, no tools",
+  "date": "2026-10-27",
+  "seed": 42,
+  "verifier": "05_dpo_rlvr/bioelectric.reward",
+  "results": {
+    "A five": {
+      "n": 98,
+      "reward": 0.9551020408163264,
+      "exact": 0.9183673469387755,
+      "by_kind": {
+        "nernst": 0.9520000000000001,
+        "polarity": 0.9583333333333334
+      },
+      "missing": 0
+    },
+    "A zero": {
+      "n": 98,
+      "reward": 0.5622448979591836,
+      "exact": 0.42857142857142855,
+      "by_kind": {
+        "nernst": 0.46199999999999997,
+        "polarity": 0.6666666666666666
+      },
+      "missing": 0
+    },
+    "B five": {
+      "n": 234,
+      "reward": 0.8076923076923077,
+      "exact": 0.6666666666666666,
+      "by_kind": {
+        "nernst": 0.7416666666666667,
+        "polarity": 0.8771929824561403
+      },
+      "missing": 0
+    },
+    "B zero": {
+      "n": 234,
+      "reward": 0.5914529914529915,
+      "exact": 0.4188034188034188,
+      "by_kind": {
+        "nernst": 0.4533333333333333,
+        "polarity": 0.7368421052631579
+      },
+      "missing": 0
+    }
+  }
+}

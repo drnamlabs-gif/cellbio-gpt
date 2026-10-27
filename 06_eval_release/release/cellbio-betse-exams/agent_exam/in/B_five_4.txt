@@ -1,0 +1,495 @@
+EXAM BATCH B_five_4  (34 questions)
+
+You are a candidate sitting a closed-book exam on BETSE bioelectric
+tissue simulations (a 213-cell tissue run to steady state).
+
+Rules, which are part of the exam:
+- Use no tools except: Read on THIS file, and Write on the one answer file named below.
+- Do not search, do not list directories, do not open any other file, do not run
+  code or the simulator. Answer from your own knowledge and reasoning.
+- You may reason before answering. Only the answer file is scored.
+
+Answer format, one line per question, in the form  <id>: <answer>
+- numeric questions:  <id>: Mean Vmem = <integer> mV.
+- polarity questions: <id>: The tissue is depolarized.   or   <id>: The tissue is hyperpolarized.
+Write exactly one line for every question id, nothing else in the file.
+
+Answer file (Write here, nothing else): C:/Users/namle/AppData/Local/Temp/claude/C--Users-namle/7d05d186-472f-481c-b1ac-0cb3c0ce7e24/scratchpad/agent_exam\answers\B_five_4.txt
+
+============================================================
+Question id 200
+A BETSE tissue simulation runs with extracellular K+ = 5.2 mM, extracellular Na+ = 144.8 mM, K+ membrane permeability scaled x3.51 and Na+ permeability scaled x0.75. What steady-state mean Vmem (mV) does the tissue reach?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.6 mM, extracellular Na+ = 144.4 mM, K+ membrane permeability scaled x2.86 and Na+ permeability scaled x0.68. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -58 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 5.6 mM K+ and 144.4 mM Na+; membrane Dm_K is scaled x2.86 and Dm_Na x0.68. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -58 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.8 mM, extracellular Na+ = 146.2 mM, K+ membrane permeability scaled x2.3 and Na+ permeability scaled x0.61. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -63 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 3.8 mM K+ and 146.2 mM Na+; membrane Dm_K is scaled x2.3 and Dm_Na x0.61. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -63 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 8.6 mM, extracellular Na+ = 141.4 mM, K+ membrane permeability scaled x2.39 and Na+ permeability scaled x0.81. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -1 mV.
+------------------------------------------------------------
+Question id 201
+In a bioelectric tissue sim (BETSE), the bath has 5.2 mM K+ and 144.8 mM Na+; membrane Dm_K is scaled x3.51 and Dm_Na x0.75. Predict the tissue's mean Vmem in mV.
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.6 mM, extracellular Na+ = 144.4 mM, K+ membrane permeability scaled x2.86 and Na+ permeability scaled x0.68. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -58 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 5.6 mM K+ and 144.4 mM Na+; membrane Dm_K is scaled x2.86 and Dm_Na x0.68. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -58 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.8 mM, extracellular Na+ = 146.2 mM, K+ membrane permeability scaled x2.3 and Na+ permeability scaled x0.61. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -63 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 3.8 mM K+ and 146.2 mM Na+; membrane Dm_K is scaled x2.3 and Dm_Na x0.61. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -63 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 8.6 mM, extracellular Na+ = 141.4 mM, K+ membrane permeability scaled x2.39 and Na+ permeability scaled x0.81. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -1 mV.
+------------------------------------------------------------
+Question id 202
+A BETSE tissue simulation runs with extracellular K+ = 5.2 mM, Na+ = 144.8 mM, Dm_K scaled x3.51, Dm_Na x0.75. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.6 mM, Na+ = 144.4 mM, Dm_K scaled x2.86, Dm_Na x0.68. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 5.6 mM K+, 144.4 mM Na+, Dm_K x2.86, Dm_Na x0.68 depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.8 mM, Na+ = 146.2 mM, Dm_K scaled x2.3, Dm_Na x0.61. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 3.8 mM K+, 146.2 mM Na+, Dm_K x2.3, Dm_Na x0.61 depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 8.6 mM, Na+ = 141.4 mM, Dm_K scaled x2.39, Dm_Na x0.81. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+------------------------------------------------------------
+Question id 203
+Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 5.2 mM K+, 144.8 mM Na+, Dm_K x3.51, Dm_Na x0.75 depolarized or hyperpolarized?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.6 mM, Na+ = 144.4 mM, Dm_K scaled x2.86, Dm_Na x0.68. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 5.6 mM K+, 144.4 mM Na+, Dm_K x2.86, Dm_Na x0.68 depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.8 mM, Na+ = 146.2 mM, Dm_K scaled x2.3, Dm_Na x0.61. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 3.8 mM K+, 146.2 mM Na+, Dm_K x2.3, Dm_Na x0.61 depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 8.6 mM, Na+ = 141.4 mM, Dm_K scaled x2.39, Dm_Na x0.81. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+------------------------------------------------------------
+Question id 204
+A BETSE tissue simulation runs with extracellular K+ = 9.4 mM, extracellular Na+ = 140.6 mM, K+ membrane permeability scaled x0.51 and Na+ permeability scaled x1.83. What steady-state mean Vmem (mV) does the tissue reach?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 8.2 mM, extracellular Na+ = 141.8 mM, K+ membrane permeability scaled x0.37 and Na+ permeability scaled x1.56. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 8.2 mM K+ and 141.8 mM Na+; membrane Dm_K is scaled x0.37 and Dm_Na x1.56. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -20 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 6.2 mM, extracellular Na+ = 143.8 mM, K+ membrane permeability scaled x0.55 and Na+ permeability scaled x1.47. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 6.2 mM K+ and 143.8 mM Na+; membrane Dm_K is scaled x0.55 and Dm_Na x1.47. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -20 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.9 mM, extracellular Na+ = 144.1 mM, K+ membrane permeability scaled x0.55 and Na+ permeability scaled x1.98. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -17 mV.
+------------------------------------------------------------
+Question id 205
+In a bioelectric tissue sim (BETSE), the bath has 9.4 mM K+ and 140.6 mM Na+; membrane Dm_K is scaled x0.51 and Dm_Na x1.83. Predict the tissue's mean Vmem in mV.
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 8.2 mM, extracellular Na+ = 141.8 mM, K+ membrane permeability scaled x0.37 and Na+ permeability scaled x1.56. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 8.2 mM K+ and 141.8 mM Na+; membrane Dm_K is scaled x0.37 and Dm_Na x1.56. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -20 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 6.2 mM, extracellular Na+ = 143.8 mM, K+ membrane permeability scaled x0.55 and Na+ permeability scaled x1.47. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 6.2 mM K+ and 143.8 mM Na+; membrane Dm_K is scaled x0.55 and Dm_Na x1.47. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -20 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.9 mM, extracellular Na+ = 144.1 mM, K+ membrane permeability scaled x0.55 and Na+ permeability scaled x1.98. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -17 mV.
+------------------------------------------------------------
+Question id 206
+A BETSE tissue simulation runs with extracellular K+ = 9.4 mM, Na+ = 140.6 mM, Dm_K scaled x0.51, Dm_Na x1.83. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 8.2 mM, Na+ = 141.8 mM, Dm_K scaled x0.37, Dm_Na x1.56. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 8.2 mM K+, 141.8 mM Na+, Dm_K x0.37, Dm_Na x1.56 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 6.2 mM, Na+ = 143.8 mM, Dm_K scaled x0.55, Dm_Na x1.47. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 6.2 mM K+, 143.8 mM Na+, Dm_K x0.55, Dm_Na x1.47 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.9 mM, Na+ = 144.1 mM, Dm_K scaled x0.55, Dm_Na x1.98. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+------------------------------------------------------------
+Question id 207
+Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 9.4 mM K+, 140.6 mM Na+, Dm_K x0.51, Dm_Na x1.83 depolarized or hyperpolarized?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 8.2 mM, Na+ = 141.8 mM, Dm_K scaled x0.37, Dm_Na x1.56. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 8.2 mM K+, 141.8 mM Na+, Dm_K x0.37, Dm_Na x1.56 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 6.2 mM, Na+ = 143.8 mM, Dm_K scaled x0.55, Dm_Na x1.47. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 6.2 mM K+, 143.8 mM Na+, Dm_K x0.55, Dm_Na x1.47 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.9 mM, Na+ = 144.1 mM, Dm_K scaled x0.55, Dm_Na x1.98. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+------------------------------------------------------------
+Question id 208
+A BETSE tissue simulation runs with extracellular K+ = 3.3 mM, extracellular Na+ = 146.7 mM, K+ membrane permeability scaled x0.28 and Na+ permeability scaled x0.91. What steady-state mean Vmem (mV) does the tissue reach?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.8 mM, extracellular Na+ = 146.2 mM, K+ membrane permeability scaled x0.27 and Na+ permeability scaled x1.0. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -44 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 3.8 mM K+ and 146.2 mM Na+; membrane Dm_K is scaled x0.27 and Dm_Na x1.0. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -44 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 4.2 mM, extracellular Na+ = 145.8 mM, K+ membrane permeability scaled x0.25 and Na+ permeability scaled x1.05. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -40 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 4.2 mM K+ and 145.8 mM Na+; membrane Dm_K is scaled x0.25 and Dm_Na x1.05. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -40 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.9 mM, extracellular Na+ = 146.1 mM, K+ membrane permeability scaled x0.39 and Na+ permeability scaled x0.99. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -44 mV.
+------------------------------------------------------------
+Question id 209
+In a bioelectric tissue sim (BETSE), the bath has 3.3 mM K+ and 146.7 mM Na+; membrane Dm_K is scaled x0.28 and Dm_Na x0.91. Predict the tissue's mean Vmem in mV.
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.8 mM, extracellular Na+ = 146.2 mM, K+ membrane permeability scaled x0.27 and Na+ permeability scaled x1.0. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -44 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 3.8 mM K+ and 146.2 mM Na+; membrane Dm_K is scaled x0.27 and Dm_Na x1.0. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -44 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 4.2 mM, extracellular Na+ = 145.8 mM, K+ membrane permeability scaled x0.25 and Na+ permeability scaled x1.05. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -40 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 4.2 mM K+ and 145.8 mM Na+; membrane Dm_K is scaled x0.25 and Dm_Na x1.05. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -40 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.9 mM, extracellular Na+ = 146.1 mM, K+ membrane permeability scaled x0.39 and Na+ permeability scaled x0.99. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -44 mV.
+------------------------------------------------------------
+Question id 210
+A BETSE tissue simulation runs with extracellular K+ = 39.1 mM, extracellular Na+ = 110.9 mM, K+ membrane permeability scaled x2.96 and Na+ permeability scaled x1.41. What steady-state mean Vmem (mV) does the tissue reach?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 31.4 mM, extracellular Na+ = 118.6 mM, K+ membrane permeability scaled x2.87 and Na+ permeability scaled x1.27. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 31.4 mM K+ and 118.6 mM Na+; membrane Dm_K is scaled x2.87 and Dm_Na x1.27. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -20 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 31.4 mM, extracellular Na+ = 118.6 mM, K+ membrane permeability scaled x1.99 and Na+ permeability scaled x1.69. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -18 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 31.4 mM K+ and 118.6 mM Na+; membrane Dm_K is scaled x1.99 and Dm_Na x1.69. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -18 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 37.3 mM, extracellular Na+ = 112.7 mM, K+ membrane permeability scaled x2.58 and Na+ permeability scaled x0.88. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+------------------------------------------------------------
+Question id 211
+In a bioelectric tissue sim (BETSE), the bath has 39.1 mM K+ and 110.9 mM Na+; membrane Dm_K is scaled x2.96 and Dm_Na x1.41. Predict the tissue's mean Vmem in mV.
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 31.4 mM, extracellular Na+ = 118.6 mM, K+ membrane permeability scaled x2.87 and Na+ permeability scaled x1.27. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 31.4 mM K+ and 118.6 mM Na+; membrane Dm_K is scaled x2.87 and Dm_Na x1.27. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -20 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 31.4 mM, extracellular Na+ = 118.6 mM, K+ membrane permeability scaled x1.99 and Na+ permeability scaled x1.69. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -18 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 31.4 mM K+ and 118.6 mM Na+; membrane Dm_K is scaled x1.99 and Dm_Na x1.69. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -18 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 37.3 mM, extracellular Na+ = 112.7 mM, K+ membrane permeability scaled x2.58 and Na+ permeability scaled x0.88. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+------------------------------------------------------------
+Question id 212
+A BETSE tissue simulation runs with extracellular K+ = 39.1 mM, Na+ = 110.9 mM, Dm_K scaled x2.96, Dm_Na x1.41. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 31.4 mM, Na+ = 118.6 mM, Dm_K scaled x2.87, Dm_Na x1.27. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 31.4 mM K+, 118.6 mM Na+, Dm_K x2.87, Dm_Na x1.27 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 31.4 mM, Na+ = 118.6 mM, Dm_K scaled x1.99, Dm_Na x1.69. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 31.4 mM K+, 118.6 mM Na+, Dm_K x1.99, Dm_Na x1.69 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 37.3 mM, Na+ = 112.7 mM, Dm_K scaled x2.58, Dm_Na x0.88. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+------------------------------------------------------------
+Question id 213
+Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 39.1 mM K+, 110.9 mM Na+, Dm_K x2.96, Dm_Na x1.41 depolarized or hyperpolarized?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 31.4 mM, Na+ = 118.6 mM, Dm_K scaled x2.87, Dm_Na x1.27. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 31.4 mM K+, 118.6 mM Na+, Dm_K x2.87, Dm_Na x1.27 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 31.4 mM, Na+ = 118.6 mM, Dm_K scaled x1.99, Dm_Na x1.69. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 31.4 mM K+, 118.6 mM Na+, Dm_K x1.99, Dm_Na x1.69 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 37.3 mM, Na+ = 112.7 mM, Dm_K scaled x2.58, Dm_Na x0.88. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+------------------------------------------------------------
+Question id 214
+A BETSE tissue simulation runs with extracellular K+ = 28.8 mM, extracellular Na+ = 121.2 mM, K+ membrane permeability scaled x2.98 and Na+ permeability scaled x1.03. What steady-state mean Vmem (mV) does the tissue reach?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 31.4 mM, extracellular Na+ = 118.6 mM, K+ membrane permeability scaled x2.87 and Na+ permeability scaled x1.27. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 31.4 mM K+ and 118.6 mM Na+; membrane Dm_K is scaled x2.87 and Dm_Na x1.27. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -20 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 37.3 mM, extracellular Na+ = 112.7 mM, K+ membrane permeability scaled x2.58 and Na+ permeability scaled x0.88. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 37.3 mM K+ and 112.7 mM Na+; membrane Dm_K is scaled x2.58 and Dm_Na x0.88. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -20 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 21.5 mM, extracellular Na+ = 128.5 mM, K+ membrane permeability scaled x2.31 and Na+ permeability scaled x1.11. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -21 mV.
+------------------------------------------------------------
+Question id 215
+In a bioelectric tissue sim (BETSE), the bath has 28.8 mM K+ and 121.2 mM Na+; membrane Dm_K is scaled x2.98 and Dm_Na x1.03. Predict the tissue's mean Vmem in mV.
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 31.4 mM, extracellular Na+ = 118.6 mM, K+ membrane permeability scaled x2.87 and Na+ permeability scaled x1.27. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 31.4 mM K+ and 118.6 mM Na+; membrane Dm_K is scaled x2.87 and Dm_Na x1.27. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -20 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 37.3 mM, extracellular Na+ = 112.7 mM, K+ membrane permeability scaled x2.58 and Na+ permeability scaled x0.88. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 37.3 mM K+ and 112.7 mM Na+; membrane Dm_K is scaled x2.58 and Dm_Na x0.88. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -20 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 21.5 mM, extracellular Na+ = 128.5 mM, K+ membrane permeability scaled x2.31 and Na+ permeability scaled x1.11. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -21 mV.
+------------------------------------------------------------
+Question id 216
+A BETSE tissue simulation runs with extracellular K+ = 28.8 mM, Na+ = 121.2 mM, Dm_K scaled x2.98, Dm_Na x1.03. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 31.4 mM, Na+ = 118.6 mM, Dm_K scaled x2.87, Dm_Na x1.27. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 31.4 mM K+, 118.6 mM Na+, Dm_K x2.87, Dm_Na x1.27 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 37.3 mM, Na+ = 112.7 mM, Dm_K scaled x2.58, Dm_Na x0.88. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 37.3 mM K+, 112.7 mM Na+, Dm_K x2.58, Dm_Na x0.88 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 21.5 mM, Na+ = 128.5 mM, Dm_K scaled x2.31, Dm_Na x1.11. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+------------------------------------------------------------
+Question id 217
+Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 28.8 mM K+, 121.2 mM Na+, Dm_K x2.98, Dm_Na x1.03 depolarized or hyperpolarized?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 31.4 mM, Na+ = 118.6 mM, Dm_K scaled x2.87, Dm_Na x1.27. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 31.4 mM K+, 118.6 mM Na+, Dm_K x2.87, Dm_Na x1.27 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 37.3 mM, Na+ = 112.7 mM, Dm_K scaled x2.58, Dm_Na x0.88. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 37.3 mM K+, 112.7 mM Na+, Dm_K x2.58, Dm_Na x0.88 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 21.5 mM, Na+ = 128.5 mM, Dm_K scaled x2.31, Dm_Na x1.11. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+------------------------------------------------------------
+Question id 218
+A BETSE tissue simulation runs with extracellular K+ = 5.2 mM, extracellular Na+ = 144.8 mM, K+ membrane permeability scaled x2.13 and Na+ permeability scaled x1.25. What steady-state mean Vmem (mV) does the tissue reach?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.4 mM, extracellular Na+ = 144.6 mM, K+ membrane permeability scaled x1.7 and Na+ permeability scaled x1.7. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 5.4 mM K+ and 144.6 mM Na+; membrane Dm_K is scaled x1.7 and Dm_Na x1.7. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -20 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 4.9 mM, extracellular Na+ = 145.1 mM, K+ membrane permeability scaled x1.34 and Na+ permeability scaled x0.94. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -43 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 4.9 mM K+ and 145.1 mM Na+; membrane Dm_K is scaled x1.34 and Dm_Na x0.94. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -43 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 6.7 mM, extracellular Na+ = 143.3 mM, K+ membrane permeability scaled x2.97 and Na+ permeability scaled x1.78. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+------------------------------------------------------------
+Question id 219
+In a bioelectric tissue sim (BETSE), the bath has 5.2 mM K+ and 144.8 mM Na+; membrane Dm_K is scaled x2.13 and Dm_Na x1.25. Predict the tissue's mean Vmem in mV.
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.4 mM, extracellular Na+ = 144.6 mM, K+ membrane permeability scaled x1.7 and Na+ permeability scaled x1.7. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 5.4 mM K+ and 144.6 mM Na+; membrane Dm_K is scaled x1.7 and Dm_Na x1.7. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -20 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 4.9 mM, extracellular Na+ = 145.1 mM, K+ membrane permeability scaled x1.34 and Na+ permeability scaled x0.94. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -43 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 4.9 mM K+ and 145.1 mM Na+; membrane Dm_K is scaled x1.34 and Dm_Na x0.94. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -43 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 6.7 mM, extracellular Na+ = 143.3 mM, K+ membrane permeability scaled x2.97 and Na+ permeability scaled x1.78. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+------------------------------------------------------------
+Question id 220
+A BETSE tissue simulation runs with extracellular K+ = 5.2 mM, Na+ = 144.8 mM, Dm_K scaled x2.13, Dm_Na x1.25. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.4 mM, Na+ = 144.6 mM, Dm_K scaled x1.7, Dm_Na x1.7. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 5.4 mM K+, 144.6 mM Na+, Dm_K x1.7, Dm_Na x1.7 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 6.7 mM, Na+ = 143.3 mM, Dm_K scaled x2.97, Dm_Na x1.78. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 6.7 mM K+, 143.3 mM Na+, Dm_K x2.97, Dm_Na x1.78 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 6.2 mM, Na+ = 143.8 mM, Dm_K scaled x1.35, Dm_Na x1.69. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+------------------------------------------------------------
+Question id 221
+Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 5.2 mM K+, 144.8 mM Na+, Dm_K x2.13, Dm_Na x1.25 depolarized or hyperpolarized?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.4 mM, Na+ = 144.6 mM, Dm_K scaled x1.7, Dm_Na x1.7. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 5.4 mM K+, 144.6 mM Na+, Dm_K x1.7, Dm_Na x1.7 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 6.7 mM, Na+ = 143.3 mM, Dm_K scaled x2.97, Dm_Na x1.78. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 6.7 mM K+, 143.3 mM Na+, Dm_K x2.97, Dm_Na x1.78 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 6.2 mM, Na+ = 143.8 mM, Dm_K scaled x1.35, Dm_Na x1.69. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+------------------------------------------------------------
+Question id 222
+A BETSE tissue simulation runs with extracellular K+ = 6.1 mM, extracellular Na+ = 143.9 mM, K+ membrane permeability scaled x0.32 and Na+ permeability scaled x1.41. What steady-state mean Vmem (mV) does the tissue reach?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 6.5 mM, extracellular Na+ = 143.5 mM, K+ membrane permeability scaled x0.31 and Na+ permeability scaled x1.89. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -18 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 6.5 mM K+ and 143.5 mM Na+; membrane Dm_K is scaled x0.31 and Dm_Na x1.89. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -18 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.0 mM, extracellular Na+ = 145.0 mM, K+ membrane permeability scaled x0.26 and Na+ permeability scaled x1.62. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 5.0 mM K+ and 145.0 mM Na+; membrane Dm_K is scaled x0.26 and Dm_Na x1.62. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -20 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 8.2 mM, extracellular Na+ = 141.8 mM, K+ membrane permeability scaled x0.37 and Na+ permeability scaled x1.56. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+------------------------------------------------------------
+Question id 223
+In a bioelectric tissue sim (BETSE), the bath has 6.1 mM K+ and 143.9 mM Na+; membrane Dm_K is scaled x0.32 and Dm_Na x1.41. Predict the tissue's mean Vmem in mV.
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 6.5 mM, extracellular Na+ = 143.5 mM, K+ membrane permeability scaled x0.31 and Na+ permeability scaled x1.89. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -18 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 6.5 mM K+ and 143.5 mM Na+; membrane Dm_K is scaled x0.31 and Dm_Na x1.89. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -18 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.0 mM, extracellular Na+ = 145.0 mM, K+ membrane permeability scaled x0.26 and Na+ permeability scaled x1.62. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 5.0 mM K+ and 145.0 mM Na+; membrane Dm_K is scaled x0.26 and Dm_Na x1.62. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -20 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 8.2 mM, extracellular Na+ = 141.8 mM, K+ membrane permeability scaled x0.37 and Na+ permeability scaled x1.56. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -20 mV.
+------------------------------------------------------------
+Question id 224
+A BETSE tissue simulation runs with extracellular K+ = 6.1 mM, Na+ = 143.9 mM, Dm_K scaled x0.32, Dm_Na x1.41. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 6.5 mM, Na+ = 143.5 mM, Dm_K scaled x0.31, Dm_Na x1.89. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 6.5 mM K+, 143.5 mM Na+, Dm_K x0.31, Dm_Na x1.89 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.0 mM, Na+ = 145.0 mM, Dm_K scaled x0.26, Dm_Na x1.62. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 5.0 mM K+, 145.0 mM Na+, Dm_K x0.26, Dm_Na x1.62 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 8.2 mM, Na+ = 141.8 mM, Dm_K scaled x0.37, Dm_Na x1.56. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+------------------------------------------------------------
+Question id 225
+Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 6.1 mM K+, 143.9 mM Na+, Dm_K x0.32, Dm_Na x1.41 depolarized or hyperpolarized?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 6.5 mM, Na+ = 143.5 mM, Dm_K scaled x0.31, Dm_Na x1.89. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 6.5 mM K+, 143.5 mM Na+, Dm_K x0.31, Dm_Na x1.89 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.0 mM, Na+ = 145.0 mM, Dm_K scaled x0.26, Dm_Na x1.62. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 5.0 mM K+, 145.0 mM Na+, Dm_K x0.26, Dm_Na x1.62 depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 8.2 mM, Na+ = 141.8 mM, Dm_K scaled x0.37, Dm_Na x1.56. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is depolarized.
+------------------------------------------------------------
+Question id 226
+A BETSE tissue simulation runs with extracellular K+ = 4.4 mM, extracellular Na+ = 145.6 mM, K+ membrane permeability scaled x3.36 and Na+ permeability scaled x0.7. What steady-state mean Vmem (mV) does the tissue reach?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.6 mM, extracellular Na+ = 144.4 mM, K+ membrane permeability scaled x2.86 and Na+ permeability scaled x0.68. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -58 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 5.6 mM K+ and 144.4 mM Na+; membrane Dm_K is scaled x2.86 and Dm_Na x0.68. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -58 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.8 mM, extracellular Na+ = 146.2 mM, K+ membrane permeability scaled x2.3 and Na+ permeability scaled x0.61. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -63 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 3.8 mM K+ and 146.2 mM Na+; membrane Dm_K is scaled x2.3 and Dm_Na x0.61. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -63 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 4.0 mM, extracellular Na+ = 146.0 mM, K+ membrane permeability scaled x1.98 and Na+ permeability scaled x0.55. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -66 mV.
+------------------------------------------------------------
+Question id 227
+In a bioelectric tissue sim (BETSE), the bath has 4.4 mM K+ and 145.6 mM Na+; membrane Dm_K is scaled x3.36 and Dm_Na x0.7. Predict the tissue's mean Vmem in mV.
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.6 mM, extracellular Na+ = 144.4 mM, K+ membrane permeability scaled x2.86 and Na+ permeability scaled x0.68. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -58 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 5.6 mM K+ and 144.4 mM Na+; membrane Dm_K is scaled x2.86 and Dm_Na x0.68. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -58 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.8 mM, extracellular Na+ = 146.2 mM, K+ membrane permeability scaled x2.3 and Na+ permeability scaled x0.61. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -63 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 3.8 mM K+ and 146.2 mM Na+; membrane Dm_K is scaled x2.3 and Dm_Na x0.61. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -63 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 4.0 mM, extracellular Na+ = 146.0 mM, K+ membrane permeability scaled x1.98 and Na+ permeability scaled x0.55. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -66 mV.
+------------------------------------------------------------
+Question id 228
+A BETSE tissue simulation runs with extracellular K+ = 4.4 mM, Na+ = 145.6 mM, Dm_K scaled x3.36, Dm_Na x0.7. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.6 mM, Na+ = 144.4 mM, Dm_K scaled x2.86, Dm_Na x0.68. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 5.6 mM K+, 144.4 mM Na+, Dm_K x2.86, Dm_Na x0.68 depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.8 mM, Na+ = 146.2 mM, Dm_K scaled x2.3, Dm_Na x0.61. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 3.8 mM K+, 146.2 mM Na+, Dm_K x2.3, Dm_Na x0.61 depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 4.0 mM, Na+ = 146.0 mM, Dm_K scaled x1.98, Dm_Na x0.55. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+------------------------------------------------------------
+Question id 229
+Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 4.4 mM K+, 145.6 mM Na+, Dm_K x3.36, Dm_Na x0.7 depolarized or hyperpolarized?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 5.6 mM, Na+ = 144.4 mM, Dm_K scaled x2.86, Dm_Na x0.68. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 5.6 mM K+, 144.4 mM Na+, Dm_K x2.86, Dm_Na x0.68 depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.8 mM, Na+ = 146.2 mM, Dm_K scaled x2.3, Dm_Na x0.61. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 3.8 mM K+, 146.2 mM Na+, Dm_K x2.3, Dm_Na x0.61 depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 4.0 mM, Na+ = 146.0 mM, Dm_K scaled x1.98, Dm_Na x0.55. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+------------------------------------------------------------
+Question id 230
+A BETSE tissue simulation runs with extracellular K+ = 2.9 mM, extracellular Na+ = 147.1 mM, K+ membrane permeability scaled x2.5 and Na+ permeability scaled x0.62. What steady-state mean Vmem (mV) does the tissue reach?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.8 mM, extracellular Na+ = 146.2 mM, K+ membrane permeability scaled x2.3 and Na+ permeability scaled x0.61. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -63 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 3.8 mM K+ and 146.2 mM Na+; membrane Dm_K is scaled x2.3 and Dm_Na x0.61. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -63 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.0 mM, extracellular Na+ = 147.0 mM, K+ membrane permeability scaled x1.75 and Na+ permeability scaled x0.75. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -54 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 3.0 mM K+ and 147.0 mM Na+; membrane Dm_K is scaled x1.75 and Dm_Na x0.75. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -54 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 4.0 mM, extracellular Na+ = 146.0 mM, K+ membrane permeability scaled x1.98 and Na+ permeability scaled x0.55. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -66 mV.
+------------------------------------------------------------
+Question id 231
+In a bioelectric tissue sim (BETSE), the bath has 2.9 mM K+ and 147.1 mM Na+; membrane Dm_K is scaled x2.5 and Dm_Na x0.62. Predict the tissue's mean Vmem in mV.
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.8 mM, extracellular Na+ = 146.2 mM, K+ membrane permeability scaled x2.3 and Na+ permeability scaled x0.61. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -63 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 3.8 mM K+ and 146.2 mM Na+; membrane Dm_K is scaled x2.3 and Dm_Na x0.61. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -63 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.0 mM, extracellular Na+ = 147.0 mM, K+ membrane permeability scaled x1.75 and Na+ permeability scaled x0.75. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -54 mV.
+  Q: In a bioelectric tissue sim (BETSE), the bath has 3.0 mM K+ and 147.0 mM Na+; membrane Dm_K is scaled x1.75 and Dm_Na x0.75. Predict the tissue's mean Vmem in mV.
+  A: Mean Vmem = -54 mV.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 4.0 mM, extracellular Na+ = 146.0 mM, K+ membrane permeability scaled x1.98 and Na+ permeability scaled x0.55. What steady-state mean Vmem (mV) does the tissue reach?
+  A: Mean Vmem = -66 mV.
+------------------------------------------------------------
+Question id 232
+A BETSE tissue simulation runs with extracellular K+ = 2.9 mM, Na+ = 147.1 mM, Dm_K scaled x2.5, Dm_Na x0.62. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.8 mM, Na+ = 146.2 mM, Dm_K scaled x2.3, Dm_Na x0.61. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 3.8 mM K+, 146.2 mM Na+, Dm_K x2.3, Dm_Na x0.61 depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.0 mM, Na+ = 147.0 mM, Dm_K scaled x1.75, Dm_Na x0.75. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 3.0 mM K+, 147.0 mM Na+, Dm_K x1.75, Dm_Na x0.75 depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 4.0 mM, Na+ = 146.0 mM, Dm_K scaled x1.98, Dm_Na x0.55. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+------------------------------------------------------------
+Question id 233
+Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 2.9 mM K+, 147.1 mM Na+, Dm_K x2.5, Dm_Na x0.62 depolarized or hyperpolarized?
+Worked examples (same simulator, other settings):
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.8 mM, Na+ = 146.2 mM, Dm_K scaled x2.3, Dm_Na x0.61. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 3.8 mM K+, 146.2 mM Na+, Dm_K x2.3, Dm_Na x0.61 depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 3.0 mM, Na+ = 147.0 mM, Dm_K scaled x1.75, Dm_Na x0.75. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: Compared with baseline (5 mM K+, 145 mM Na+, default channel permeabilities), is a BETSE tissue with 3.0 mM K+, 147.0 mM Na+, Dm_K x1.75, Dm_Na x0.75 depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+  Q: A BETSE tissue simulation runs with extracellular K+ = 4.0 mM, Na+ = 146.0 mM, Dm_K scaled x1.98, Dm_Na x0.55. Relative to the baseline run (K+ = 5 mM, Na+ = 145 mM, default permeabilities), does the tissue sit depolarized or hyperpolarized?
+  A: The tissue is hyperpolarized.
+------------------------------------------------------------

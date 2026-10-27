@@ -44,6 +44,24 @@ name is historical) or for the direction of the shift (`kind: polarity`). The
 `truth` field holds the simulator value. A reward function gives full credit
 within 2 mV and partial credit within 10 and 25 mV.
 
+## Hosted model as agent
+
+`agent_exam/` holds one run of Claude Sonnet 5.5 sitting both exams closed book
+as an agent: it read one question file and wrote one answer file, could reason
+but had no simulator or truth access. Questions (`in/`), answers (`answers/`),
+per-question scores (`items.jsonl`), summary (`results.json`) and the run log
+(`run_log.jsonl`) are included.
+
+| | Exam A | Exam B |
+|---|---|---|
+| zero-shot | 0.562 | 0.591 |
+| five nearest worked examples | 0.955 | 0.808 |
+
+Four of ten batches were repeated because the agent reported using code, against
+the rules. The discarded attempts are in `agent_exam/violations/` and scored
+within 0.03 of the repeats. Tool use could not be audited beyond the agents' own
+reports. This is a single forward test: one run, one model, no repeated batches, so no statistical validation yet. A follow-up with 20 separate, unseen test batches is planned.
+
 ## Why two exams
 
 A model trained on the grid scores well on held-out grid problems because

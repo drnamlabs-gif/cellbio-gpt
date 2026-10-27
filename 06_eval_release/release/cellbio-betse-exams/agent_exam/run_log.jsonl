@@ -1,0 +1,18 @@
+{"event": "smoke", "batch": "smoke_A_zero_0", "tool_uses": 3, "note": "format check passed"}
+{"event": "violation", "batch": "B_five_0", "attempt": 1, "agent_report": "generated and saved the file with a short Bash/Python script instead of the Write tool", "action": "answers moved to violations/, excluded from scoring, batch re-run with a new agent"}
+{"event": "violation", "batch": "A_zero_0", "attempt": 1, "agent_report": "wrote the file with a Bash/Python call; answers came from a rough GHK estimate with fixed intracellular concentrations", "action": "answers moved to violations/, excluded from scoring, batch re-run with a new agent"}
+{"event": "completed", "batch": "A_five_0", "attempt": 1, "tool_uses": 4, "self_report": "answer file written, no violation stated"}
+{"event": "completed", "batch": "A_five_1", "attempt": 1, "tool_uses": 4, "self_report": "answer file written, no violation stated"}
+{"event": "completed", "batch": "B_five_2", "attempt": 1, "tool_uses": 4, "self_report": "answer file written, no violation stated"}
+{"event": "completed", "batch": "B_five_3", "attempt": 1, "tool_uses": 4, "self_report": "answer file written, no violation stated"}
+{"event": "completed", "batch": "B_five_4", "attempt": 1, "tool_uses": 4, "self_report": "answer file written, no violation stated"}
+{"event": "note", "text": "agent transcripts were empty on disk, so tool use cannot be audited beyond the agents' own reports and tool_uses counts (3-4 per agent; large five-shot files may need more than one Read)"}
+{"event": "completed", "batch": "B_five_1", "attempt": 1, "tool_uses": 4, "self_report": "read the file in two pages (first view truncated); interpolated between worked examples; opened no other file"}
+{"event": "breach_reported", "batch": "B_zero_0", "attempt": 1, "tool_uses": 3, "agent_report": "wrote the file with a Bash/Python call instead of Write; says Python computed no answers, values were hand estimates from a GHK-style model with baseline Vmem about -51 mV", "status": "pending: decide after the strict reruns show whether Write is usable by agents"}
+{"event": "completed", "batch": "B_five_0", "attempt": 2, "self_report": "Read twice (first read cut off at line 391 of 720, read the rest of the same file), then Write; no other tools"}
+{"event": "decision", "batch": "B_zero_0", "text": "strict rerun of B_five_0 shows Write works for agents, so the Bash fallback was unnecessary; B_zero_0 attempt 1 quarantined and re-run under the strict prompt"}
+{"event": "completed", "batch": "A_zero_0", "attempt": 2, "self_report": "Read on the exam file and one Write, no code, no other tools"}
+{"event": "completed", "batch": "B_zero_0", "attempt": 2, "self_report": "Read on the exam file and one Write; answers worked out by hand with a GHK-style estimate; no rules broken"}
+{"event": "completed", "batch": "B_zero_1", "attempt": 1, "tool_uses": 3, "self_report": "answer file written, 114 lines, no violation stated"}
+{"event": "suspect", "batch": "B_zero_1", "attempt": 1, "tool_uses": 4, "duration_s": 176, "note": "no breach self-reported, but the run took about 4x longer than the others and the harness said the agent stopped with background work of its own still running, which suggests code was run; answers quarantined and the batch re-run strictly"}
+{"event": "completed", "batch": "B_zero_1", "attempt": 2, "self_report": "Read on the exam file and one Write; every answer by hand reasoning; no rules broken"}

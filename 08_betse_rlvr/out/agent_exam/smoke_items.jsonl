@@ -1,0 +1,5 @@
+{"batch": "smoke_A_zero_0", "exam": "A", "cond": "zero", "id": 0, "kind": "nernst", "combo": [2, 0.5, 1], "truth": {"value": -47}, "answer": "Mean Vmem = -45 mV.", "reward": 1.0, "missing": false}
+{"batch": "smoke_A_zero_0", "exam": "A", "cond": "zero", "id": 1, "kind": "nernst", "combo": [2, 0.5, 1], "truth": {"value": -47}, "answer": "Mean Vmem = -45 mV.", "reward": 1.0, "missing": false}
+{"batch": "smoke_A_zero_0", "exam": "A", "cond": "zero", "id": 2, "kind": "polarity", "combo": [2, 0.5, 1], "truth": {"cat": "hyperpolarizes"}, "answer": "The tissue is depolarized.", "reward": 0.0, "missing": false}
+{"batch": "smoke_A_zero_0", "exam": "A", "cond": "zero", "id": 96, "kind": "polarity", "combo": [40, 2, 2], "truth": {"cat": "depolarizes"}, "answer": "The tissue is depolarized.", "reward": 1.0, "missing": false}
+{"batch": "smoke_A_zero_0", "exam": "A", "cond": "zero", "id": 97, "kind": "polarity", "combo": [40, 2, 2], "truth": {"cat": "depolarizes"}, "answer": "The tissue is depolarized.", "reward": 1.0, "missing": false}

@@ -1,0 +1,18 @@
+{
+  "model": "smoke",
+  "date": "2026-10-27",
+  "seed": 42,
+  "verifier": "05_dpo_rlvr/bioelectric.reward",
+  "results": {
+    "A zero": {
+      "n": 5,
+      "reward": 0.8,
+      "exact": 0.8,
+      "by_kind": {
+        "nernst": 1.0,
+        "polarity": 0.6666666666666666
+      },
+      "missing": 0
+    }
+  }
+}

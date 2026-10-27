@@ -1,0 +1,5 @@
+0: Mean Vmem = -45 mV.
+1: Mean Vmem = -45 mV.
+2: The tissue is depolarized.
+96: The tissue is depolarized.
+97: The tissue is depolarized.
