@@ -1,0 +1,14 @@
+{
+  "seed": 43,
+  "n_points": 150,
+  "n_problems": 574,
+  "min_test_dist_log2": 0.2,
+  "dist_to_test": {
+    "min": 0.201,
+    "median": 0.493
+  },
+  "vmem_range": [
+    -68.85,
+    -0.83
+  ]
+}

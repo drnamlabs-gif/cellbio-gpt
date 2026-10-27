@@ -23,8 +23,12 @@ SRC = {
     "sft": os.path.join(HERE, "..", "04_sft", "out", "sft_final.pt"),
     "dpo": os.path.join(HERE, "..", "05_dpo_rlvr", "out", "dpo_final_v2.pt"),
     "grpo": os.path.join(HERE, "..", "05_dpo_rlvr", "out", "grpo_final.pt"),
+    "sim_grid": os.path.join(HERE, "..", "08_betse_rlvr", "out", "bg8_final.pt"),
+    "sim_mixed": os.path.join(HERE, "..", "08_betse_rlvr", "out", "bw8r_ws.pt"),
 }
 STAGE_DESC = {
+    "sim_grid": "stage 8 simulator RL: warm start + GRPO on 150 grid simulations (exam A)",
+    "sim_mixed": "stage 8e: 150 randomly placed simulations, mixed 0-5 worked examples (exam B)",
     "base": "stage 3 pretrain (988.5M tokens, 1 epoch)",
     "sft": "stage 4 SFT (97.5k corpus-mined instructions, 2 epochs)",
     "dpo": "stage 5a DPO v2 (beta=0.3, on-policy rejected + hard negatives)",
@@ -34,9 +38,10 @@ STAGE_DESC = {
 os.makedirs(REL, exist_ok=True)
 
 for name, path in SRC.items():
-    ck = torch.load(path, weights_only=False)
+    ck = torch.load(path, weights_only=False, map_location="cpu")
     torch.save({"cfg": ck["cfg"], "model": ck["model"], "stage": STAGE_DESC[name],
-                "seed": 42, "date": "2026-10-23",
+                "seed": 42,
+                "date": "2026-10-24" if name.startswith("sim") else "2026-10-23",
                 "author": "Dr. Nam H. Le — drnamlabs.com"},
                os.path.join(REL, f"model_{name}.pt"))
     print(f"model_{name}.pt  <- {STAGE_DESC[name]}")
@@ -61,7 +66,19 @@ def row(n, label):
             f"{r['pubmedqa_clean']['acc']:.3f} | {r['betse_reward']:.3f} |")
 
 
-card = f"""# cellbio-gpt-40m
+card = f"""---
+license: mit
+language: en
+library_name: pytorch
+tags:
+- biology
+- bioelectricity
+- from-scratch
+- reinforcement-learning
+- verifiable-rewards
+---
+
+# cellbio-gpt-40m
 
 Dr. Nam H. Le — [drnamlabs.com](https://drnamlabs.com)
 
@@ -74,7 +91,10 @@ and trained end-to-end on a single RTX 5090 for **cell & tissue biology**.
 This is a *pedagogical/portfolio* release: the point is the complete, honest
 pipeline at small scale, not SOTA. Repo: https://github.com/drnamlabs-gif/cellbio-gpt.
 
-## The four checkpoints (the post-training ladder)
+## Checkpoints
+
+The first four are the post-training ladder; the last two are trained against
+the BETSE tissue simulator.
 
 | file | stage |
 |---|---|
@@ -82,6 +102,8 @@ pipeline at small scale, not SOTA. Repo: https://github.com/drnamlabs-gif/cellbi
 | `model_sft.pt` | {STAGE_DESC['sft']} |
 | `model_dpo.pt` | {STAGE_DESC['dpo']} |
 | `model_grpo.pt` | {STAGE_DESC['grpo']} |
+| `model_sim_grid.pt` | {STAGE_DESC['sim_grid']} |
+| `model_sim_mixed.pt` | {STAGE_DESC['sim_mixed']} |
 
 ## Training data
 
@@ -105,6 +127,26 @@ Contamination audit: {con['n_contaminated']}/{con['n_items']} PubMedQA items ({c
 source PMID in the pretraining corpus; the **clean** column excludes them.
 BETSE = mean verifier reward on 727 combo-held-out Nernst-physics problems
 (numeric mV graded ±2/±10/±25; categorical exact).
+
+## Simulator exams
+
+The model is given three simulator settings (extracellular K+, K+ permeability,
+Na+ permeability) and answers with the mean membrane potential in mV. BETSE
+scores it: full reward within 2 mV, partial within 10 and 25 mV.
+
+| | Exam A: 98 held-out grid problems | Exam B: 234 sealed off-grid problems |
+|---|---|---|
+| constant predictor | 0.538 | 0.663 |
+| `model_sim_grid.pt` | **0.945** | 0.539 |
+| `model_sim_mixed.pt`, five worked examples in the prompt | not measured | **0.835** |
+| `model_sim_mixed.pt`, zero-shot | not measured | 0.666 |
+
+The grid-trained model is excellent on exam A and falls below the constant
+predictor on exam B: it learned a lookup table. Placing the training
+simulations at random positions fixed most of that. Prompts follow the problem
+format in `08_betse_rlvr/make_sim_problems.py`, and `10_demo/serve_demo.py`
+shows how the five worked examples are built. `generate.py` uses the SFT chat
+template and is meant for the first four checkpoints.
 
 ## Honest limitations
 

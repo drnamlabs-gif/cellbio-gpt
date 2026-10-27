@@ -393,7 +393,7 @@ saved AND listed here.
   0.835 (in-context examples). Two honest notes: (a) GRPO@k5 slightly HURT
   off-grid (0.835→0.812) — RL on anchors overfits in-pool patterns, the SFT
   ws generalizes better; (b) mixed-k capacity split costs k=0 performance
-  (0.674 vs case-2's 0.777), so anchors are a pure-win only when examples
+  (0.666 vs case-2's 0.777), so anchors are a pure-win only when examples
   are available at test time. Figure: two_exams.png (updated, 1-NN bars
   removed per baseline policy).
 - BASELINE POLICY (user decision, 2026-10-24): the paper's main tables

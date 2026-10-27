@@ -1,3 +1,15 @@
+---
+license: mit
+language: en
+library_name: pytorch
+tags:
+- biology
+- bioelectricity
+- from-scratch
+- reinforcement-learning
+- verifiable-rewards
+---
+
 # cellbio-gpt-40m
 
 Dr. Nam H. Le — [drnamlabs.com](https://drnamlabs.com)
@@ -11,7 +23,10 @@ and trained end-to-end on a single RTX 5090 for **cell & tissue biology**.
 This is a *pedagogical/portfolio* release: the point is the complete, honest
 pipeline at small scale, not SOTA. Repo: https://github.com/drnamlabs-gif/cellbio-gpt.
 
-## The four checkpoints (the post-training ladder)
+## Checkpoints
+
+The first four are the post-training ladder; the last two are trained against
+the BETSE tissue simulator.
 
 | file | stage |
 |---|---|
@@ -19,6 +34,8 @@ pipeline at small scale, not SOTA. Repo: https://github.com/drnamlabs-gif/cellbi
 | `model_sft.pt` | stage 4 SFT (97.5k corpus-mined instructions, 2 epochs) |
 | `model_dpo.pt` | stage 5a DPO v2 (beta=0.3, on-policy rejected + hard negatives) |
 | `model_grpo.pt` | stage 5b GRPO (bioelectric verifier, 300 steps, KL 0.05) |
+| `model_sim_grid.pt` | stage 8 simulator RL: warm start + GRPO on 150 grid simulations (exam A) |
+| `model_sim_mixed.pt` | stage 8e: 150 randomly placed simulations, mixed 0-5 worked examples (exam B) |
 
 ## Training data
 
@@ -42,6 +59,26 @@ Contamination audit: 59/1000 PubMedQA items (5.9%) have their
 source PMID in the pretraining corpus; the **clean** column excludes them.
 BETSE = mean verifier reward on 727 combo-held-out Nernst-physics problems
 (numeric mV graded ±2/±10/±25; categorical exact).
+
+## Simulator exams
+
+The model is given three simulator settings (extracellular K+, K+ permeability,
+Na+ permeability) and answers with the mean membrane potential in mV. BETSE
+scores it: full reward within 2 mV, partial within 10 and 25 mV.
+
+| | Exam A: 98 held-out grid problems | Exam B: 234 sealed off-grid problems |
+|---|---|---|
+| constant predictor | 0.538 | 0.663 |
+| `model_sim_grid.pt` | **0.945** | 0.539 |
+| `model_sim_mixed.pt`, five worked examples in the prompt | not measured | **0.835** |
+| `model_sim_mixed.pt`, zero-shot | not measured | 0.666 |
+
+The grid-trained model is excellent on exam A and falls below the constant
+predictor on exam B: it learned a lookup table. Placing the training
+simulations at random positions fixed most of that. Prompts follow the problem
+format in `08_betse_rlvr/make_sim_problems.py`, and `10_demo/serve_demo.py`
+shows how the five worked examples are built. `generate.py` uses the SFT chat
+template and is meant for the first four checkpoints.
 
 ## Honest limitations
 

@@ -89,7 +89,10 @@ python 10_demo/serve_demo.py                    # http://localhost:8765
 
 Each stage folder has scripts with a usage note at the top, a `out/` folder with its figures, logs and metrics, and the figure that explains the stage. Scripts cap GPU memory and CPU threads explicitly, since the machine they were written on is shared. Seed 42 throughout, recorded in each saved artifact.
 
-Checkpoints, the simulator exams and the larger derived datasets are published separately and are not in git (link added on release).
+Checkpoints and the simulator exams are published on Hugging Face and are not in git:
+
+- Model, six checkpoints and a model card: [drnamlabs/cellbio-gpt-40m](https://huggingface.co/drnamlabs/cellbio-gpt-40m)
+- Simulator exams and problems: [drnamlabs/cellbio-betse-exams](https://huggingface.co/datasets/drnamlabs/cellbio-betse-exams)
 
 ## Related work and credit
 
