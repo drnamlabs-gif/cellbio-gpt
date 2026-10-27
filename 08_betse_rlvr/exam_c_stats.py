@@ -21,10 +21,16 @@ SYS_DIR = os.path.join(HERE, "out", "exam_c", "systems")
 OUTD = os.path.join(HERE, "out", "exam_c")
 
 PRIMARY = [("mixed_k5", "agent_k5")]
+OPEN = ["agent_haiku", "qwen35", "qwen36", "gptoss20b", "deepseekr1_8b"]
 SECONDARY = [(s, "constant") for s in ("grid_k0", "random_k0", "mixed_k0", "mixed_k5",
-                                       "agent_k0", "agent_k5")] + \
-            [("mixed_k5", "mixed_k0"), ("agent_k5", "agent_k0"),
+                                       "agent_k0", "agent_k5")] +             [("mixed_k5", "mixed_k0"), ("agent_k5", "agent_k0"),
              ("mixed_k5", "random_k0"), ("agent_k5", "nn1"), ("mixed_k5", "nn1")]
+# declared in the PLAN addendum before the second round of runs
+SECONDARY += [(f"{m}_{k}", "constant") for m in OPEN for k in ("k0", "k5")]
+SECONDARY += [(f"{m}_k5", f"{m}_k0") for m in OPEN]
+SECONDARY += [("mixed_k5", f"{m}_k5") for m in OPEN]
+SECONDARY += [("random_k0", f"{m}_k0") for m in OPEN]
+SECONDARY += [("agent_haiku_k5", "agent_k5")]
 
 
 def load(name):
@@ -57,16 +63,22 @@ def main():
                 print("skipped (missing system):", a, b)
                 continue
             rows[kind].append(compare(a, b, rng))
+    sec = rows["secondary"]
+    order = sorted(range(len(sec)), key=lambda i: sec[i]["wilcoxon_p"])
+    m, run = len(sec), 0.0
+    for rank, i in enumerate(order):
+        run = max(run, min(1.0, (m - rank) * sec[i]["wilcoxon_p"]))
+        sec[i]["holm_p"] = run
     means = {n: float(np.mean(load(n))) for n in names}
     json.dump({"means_of_batch_means": means, **rows}, open(os.path.join(OUTD, "stats.json"), "w"), indent=1)
     lines = ["| system | mean reward over 20 batches |", "|---|---|"]
     lines += [f"| {n} | {m:.3f} |" for n, m in sorted(means.items(), key=lambda t: -t[1])]
-    lines += ["", "| comparison | diff | 95% CI | Wilcoxon p | wins a/b |", "|---|---|---|---|---|"]
+    lines += ["", "| comparison | diff | 95% CI | Wilcoxon p | Holm p | wins a/b |", "|---|---|---|---|---|---|"]
     for kind in ("primary", "secondary"):
         for r in rows[kind]:
             lines.append(f"| {'**' if kind == 'primary' else ''}{r['a']} vs {r['b']}{'**' if kind == 'primary' else ''} "
                          f"| {r['diff']:+.3f} | [{r['ci95'][0]:+.3f}, {r['ci95'][1]:+.3f}] "
-                         f"| {r['wilcoxon_p']:.4f} | {r['a_wins']}/{r['b_wins']} |")
+                         f"| {r['wilcoxon_p']:.4f} | {r.get('holm_p', r['wilcoxon_p']):.4f} | {r['a_wins']}/{r['b_wins']} |")
     open(os.path.join(OUTD, "stats.md"), "w").write("\n".join(lines) + "\n")
     print("\n".join(lines))
 
