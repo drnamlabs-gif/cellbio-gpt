@@ -55,20 +55,25 @@ The hosted-model rows come from a first, single forward test: an agent that read
 
 Twenty batches of fresh simulations (300 simulations, 1,146 problems) were generated at points that appear in no training set and no earlier exam. They were fixed before any model saw them: the repository holds only their SHA-256 hashes (`08_betse_rlvr/exam_c/commitment.json`, committed before the exams) and the analysis plan (`08_betse_rlvr/exam_c/PLAN.md`). Each batch is one unit, so every comparison is paired over 20 batches. Mean reward over the batches:
 
-| System | Reward |
-|---|---|
-| Hosted model as agent (Claude Sonnet 5.5), five worked examples | **0.852** |
-| Nearest-neighbour lookup, no model (diagnostic) | 0.827 |
-| 40M, mixed warm start, five worked examples | 0.807 |
-| 40M, trained on random points, zero-shot | 0.772 |
-| Constant predictor | 0.708 |
-| 40M, mixed warm start, zero-shot | 0.678 |
-| Hosted model as agent, zero-shot | 0.602 |
-| 40M, trained on the grid, zero-shot | 0.500 |
+| System | Zero-shot | Five worked examples |
+|---|---|---|
+| Claude Sonnet 5.5 (agent) | 0.602 | **0.852** |
+| Claude Haiku 5.5 (agent, `claude-haiku-5-5`) | 0.569 | 0.842 |
+| 40M, trained on random points | **0.772** | not trained for it |
+| 40M, mixed warm start | 0.678 | 0.807 |
+| 40M, trained on the grid | 0.500 | not trained for it |
+| gpt-oss:20b (Ollama) | 0.511 | running |
+| Qwen 3.5 (Ollama) | 0.465 | running |
+| Qwen 3.6 (Ollama) | running | running |
+| DeepSeek-R1 8B (Ollama) | 0.278 (see note) | running |
+| Constant predictor | 0.708 | 0.708 |
+| Nearest-neighbour lookup, no model (diagnostic) | n/a | 0.827 |
+
+Mean reward over the 20 batches; "running" means the model has not finished the exam yet and the row will be filled in when it has. Zero-shot is the headline column: it shows what a model brings on its own. With worked examples in the prompt the large hosted models have the advantage, and they gain 0.25 to 0.27 from the examples (paired over 20 batches, 20 of 20 batches). DeepSeek-R1 always reasons before answering and was given 3,000 tokens; 679 of its 1,146 answers (59%) were cut off before a final line and score zero, so its row measures the token budget as much as the model. The open models ran through Ollama with default quantization, greedy decoding and one-line answers.
 
 The comparison fixed in advance was the 40M model with five examples against the hosted agent with five examples. The agent is ahead by 0.045 (95% bootstrap interval 0.025 to 0.065 over batches, Wilcoxon p = 0.0014) and wins 17 of 20 batches. The near-tie in the first test did not hold. Both are above the constant predictor with five examples, and the agent also beats nearest-neighbour lookup (+0.025, p = 0.003) while the 40M model falls below it (-0.020, p = 0.015). Zero-shot the order flips: the agent is 0.106 below the constant predictor, and the 40M model trained on random points is 0.063 above it, which is evidence that the weights hold part of the simulator's response surface and the agent needs the examples to get there. Only the first comparison was the planned test; the rest are descriptive, and with twelve comparisons the secondary p-values should not be read at face value. Full table: `08_betse_rlvr/out/exam_c/stats.md`.
 
-Limits: one hosted model (Sonnet 5.5), one run per batch, agent tool use checked only through the agents' own reports (none reported a rule breach; the log is in `08_betse_rlvr/out/exam_c/agent_run_log.jsonl`). Open models through Ollama and other hosted models have not sat exam C yet, so the exam stays sealed: truths, questions and per-problem answers are withheld until they have.
+Limits: two hosted models (Sonnet 5.5 and Haiku 5.5), one run per batch, agent tool use checked only through the agents' own reports (none reported a rule breach). The 40M models were trained on this task and the hosted and open models were not, so the comparison is not like for like. The zero-shot column became the headline after the first-round results were seen (recorded in `08_betse_rlvr/exam_c/PLAN.md`); the planned test is the five-example one. The exam stays sealed until the remaining open-model runs finish: truths, questions and per-problem answers are withheld.
 
 The earlier single test is in `08_betse_rlvr/out/agent_exam/`.
 

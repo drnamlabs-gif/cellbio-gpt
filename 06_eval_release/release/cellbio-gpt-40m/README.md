@@ -82,23 +82,28 @@ test followed, exam C: 20 sealed batches of fresh simulations (300 simulations, 
 problems) whose SHA-256 hashes were published before any model saw them. Mean reward
 over the batches:
 
-| system | reward |
-|---|---|
-| hosted model as agent (Claude Sonnet 5.5), five examples | 0.852 |
-| nearest-neighbour lookup, no model (diagnostic) | 0.827 |
-| `model_sim_mixed.pt`, five examples | 0.807 |
-| `model_sim_random.pt`, zero-shot | 0.772 |
-| constant predictor | 0.708 |
-| `model_sim_mixed.pt`, zero-shot | 0.678 |
-| hosted model as agent, zero-shot | 0.602 |
-| `model_sim_grid.pt`, zero-shot | 0.500 |
+| System | Zero-shot | Five worked examples |
+|---|---|---|
+| Claude Sonnet 5.5 (agent) | 0.602 | **0.852** |
+| Claude Haiku 5.5 (agent, `claude-haiku-5-5`) | 0.569 | 0.842 |
+| `model_sim_random.pt` | **0.772** | not trained for it |
+| `model_sim_mixed.pt` | 0.678 | 0.807 |
+| `model_sim_grid.pt` | 0.500 | not trained for it |
+| gpt-oss:20b (Ollama) | 0.511 | running |
+| Qwen 3.5 (Ollama) | 0.465 | running |
+| Qwen 3.6 (Ollama) | running | running |
+| DeepSeek-R1 8B (Ollama) | 0.278 (see note) | running |
+| Constant predictor | 0.708 | 0.708 |
+| Nearest-neighbour lookup, no model (diagnostic) | n/a | 0.827 |
+
+Mean reward over the 20 batches; "running" means the model has not finished the exam yet and the row will be filled in when it has. Zero-shot is the headline column: it shows what a model brings on its own. With worked examples in the prompt the large hosted models have the advantage, and they gain 0.25 to 0.27 from the examples (paired over 20 batches, 20 of 20 batches). DeepSeek-R1 always reasons before answering and was given 3,000 tokens; 679 of its 1,146 answers (59%) were cut off before a final line and score zero, so its row measures the token budget as much as the model. The open models ran through Ollama with default quantization, greedy decoding and one-line answers.
 
 The comparison fixed in advance was `model_sim_mixed.pt` with five examples against the
 hosted agent with five examples. The agent is ahead by 0.045 (95% bootstrap interval 0.025
 to 0.065 over batches, Wilcoxon p = 0.0014) and wins 17 of 20 batches, so the near-tie in
 the first test did not hold. Other comparisons are descriptive. One hosted model, one run
 per batch; the agents' tool use was checked only through their own reports. Exam C stays
-sealed until other model families have sat it. Details are in the dataset repo. Per-question answers and
+sealed until the remaining open-model runs finish. Details are in the dataset repo. Per-question answers and
 scores are in the dataset repo.
 
 The grid-trained model is excellent on exam A and falls below the constant

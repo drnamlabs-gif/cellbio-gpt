@@ -46,7 +46,8 @@ def dist(a, b):
 def chat(model, messages, think_field):
     # gpt-oss routes everything through a reasoning channel: give it a low
     # thinking budget + room, and read the final content as usual
-    npred = 1024 if "gpt-oss" in model else 300
+    # deepseek-r1 always thinks (500 to 3000 tokens) before the one-line answer
+    npred = 3000 if "deepseek" in model else (1024 if "gpt-oss" in model else 300)
     body = {"model": model, "messages": messages, "stream": False,
             "options": {"temperature": 0.0, "num_predict": npred},
             "keep_alive": "2m"}

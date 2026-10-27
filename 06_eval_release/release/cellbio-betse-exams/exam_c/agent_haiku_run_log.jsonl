@@ -1,0 +1,6 @@
+{"model": "claude-haiku-5-5 (Haiku 5.5, self-reported by every agent; the `haiku` alias of the agent tool, not Haiku 4.5)", "rules": "Read + Write only; no Bash, no background tasks, no code; later batches also told not to load other tool definitions", "note": "agent transcripts are empty on disk; breaches are known only from the agents' own reports and from tool_uses counts"}
+{"summary": "40 agents (20 batches x zero/five); every report said no rules broken and named claude-haiku-5-5", "tool_uses_seen": "2 to 6; zero-shot batches 3, five-shot 4 to 6 (extra Reads for paging a large file, one oversize Read that failed and was retried in ranges)"}
+{"batch": "C04_zero", "deviation": "agent said it loaded other tool definitions (no tool other than Read and Write was invoked); answers kept"}
+{"batch": "C07_zero", "deviation": "agent ended without delivering a hand-back report (tool_uses 2); the answer file is complete, 60 lines; kept"}
+{"batch": "C17_zero_to_C19_five", "note": "the first launch of these six agents was refused by the harness (limit of 20 concurrent subagents) and they were started again once slots freed; no answers were produced by the refused launches"}
+{"batch": "C17_five", "tool_uses": 6, "duration_s": 127.9, "note": "longest run of the 40; agent reported no breach and said it used only Read and one Write"}

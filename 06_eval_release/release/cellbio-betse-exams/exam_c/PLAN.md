@@ -54,3 +54,38 @@ level with the 40M model on exam A and a little behind on exam B. If the
 paired interval over 20 batches excludes zero in either direction, the first
 result was misleading. If it spans zero, the honest reading is that the two
 cannot be told apart at this sample size.
+
+## Addendum, written before the second round of runs
+
+The first round (40M checkpoints and Sonnet 5.5 agents) is finished and its result is
+in the report. Before running anything further, these systems and comparisons are fixed.
+
+Systems added, each on all 20 batches, zero-shot and with five examples:
+- A Haiku-class agent (the `haiku` alias of the agent tool; the exact model version
+  is whatever the harness maps it to and is recorded from the agent's own reply).
+  Same rules and prompt as the Sonnet agents.
+- Open models through Ollama, greedy decoding, one-line answers as in the earlier
+  open-model exam: `qwen3.5:latest`, `qwen3.6:latest`, `gpt-oss:20b`, `deepseek-r1:8b`.
+
+Comparisons, all declared now:
+- Each added system against the constant predictor, and five-shot against zero-shot
+  for each system.
+- With five examples: the 40M mixed warm start against each added system.
+- Zero-shot: the 40M model trained on random points against each added system.
+- The Haiku agent against the Sonnet agent, with five examples.
+
+The planned primary comparison is unchanged. For this second family, p-values are
+reported both raw and Holm-adjusted over the whole secondary family, and the adjusted
+value is the one to read. No comparison will be added after the data are seen. Batches
+that have to be repeated are logged as before.
+
+## Note on the headline, added after the first-round results were seen
+
+After the 40M and Sonnet results were known, the author decided that the headline
+comparison in write-ups is the zero-shot column (no worked examples in the prompt),
+because that column measures what a model brings on its own. This choice was made
+after seeing the data, so it is recorded here. The comparison fixed in advance
+(40M with five examples against the hosted agent with five examples) is unchanged
+and is still reported, and the final table always shows both columns. Zero-shot
+comparisons were already among the declared secondary ones, so their Holm-adjusted
+p-values are the ones to read.

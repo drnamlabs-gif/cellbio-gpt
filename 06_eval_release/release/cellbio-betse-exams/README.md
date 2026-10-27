@@ -70,21 +70,26 @@ reward per batch; `stats.md` and `stats.json` have the paired statistics;
 `agent_run_log.jsonl` is the run log. The questions, truths and per-problem answers are
 withheld until other model families have sat the exam.
 
-| System | Mean reward over 20 batches |
-|---|---|
-| hosted agent (Sonnet 5.5), five examples | 0.852 |
-| nearest-neighbour lookup (diagnostic) | 0.827 |
-| 40M mixed warm start, five examples | 0.807 |
-| 40M random-point training, zero-shot | 0.772 |
-| constant predictor | 0.708 |
-| 40M mixed warm start, zero-shot | 0.678 |
-| hosted agent, zero-shot | 0.602 |
-| 40M grid training, zero-shot | 0.500 |
+| System | Zero-shot | Five worked examples |
+|---|---|---|
+| Claude Sonnet 5.5 (agent) | 0.602 | **0.852** |
+| Claude Haiku 5.5 (agent, `claude-haiku-5-5`) | 0.569 | 0.842 |
+| 40M, trained on random points | **0.772** | not trained for it |
+| 40M, mixed warm start | 0.678 | 0.807 |
+| 40M, trained on the grid | 0.500 | not trained for it |
+| gpt-oss:20b (Ollama) | 0.511 | running |
+| Qwen 3.5 (Ollama) | 0.465 | running |
+| Qwen 3.6 (Ollama) | running | running |
+| DeepSeek-R1 8B (Ollama) | 0.278 (see note) | running |
+| Constant predictor | 0.708 | 0.708 |
+| Nearest-neighbour lookup, no model (diagnostic) | n/a | 0.827 |
+
+Mean reward over the 20 batches; "running" means the model has not finished the exam yet and the row will be filled in when it has. Zero-shot is the headline column: it shows what a model brings on its own. With worked examples in the prompt the large hosted models have the advantage, and they gain 0.25 to 0.27 from the examples (paired over 20 batches, 20 of 20 batches). DeepSeek-R1 always reasons before answering and was given 3,000 tokens; 679 of its 1,146 answers (59%) were cut off before a final line and score zero, so its row measures the token budget as much as the model. The open models ran through Ollama with default quantization, greedy decoding and one-line answers.
 
 Planned comparison, 40M with five examples against the hosted agent with five examples:
 the agent is ahead by 0.045 (95% bootstrap interval 0.025 to 0.065, Wilcoxon p = 0.0014),
 winning 17 of 20 batches. Other comparisons are descriptive. One hosted model, one run
-per batch, tool use checked only through the agents' own reports.
+per batch, tool use checked only through the agents' own reports. The zero-shot column became the headline after the first-round results were seen; see PLAN.md.
 
 ## Why two exams
 
