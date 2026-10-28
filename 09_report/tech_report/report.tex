@@ -587,30 +587,53 @@ lookup (+0.025, $p=0.003$), which the 40M model did not (--0.020, $p=0.015$).
 Zero-shot the order reverses: the agent scored 0.106 below the constant predictor
 and the 40M model trained on random points 0.063 above it. We read that as the
 weights holding part of the simulator's response surface while the agent needs
-the examples to reach it, but only the first comparison was planned; the rest
-are descriptive, and with twelve comparisons the secondary $p$-values should
-not be taken at face value. The limits are one hosted model, one run per
-batch, and tool use that could be checked only through the agents' own
-reports, none of which reported a breach on exam C. Open models run through Ollama and other hosted models
-have not yet sat exam C, so it stays sealed.
+the examples to reach it.
+
+A second round added a Haiku-class agent (Haiku 5.5) and four open models run
+through Ollama with greedy decoding and one-line answers (gpt-oss:20b,
+Qwen 3.5, Qwen 3.6 and DeepSeek-R1 8B). Their systems and comparisons were
+declared before they ran, and the plan records that the zero-shot column was
+made the headline after the first-round results were seen. Zero-shot, the
+40M model trained on random points (0.772) is ahead of every hosted and open
+model, and all of those are below the constant predictor. Given five
+examples, the large hosted models gain 0.25 to 0.27 and lead the table (Sonnet
+0.852, Haiku 0.842; the two cannot be told apart, $p=0.37$); the open models
+gain 0.10 to 0.33, with Qwen 3.5 (0.784) and Qwen 3.6 (0.759) above the
+constant predictor and gpt-oss:20b (0.616) and DeepSeek-R1 8B (0.431) below it.
+The 40M model with five examples is 0.035 below Haiku (Holm-adjusted $p=0.02$)
+and 0.048 above Qwen 3.6 (Holm-adjusted $p=0.04$). DeepSeek-R1 always reasons
+before answering and was given 3,000 tokens; 679 of its 1,146 zero-shot answers
+(59\%) and 563 with examples (49\%) were cut off before a final line and score
+zero, so its rows measure the token budget as much as the model. The 40M models
+were trained on this task and the hosted and open models were not, so the
+comparison is not like for like. Only the first comparison was the planned
+test; the rest are descriptive, with Holm adjustment over the whole secondary
+family. The limits are one run per batch, open models at default quantization,
+and tool use by the hosted agents that could be checked only through their own
+reports, none of which reported a breach on exam C. GPT and Gemini have not
+sat exam C, so it stays sealed.
 
 \begin{table}[t]
 \centering\small
-\begin{tabular}{@{}lc@{}}
+\begin{tabular}{@{}lcc@{}}
 \toprule
-System & Reward\\
+System & Zero-shot & Five examples\\
 \midrule
-Hosted model as agent, five worked examples & \textbf{0.852}\\
-Nearest-neighbour lookup, no model (diagnostic) & 0.827\\
-40M, mixed warm start, five worked examples & 0.807\\
-40M, trained on random points, zero-shot & 0.772\\
-Constant predictor & 0.708\\
-40M, mixed warm start, zero-shot & 0.678\\
-Hosted model as agent, zero-shot & 0.602\\
-40M, trained on the grid, zero-shot & 0.500\\
+Claude Sonnet 5.5 (agent) & 0.602 & \textbf{0.852}\\
+Claude Haiku 5.5 (agent) & 0.569 & 0.842\\
+40M, trained on random points & \textbf{0.772} & --\\
+40M, mixed warm start & 0.678 & 0.807\\
+40M, trained on the grid & 0.500 & --\\
+Qwen 3.5 & 0.465 & 0.784\\
+Qwen 3.6 & 0.429 & 0.759\\
+gpt-oss:20b & 0.511 & 0.616\\
+DeepSeek-R1 8B (truncated) & 0.278 & 0.431\\
+Constant predictor & 0.708 & 0.708\\
+Nearest-neighbour lookup (diagnostic) & -- & 0.827\\
 \bottomrule
 \end{tabular}
-\caption{Exam C: mean reward over 20 sealed batches (1,146 problems).}
+\caption{Exam C: mean reward over 20 sealed batches (1,146 problems). The 40M
+models were trained on this task; the others were not.}
 \label{tab:examc}
 \end{table}
 

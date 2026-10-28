@@ -89,21 +89,21 @@ over the batches:
 | `model_sim_random.pt` | **0.772** | not trained for it |
 | `model_sim_mixed.pt` | 0.678 | 0.807 |
 | `model_sim_grid.pt` | 0.500 | not trained for it |
-| gpt-oss:20b (Ollama) | 0.511 | running |
-| Qwen 3.5 (Ollama) | 0.465 | running |
-| Qwen 3.6 (Ollama) | running | running |
-| DeepSeek-R1 8B (Ollama) | 0.278 (see note) | running |
+| gpt-oss:20b (Ollama) | 0.511 | 0.616 |
+| Qwen 3.5 (Ollama) | 0.465 | 0.784 |
+| Qwen 3.6 (Ollama) | 0.429 | 0.759 |
+| DeepSeek-R1 8B (Ollama) | 0.278 (see note) | 0.431 (see note) |
 | Constant predictor | 0.708 | 0.708 |
 | Nearest-neighbour lookup, no model (diagnostic) | n/a | 0.827 |
 
-Mean reward over the 20 batches; "running" means the model has not finished the exam yet and the row will be filled in when it has. Zero-shot is the headline column: it shows what a model brings on its own. With worked examples in the prompt the large hosted models have the advantage, and they gain 0.25 to 0.27 from the examples (paired over 20 batches, 20 of 20 batches). DeepSeek-R1 always reasons before answering and was given 3,000 tokens; 679 of its 1,146 answers (59%) were cut off before a final line and score zero, so its row measures the token budget as much as the model. The constant predictor ignores the question and always answers the most common training answer for that kind of question; it is the floor, and a model below it has not learned the simulator. The open models ran through Ollama with default quantization, greedy decoding and one-line answers.
+Mean reward over the 20 batches. Zero-shot is the headline column: it shows what a model brings on its own. With worked examples in the prompt the large hosted models have the advantage, and they gain 0.25 to 0.27 from the examples (paired over 20 batches, 20 of 20 batches). DeepSeek-R1 always reasons before answering and was given 3,000 tokens; 679 of its 1,146 zero-shot answers (59%) and 563 with examples (49%) were cut off before a final line and score zero, so its row measures the token budget as much as the model. The constant predictor ignores the question and always answers the most common training answer for that kind of question; it is the floor, and a model below it has not learned the simulator. The open models ran through Ollama with default quantization, greedy decoding and one-line answers.
 
 The comparison fixed in advance was `model_sim_mixed.pt` with five examples against the
 hosted agent with five examples. The agent is ahead by 0.045 (95% bootstrap interval 0.025
 to 0.065 over batches, Wilcoxon p = 0.0014) and wins 17 of 20 batches, so the near-tie in
 the first test did not hold. Other comparisons are descriptive. One hosted model, one run
 per batch; the agents' tool use was checked only through their own reports. Exam C stays
-sealed until the remaining open-model runs finish. Details are in the dataset repo. Per-question answers and
+sealed for now (GPT and Gemini have not sat it). Details are in the dataset repo. Per-question answers and
 scores are in the dataset repo.
 
 The grid-trained model is excellent on exam A and falls below the constant
