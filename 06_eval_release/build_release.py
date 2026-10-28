@@ -140,8 +140,8 @@ scores it: full reward within 2 mV, partial within 10 and 25 mV.
 | | Exam A: 98 held-out grid problems | Exam B: 234 sealed off-grid problems |
 |---|---|---|
 | constant predictor | 0.538 | 0.663 |
-| hosted model as agent (Claude Sonnet 5.5), zero-shot | 0.562 | 0.591 |
-| hosted model as agent (Claude Sonnet 5.5), five worked examples | **0.955** | 0.808 |
+| hosted model as agent (frontier LLM), zero-shot | 0.562 | 0.591 |
+| hosted model as agent (frontier LLM), five worked examples | **0.955** | 0.808 |
 | `model_sim_grid.pt` | **0.945** | 0.539 |
 | `model_sim_mixed.pt`, five worked examples in the prompt | not measured | **0.835** |
 | `model_sim_mixed.pt`, zero-shot | not measured | 0.666 |
@@ -154,8 +154,8 @@ over the batches:
 
 | System | Zero-shot | Five worked examples |
 |---|---|---|
-| Claude Sonnet 5.5 (agent) | 0.602 | **0.852** |
-| Claude Haiku 5.5 (agent, `claude-haiku-5-5`) | 0.569 | 0.842 |
+| Frontier hosted LLM, large (agent) | 0.602 | **0.852** |
+| Frontier hosted LLM, small (agent) | 0.569 | 0.842 |
 | `model_sim_random.pt` | **0.772** | not trained for it |
 | `model_sim_mixed.pt` | 0.678 | 0.807 |
 | `model_sim_grid.pt` | 0.500 | not trained for it |

@@ -46,7 +46,7 @@ within 2 mV and partial credit within 10 and 25 mV.
 
 ## Hosted model as agent
 
-`agent_exam/` holds a first single test: Claude Sonnet 5.5 sat exams A and B closed book
+`agent_exam/` holds a first single test: a frontier hosted LLM sat exams A and B closed book
 as an agent (it read one question file and wrote one answer file, could reason, had no
 simulator or truth access). Questions, answers, per-question scores, summary and run log
 are included.
@@ -72,8 +72,8 @@ withheld until other model families have sat the exam.
 
 | System | Zero-shot | Five worked examples |
 |---|---|---|
-| Claude Sonnet 5.5 (agent) | 0.602 | **0.852** |
-| Claude Haiku 5.5 (agent, `claude-haiku-5-5`) | 0.569 | 0.842 |
+| Frontier hosted LLM, large (agent) | 0.602 | **0.852** |
+| Frontier hosted LLM, small (agent) | 0.569 | 0.842 |
 | 40M, trained on random points | **0.772** | not trained for it |
 | 40M, mixed warm start | 0.678 | 0.807 |
 | 40M, trained on the grid | 0.500 | not trained for it |
