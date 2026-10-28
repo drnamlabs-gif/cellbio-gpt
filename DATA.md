@@ -6,9 +6,12 @@ Domain: **cellular biology, tissue engineering, morphogenesis, bioelectricity**.
 One corpus covers all three "bio" targets; wearable/physiology is a separate
 multimodal problem (time-series, PhysioNet) and is deferred — see bottom.
 
-Why this domain and not generic text: the BETSE simulator (and the xenobot
-pipeline) gives a **verifiable reward** for stage 5 — a domain-specific RLVR
-setup no generic-data toy can have, and no other applicant can copy.
+Why this domain and not generic text: the BETSE simulator gives a
+**verifiable reward** for stage 5 — a domain-specific RLVR setup no
+generic-data toy can have, and no other applicant can copy. Real biological
+systems and physical robots are the natural next verifiers once a cheap
+simulator stops being enough, but checking against them is expensive, so
+they come later in the eval-cost tiering, not first.
 
 ## Corpus sizes (verified against PubMed E-utilities, 2026-10-22)
 
@@ -70,8 +73,9 @@ the bioelectric core gets upweighted via textbooks/protocols and stage 4–5.
   predict the Vmem/pattern outcome" or "propose an intervention that produces
   pattern X". Reward = simulated outcome match. Reuse French Flag
   law+commitment tasks as the first curriculum.
-- **Xenobot pipeline** as second, expensive verifier — apply the
-  eval-cost tiering from generic_discovery (cheap verifier first, promote).
+- A real biological system or physical robot as a second, expensive verifier
+  — apply the eval-cost tiering from generic_discovery (cheap simulator
+  verifier first, promote only what survives it).
 - DPO variant: chosen/rejected pairs harvested from verifier pass/fail.
 
 ### Stage 6 — evals
