@@ -83,7 +83,7 @@ the bioelectric core gets upweighted via textbooks/protocols and stage 4–5.
 - **LAB-Bench** (FutureHouse) — biology research tasks; the eval the AI-for-science
   labs actually care about.
 - SciQ (easy sanity floor).
-- Held-out BETSE eval (ours) vs frontier hosted-LLM API baselines.
+- Held-out BETSE eval (ours) vs frontier API baselines (GPT/Claude/Gemini).
 
 ## Licensing stance
 Abstracts: research use OK, standard practice for open models trained on them.

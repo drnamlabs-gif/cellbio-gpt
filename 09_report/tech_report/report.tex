@@ -560,8 +560,8 @@ strongest open chat model scored 0.529 zero-shot, below the constant
 predictor, and 0.904 with five worked examples. The supervised warm start
 did most of the work (0.938), and GRPO added a little on top.
 
-\paragraph{A hosted model as an agent.} We also had a hosted frontier LLM
-sit the exams as an agent (closed book). The agent read one
+\paragraph{A hosted model as an agent.} We also had a hosted model sit
+the exams as an agent (Claude Sonnet 5.5, closed book). The agent read one
 question file and wrote one answer file; it could reason before answering
 but had no access to the simulator or the truth files, and the same verifier
 scored its answers. In a first single test it scored 0.562 on exam A, close
@@ -589,18 +589,18 @@ and the 40M model trained on random points 0.063 above it. We read that as the
 weights holding part of the simulator's response surface while the agent needs
 the examples to reach it.
 
-A second round added a smaller hosted agent and four open models run
+A second round added a Haiku-class agent (Haiku 5.5) and four open models run
 through Ollama with greedy decoding and one-line answers (gpt-oss:20b,
 Qwen 3.5, Qwen 3.6 and DeepSeek-R1 8B). Their systems and comparisons were
 declared before they ran, and the plan records that the zero-shot column was
 made the headline after the first-round results were seen. Zero-shot, the
 40M model trained on random points (0.772) is ahead of every hosted and open
 model, and all of those are below the constant predictor. Given five
-examples, the large hosted models gain 0.25 to 0.27 and lead the table (large
-agent 0.852, small agent 0.842; the two cannot be told apart, $p=0.37$); the open models
+examples, the large hosted models gain 0.25 to 0.27 and lead the table (Sonnet
+0.852, Haiku 0.842; the two cannot be told apart, $p=0.37$); the open models
 gain 0.10 to 0.33, with Qwen 3.5 (0.784) and Qwen 3.6 (0.759) above the
 constant predictor and gpt-oss:20b (0.616) and DeepSeek-R1 8B (0.431) below it.
-The 40M model with five examples is 0.035 below the small agent (Holm-adjusted $p=0.02$)
+The 40M model with five examples is 0.035 below Haiku (Holm-adjusted $p=0.02$)
 and 0.048 above Qwen 3.6 (Holm-adjusted $p=0.04$). DeepSeek-R1 always reasons
 before answering and was given 3,000 tokens; 679 of its 1,146 zero-shot answers
 (59\%) and 563 with examples (49\%) were cut off before a final line and score
@@ -619,8 +619,8 @@ sat exam C, so it stays sealed.
 \toprule
 System & Zero-shot & Five examples\\
 \midrule
-Hosted agent, large & 0.602 & \textbf{0.852}\\
-Hosted agent, small & 0.569 & 0.842\\
+Claude Sonnet 5.5 (agent) & 0.602 & \textbf{0.852}\\
+Claude Haiku 5.5 (agent) & 0.569 & 0.842\\
 40M, trained on random points & \textbf{0.772} & --\\
 40M, mixed warm start & 0.678 & 0.807\\
 40M, trained on the grid & 0.500 & --\\

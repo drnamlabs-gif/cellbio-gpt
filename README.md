@@ -43,8 +43,8 @@ The model reads a problem such as "bath K+ is 12 mM, K+ permeability is 2x basel
 | Constant predictor | 0.538 | 0.663 |
 | Best open chat model, zero-shot | 0.529 | – |
 | Best open chat model, five worked examples | 0.904 | – |
-| Hosted model as agent (frontier LLM), zero-shot | 0.562 | 0.591 |
-| Hosted model as agent (frontier LLM), five worked examples | **0.955** | 0.808 |
+| Hosted model as agent (Claude Sonnet 5.5), zero-shot | 0.562 | 0.591 |
+| Hosted model as agent (Claude Sonnet 5.5), five worked examples | **0.955** | 0.808 |
 | 40M, trained on the grid | **0.945** | 0.539 |
 | 40M, trained on random points | – | 0.777 |
 | 40M, random points + five examples in the prompt | – | **0.835** |
@@ -57,8 +57,8 @@ Twenty batches of fresh simulations (300 simulations, 1,146 problems) were gener
 
 | System | Zero-shot | Five worked examples |
 |---|---|---|
-| Frontier hosted LLM, large (agent) | 0.602 | **0.852** |
-| Frontier hosted LLM, small (agent) | 0.569 | 0.842 |
+| Claude Sonnet 5.5 (agent) | 0.602 | **0.852** |
+| Claude Haiku 5.5 (agent, `claude-haiku-5-5`) | 0.569 | 0.842 |
 | 40M, trained on random points | **0.772** | not trained for it |
 | 40M, mixed warm start | 0.678 | 0.807 |
 | 40M, trained on the grid | 0.500 | not trained for it |
